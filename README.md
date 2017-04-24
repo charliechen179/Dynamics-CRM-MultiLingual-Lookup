@@ -62,4 +62,4 @@ For Primary Fields and Related Entities, use “,” character to indicate multi
 
 **Note:**
 
-"|" character is used for concatenating language specific labels. Do not use the "|" characters in the text.
+"|" character is used for concatenating language specific labels. Do not use the "|" characters in the Primary Fields labels.
