@@ -34,6 +34,8 @@ Notes:
 
 ### Create Configuration
 
+<p><img src="https://github.com/mehrgithub/Dynamics-CRM-MultiLingual-Lookup/raw/master/MultiLingual.PNG" /></p>
+
 1. Open Advanced Find.
 1. From the “Look for” drop down, select "Multi Lingual Lookup Configuration".
 1. Click on the Results ribbon button.
