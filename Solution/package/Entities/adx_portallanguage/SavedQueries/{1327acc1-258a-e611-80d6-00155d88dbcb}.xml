@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{1327acc1-258a-e611-80d6-00155d88dbcb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="adx_name" select="1" preview="1" icon="1">
+        <row name="result" id="adx_portallanguageid">
+          <cell name="adx_name" width="150" />
+          <cell name="createdon" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="true">
+        <entity name="adx_portallanguage">
+          <attribute name="adx_name" />
+          <attribute name="createdon" />
+          <order attribute="adx_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <link-entity name="adx_websitelanguage" from="adx_portallanguageid" to="adx_portallanguageid" alias="aa">
+            <attribute name="adx_websiteid" />
+            <filter type="and">
+              <condition attribute="adx_websitelanguageid" operator="not-null" />
+            </filter>
+            <link-entity name="adx_publishingstate" from="adx_publishingstateid" to="adx_publishingstate" alias="ab">
+              <filter type="and">
+                <condition attribute="adx_isvisible" operator="eq" value="1" />
+              </filter>
+            </link-entity>
+          </link-entity>
+          <attribute name="adx_portallanguageid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>8.2.0005</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Web Portal Language" languagecode="1033" />
+      <LocalizedName description="Langue du portail Web" languagecode="1036" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

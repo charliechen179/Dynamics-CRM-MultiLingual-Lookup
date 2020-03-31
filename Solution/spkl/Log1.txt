@@ -1,0 +1,7 @@
+10:14:20 AM	Unpacking solution
+10:14:20 AM	Searching for packager config in 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\spkl\..'
+10:14:20 AM	Using Config 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution'
+10:15:07 AM	Target C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\packages\spkl.1.0.370\tools
+10:15:07 AM	Map xml created at 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\packages\Microsoft.CrmSdk.CoreTools.9.0.0.7\content\bin\coretools\packager_map.xml'
+10:15:07 AM	Running C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\packages\spkl.1.0.370\tools\..\..\Microsoft.CrmSdk.CoreTools.9.0.0.7\content\bin\coretools\SolutionPackager.exe /action:Extract /zipfile:"C:\Users\cchen\AppData\Local\Temp\tmp454E.zip" /folder:"C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package" /packagetype:unmanaged /allowWrite:Yes /allowDelete:Yes /clobber /errorlevel:Verbose /nologo /log:packagerlog.txt /map:packager_map.xml
+10:15:08 AM	Processed 1 config(s)

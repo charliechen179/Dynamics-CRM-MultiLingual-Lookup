@@ -1,0 +1,27 @@
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Account\FormXml\quick\{ac7d6097-c8a0-4c01-89fd-5e111c33210f}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Account\RibbonDiff.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Account\Entity.xml
+10:15:08 AM	 - adx_portallanguage
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\FormXml\card\{b499d131-572a-42cb-a309-579a2b23ec1b}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\FormXml\main\{153bcea6-53e0-4447-b486-ccb77c1025f5}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\FormXml\main\{e184943a-71f4-42fd-afe4-ed02f28684fd}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\FormXml\quick\{997eb525-0ba8-4dd5-a675-2d62b8476b04}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\SavedQueries\{5fb1f0a8-0a03-e911-a975-000d3af475a9}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\SavedQueries\{5a82d1fb-3d5a-ea11-a811-000d3af4363f}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\SavedQueries\{1327acc1-258a-e611-80d6-00155d88dbcb}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\RibbonDiff.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\adx_portallanguage\Entity.xml
+10:15:08 AM	 - bdo_registration
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\Formulas\bdo_registration-bdo_calcpharmid.xaml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Other\Solution.xml
+10:15:08 AM	
+10:15:08 AM	Unmanaged Extract complete.
+10:15:08 AM	
+10:15:08 AM	6 warnings encountered
+10:15:08 AM	Map folder 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Plugins\bin\' does not exist.
+10:15:08 AM	Map folder 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Webresources\Webresources\' does not exist.
+10:15:08 AM	Map folder 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Webresources\Webresources\' does not exist.
+10:15:08 AM	Read-only files will be over-written or deleted.
+10:15:08 AM	Solution may not repack due to missing mapped file for: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLConfiguration-2507D461-12B1-4CCC-9F97-5647467CC34B/MLConfiguration.dll
+10:15:08 AM	Solution may not repack due to missing mapped file for: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLEventHandler-4DD92270-555B-4360-8546-A689F3B3CD11/MLEventHandler.dll
+10:15:08 AM	CrmSvcUtil Runtime = 00:00:00.6713839

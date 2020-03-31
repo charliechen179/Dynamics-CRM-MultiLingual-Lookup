@@ -1,10 +1,10 @@
 ﻿using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Query;
 using System;
 using System.Collections.Generic;
-using System.Xml;
-using MLShared;
-using Microsoft.Xrm.Sdk.Query;
+using System.Collections.ObjectModel;
 using System.Text;
+using System.Xml;
 
 namespace MLEventHandler
 {
@@ -13,337 +13,271 @@ namespace MLEventHandler
         private XmlNodeList EntityConfigList;
 
         public PluginStepHandler(string unsecureConfig, string secureConfig)
-            : base(typeof(PluginStepHandler))
+          : base(typeof(PluginStepHandler))
         {
-            RetrieveUnsecureConfiguration(unsecureConfig);
+            this.RetrieveUnsecureConfiguration(unsecureConfig);
         }
 
         private void RetrieveUnsecureConfiguration(string unsecureConfig)
         {
-            XmlDocument doc = new XmlDocument();
-            if (!String.IsNullOrEmpty(unsecureConfig))
+            XmlDocument xmlDocument = new XmlDocument();
+            if (string.IsNullOrEmpty(unsecureConfig))
+                return;
+            try
             {
-                try
+                xmlDocument.LoadXml(unsecureConfig);
+                this.EntityConfigList = xmlDocument["Settings"].ChildNodes;
+                this.RegisterEntityEvents(this.EntityConfigList[0].Attributes["name"].Value);
+                Dictionary<string, string> dictionary = new Dictionary<string, string>();
+                if (this.EntityConfigList.Count > 1)
                 {
-                    doc.LoadXml(unsecureConfig);
-                    EntityConfigList = doc["Settings"].ChildNodes;
-
-                    RegisterEntityEvents(EntityConfigList[0].Attributes["name"].Value);
-
-                    Dictionary<string, string> dic = new Dictionary<string, string>();
-                    if (EntityConfigList.Count > 1)
+                    XmlNodeList xmlNodeList = this.EntityConfigList[1].SelectNodes("lookup");
+                    if (xmlNodeList != null)
                     {
-                        XmlNodeList attributeNodes = EntityConfigList[1].SelectNodes("lookup");
-                        if (attributeNodes != null)
+                        foreach (XmlNode xmlNode in xmlNodeList)
                         {
-                            foreach (XmlNode attributeNode in attributeNodes)
+                            string key = xmlNode.Attributes["name"].Value;
+                            if (!dictionary.ContainsKey(key))
                             {
-                                string entityname = attributeNode.Attributes["name"].Value;
-                                if (dic.ContainsKey(entityname))
-                                {
-                                    continue;
-                                }
-                                dic.Add(entityname, "dummy");
-
-                                base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, PluginMessages.Retrieve, entityname,
-                                    new Action<LocalPluginContext>(UnpackNameOnRetrieve)));
-
-                                base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, PluginMessages.RetrieveMultiple, entityname,
-                                    new Action<LocalPluginContext>(UnpackNameOnRetrieveMultiple)));
+                                dictionary.Add(key, "dummy");
+                                this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "Retrieve", key, new Action<Plugin.LocalPluginContext>(this.UnpackNameOnRetrieve)));
+                                this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "RetrieveMultiple", key, new Action<Plugin.LocalPluginContext>(this.UnpackNameOnRetrieveMultiple)));
                             }
                         }
                     }
                 }
-                catch (Exception ex)
-                {
-                    throw new InvalidPluginExecutionException("Invalid xml configuration setting - " + ex.ToString());
-                }
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidPluginExecutionException("Invalid xml configuration setting - " + ex.ToString());
             }
         }
 
         private void RegisterEntityEvents(string entityName)
         {
-            // Registrations for Packing each translation field into the name field
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PreOperation, PluginMessages.Create, entityName,
-                new Action<LocalPluginContext>(PackNameTranslations)));
-
-            // Registrations for Packing each translation field into the name field on update
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PreOperation, PluginMessages.Update, entityName,
-                new Action<LocalPluginContext>(PackNameTranslations)));
-
-            // Registrations for unpacking the name field on Retrieve of Entity
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, PluginMessages.Retrieve, entityName,
-                new Action<LocalPluginContext>(UnpackNameOnRetrieve)));
-
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, PluginMessages.RetrieveMultiple, entityName,
-                new Action<LocalPluginContext>(UnpackNameOnRetrieveMultiple)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(20, "Create", entityName, new Action<Plugin.LocalPluginContext>(this.PackNameTranslations)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(20, "Update", entityName, new Action<Plugin.LocalPluginContext>(this.PackNameTranslations)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "Retrieve", entityName, new Action<Plugin.LocalPluginContext>(this.UnpackNameOnRetrieve)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "RetrieveMultiple", entityName, new Action<Plugin.LocalPluginContext>(this.UnpackNameOnRetrieveMultiple)));
         }
 
-        /// <summary>
-        /// Pack the translations into the name field when an Entity is Created or Updated
-        /// </summary>
-        protected void PackNameTranslations(LocalPluginContext localContext)
+        protected void PackNameTranslations(Plugin.LocalPluginContext localContext)
         {
-            IPluginExecutionContext context = localContext.PluginExecutionContext;
-            Entity target = GetTargetEntity(context);
-            Entity preImageEntity = GetPreImageEntity(context);
-            StringBuilder targetname = new StringBuilder();
-            if (EntityConfigList != null)
-            {
-                XmlNodeList eFields = EntityConfigList[0].SelectNodes("fields");
-                foreach (XmlNode eField in eFields)
-                {
-                    XmlNodeList fields = eField.SelectNodes("field");
-                    foreach (XmlNode fieldNode in fields)
-                    {
-                        targetname.Append(GetAttributeValue<string>(fieldNode.InnerText, preImageEntity, target));
-                        targetname.Append(MLStatics.PIPE);
-                    }
-
-                    targetname.Remove(targetname.Length - 1, 1);
-                    SetTargetAttribute(target, eField.Attributes["name"].Value, targetname.ToString());
-                    targetname.Clear();
-                }
-
-            }
-        }
-
-        /// <summary>
-        ///  Unpack the name field when an entity is Retreived
-        /// </summary>
-        protected void UnpackNameOnRetrieve(LocalPluginContext localContext)
-        {
-            IPluginExecutionContext context = localContext.PluginExecutionContext;
-            Entity target = (Entity)context.OutputParameters["BusinessEntity"];
-
-            UnpackAttributeValue(localContext, target);
-        }
-
-        /// <summary>
-        /// Unpack the name field when entities are retrieved via Lookup Search or Advanced Find
-        /// </summary>
-        protected void UnpackNameOnRetrieveMultiple(LocalPluginContext localContext)
-        {
-            IPluginExecutionContext context = localContext.PluginExecutionContext;
-            EntityCollection entityCollection = (EntityCollection)localContext.PluginExecutionContext.OutputParameters["BusinessEntityCollection"];
-            // In a grid without any entries.
-            if (entityCollection.Entities.Count == 0)
-            {
+            IPluginExecutionContext executionContext = localContext.PluginExecutionContext;
+            Entity targetEntity = this.GetTargetEntity(executionContext);
+            Entity preImageEntity = this.GetPreImageEntity(executionContext);
+            StringBuilder stringBuilder = new StringBuilder();
+            if (this.EntityConfigList == null)
                 return;
-            }
-
-            Entity targetEntity = new Entity();
-            foreach (Entity target in entityCollection.Entities)
+            foreach (XmlNode selectNode1 in this.EntityConfigList[0].SelectNodes("fields"))
             {
-                targetEntity = target;
-                UnpackAttributeValueMultiple(localContext, target);
+                foreach (XmlNode selectNode2 in selectNode1.SelectNodes("field"))
+                {
+                    stringBuilder.Append(this.GetAttributeValue<string>(selectNode2.InnerText, preImageEntity, targetEntity));
+                    stringBuilder.Append('|');
+                }
+                stringBuilder.Remove(stringBuilder.Length - 1, 1);
+                this.SetTargetAttribute(targetEntity, selectNode1.Attributes["name"].Value, stringBuilder.ToString());
+                stringBuilder.Clear();
             }
         }
 
-        private void UnpackAttributeValue(LocalPluginContext localContext, Entity target)
+        protected void UnpackNameOnRetrieve(Plugin.LocalPluginContext localContext)
         {
-            if (EntityConfigList != null)
+            IPluginExecutionContext executionContext = localContext.PluginExecutionContext;
+            ITracingService tracingService = localContext.TracingService;
+            if (this.CheckInitiatingUserDisabled(localContext, tracingService))
+                return;
+            Entity outputParameter = (Entity)executionContext.OutputParameters["BusinessEntity"];
+            this.UnpackAttributeValue(localContext, outputParameter);
+        }
+
+        protected void UnpackNameOnRetrieveMultiple(Plugin.LocalPluginContext localContext)
+        {
+            IPluginExecutionContext executionContext = localContext.PluginExecutionContext;
+            ITracingService tracingService = localContext.TracingService;
+            if (this.CheckInitiatingUserDisabled(localContext, tracingService))
+                return;
+            EntityCollection outputParameter = (EntityCollection)localContext.PluginExecutionContext.OutputParameters["BusinessEntityCollection"];
+            if (outputParameter.Entities.Count == 0)
+                return;
+            Entity entity1 = new Entity();
+            foreach (Entity entity2 in (Collection<Entity>)outputParameter.Entities)
             {
-                XmlNodeList attributeNodes = EntityConfigList[0].SelectNodes("fields");
-                string fullname = string.Empty;
-                string targetname = string.Empty;
-                string attribute = string.Empty;
+                entity1 = entity2;
+                this.UnpackAttributeValueMultiple(localContext, entity2);
+            }
+        }
 
-                foreach (XmlNode attributeNode in attributeNodes)
+        private void UnpackAttributeValue(Plugin.LocalPluginContext localContext, Entity target)
+        {
+            if (this.EntityConfigList == null)
+                return;
+            XmlNodeList xmlNodeList1 = this.EntityConfigList[0].SelectNodes("fields");
+            string empty1 = string.Empty;
+            string empty2 = string.Empty;
+            string empty3 = string.Empty;
+            foreach (XmlNode lcids in xmlNodeList1)
+            {
+                string index = lcids.Attributes["name"].Value;
+                empty2 = string.Empty;
+                if (target.Contains(index))
                 {
-                    attribute = attributeNode.Attributes["name"].Value;
-                    targetname = string.Empty;
-                    if (target.Contains(attribute))
-                    {
-                        fullname = GetAttributeValue<string>(attribute, null, target);
-
-                        targetname = UnpackName(localContext, fullname, attributeNode);
-
-                        if (target[attribute].GetType() == typeof(EntityReference))
-                        {
-                            ((EntityReference)target[attribute]).Name = targetname;
-                        }
-                        else
-                        {
-                            SetTargetAttribute(target, attribute, targetname);
-                        }
-                    }
+                    string attributeValue = this.GetAttributeValue<string>(index, (Entity)null, target);
+                    string name = this.UnpackName(localContext, attributeValue, lcids);
+                    if (target[index].GetType() == typeof(EntityReference))
+                        ((EntityReference)target[index]).Name = name;
+                    else
+                        this.SetTargetAttribute(target, index, name);
                 }
-
-                if (EntityConfigList.Count > 1)
+            }
+            if (this.EntityConfigList.Count > 1)
+            {
+                XmlNodeList xmlNodeList2 = this.EntityConfigList[1].SelectNodes("lookup");
+                XmlNodeList xmlNodeList3 = this.EntityConfigList[0].SelectNodes("fields");
+                if (xmlNodeList2 != null)
                 {
-                    attributeNodes = EntityConfigList[1].SelectNodes("lookup");
-                    XmlNodeList mainNodes = EntityConfigList[0].SelectNodes("fields");
-
-                    if (attributeNodes != null)
+                    foreach (XmlNode xmlNode1 in xmlNodeList2)
                     {
-                        foreach (XmlNode attributeNode in attributeNodes)
+                        XmlNodeList xmlNodeList4 = xmlNode1.SelectNodes("field");
+                        if (xmlNodeList4 != null)
                         {
-                            XmlNodeList fields = attributeNode.SelectNodes("field");
-                            if (fields != null)
+                            foreach (XmlNode xmlNode2 in xmlNodeList4)
                             {
-                                foreach (XmlNode field in fields)
+                                string innerText = xmlNode2.InnerText;
+                                if (target.Contains(innerText))
                                 {
-                                    string lookupname = field.InnerText;
-                                    if (target.Contains(lookupname))
-                                    {
-                                        targetname = UnpackName(localContext, ((EntityReference)target[lookupname]).Name, mainNodes[0]);
-                                        ((EntityReference)target[lookupname]).Name = targetname;
-                                    }
+                                    string str = this.UnpackName(localContext, ((EntityReference)target[innerText]).Name, xmlNodeList3[0]);
+                                    ((EntityReference)target[innerText]).Name = str;
                                 }
                             }
                         }
                     }
                 }
-
             }
         }
 
-        private void UnpackAttributeValueMultiple(LocalPluginContext localContext, Entity target)
+        private void UnpackAttributeValueMultiple(Plugin.LocalPluginContext localContext, Entity target)
         {
-            if (EntityConfigList != null)
+            if (this.EntityConfigList == null)
+                return;
+            XmlNodeList xmlNodeList1 = this.EntityConfigList[0].SelectNodes("fields");
+            string empty1 = string.Empty;
+            string empty2 = string.Empty;
+            foreach (XmlNode lcids in xmlNodeList1)
             {
-                XmlNodeList attributeNodes = EntityConfigList[0].SelectNodes("fields");
-                string fullname = string.Empty;
-                string targetname = string.Empty;
-
-                foreach (XmlNode attributeNode in attributeNodes)
+                string attributeName = lcids.Attributes["name"].Value;
+                if (target.Contains(attributeName))
                 {
-                    string attribute = attributeNode.Attributes["name"].Value;
-                    if (target.Contains(attribute))
-                    {
-                        fullname = GetAttributeValue<string>(attribute, null, target);
-                        targetname = UnpackName(localContext, fullname, attributeNode);
-
-                        if (target[attribute].GetType() == typeof(EntityReference))
-                        {
-                            ((EntityReference)target[attribute]).Name = targetname;
-                        }
-                        else
-                        {
-                            target[attribute] = targetname;
-                        }
-                    }
+                    string attributeValue = this.GetAttributeValue<string>(attributeName, (Entity)null, target);
+                    string str = this.UnpackName(localContext, attributeValue, lcids);
+                    if (target[attributeName].GetType() == typeof(EntityReference))
+                        ((EntityReference)target[attributeName]).Name = str;
+                    else
+                        target[attributeName] = (object)str;
                 }
-
-                if (EntityConfigList.Count > 1)
+            }
+            if (this.EntityConfigList.Count > 1)
+            {
+                XmlNodeList xmlNodeList2 = this.EntityConfigList[1].SelectNodes("lookup");
+                XmlNodeList xmlNodeList3 = this.EntityConfigList[0].SelectNodes("fields");
+                if (xmlNodeList2 != null)
                 {
-                    attributeNodes = EntityConfigList[1].SelectNodes("lookup");
-                    XmlNodeList mainNodes = EntityConfigList[0].SelectNodes("fields");
-
-                    if (attributeNodes != null)
+                    foreach (XmlNode xmlNode1 in xmlNodeList2)
                     {
-                        foreach (XmlNode attributeNode in attributeNodes)
+                        XmlNodeList xmlNodeList4 = xmlNode1.SelectNodes("field");
+                        if (xmlNodeList4 != null)
                         {
-                            XmlNodeList fields = attributeNode.SelectNodes("field");
-                            if (fields != null)
+                            foreach (XmlNode xmlNode2 in xmlNodeList4)
                             {
-                                foreach (XmlNode field in fields)
+                                string innerText = xmlNode2.InnerText;
+                                if (target.Contains(innerText))
                                 {
-                                    string lookupname = field.InnerText;
-                                    if (target.Contains(lookupname))
-                                    {
-                                        targetname = UnpackName(localContext, ((EntityReference)target[lookupname]).Name, mainNodes[0]);
-                                        ((EntityReference)target[lookupname]).Name = targetname;
-                                    }
+                                    string str = this.UnpackName(localContext, ((EntityReference)target[innerText]).Name, xmlNodeList3[0]);
+                                    ((EntityReference)target[innerText]).Name = str;
                                 }
                             }
                         }
                     }
                 }
-
             }
         }
 
-        /// <summary>
-        /// Unpack the entity name field
-        /// </summary>
-        protected string UnpackName(LocalPluginContext localContext, string name, XmlNode lcids = null)
+        protected string UnpackName(Plugin.LocalPluginContext localContext, string name, XmlNode lcids = null)
         {
-            // Get the language of the user
-            int userLanguageId = GetUserLanguageId(localContext);
-            //int[] locales = new int[] { 1033, 1036 };
-
-            XmlNodeList fields = lcids.SelectNodes("field");
-            int[] locales = new int[fields.Count];
-            for(int index = 0; index < fields.Count; index++)
-            {
-                locales[index] = int.Parse(fields[index].Attributes["lcid"].Value);
-            }
-            // Split the name
-            string[] labels = name.Split(MLStatics.PIPE);
-
-            // Which language is set for the user?
-            int labelIndex = Array.IndexOf<int>(locales, userLanguageId);
-            if ((labelIndex < 0) || (labelIndex > (labels.Length - 1)))
-            {
-                labelIndex = 0;
-            }
-            // Return the correct translation
-            return labels[labelIndex];
+            int userLanguageId = this.GetUserLanguageId(localContext);
+            XmlNodeList xmlNodeList = lcids.SelectNodes("field");
+            int[] array = new int[xmlNodeList.Count];
+            for (int index = 0; index < xmlNodeList.Count; ++index)
+                array[index] = int.Parse(xmlNodeList[index].Attributes["lcid"].Value);
+            string[] strArray = name.Split('|');
+            int index1 = Array.IndexOf<int>(array, userLanguageId);
+            if (index1 < 0 || index1 > strArray.Length - 1)
+                index1 = 0;
+            return strArray[index1];
         }
 
-        private int GetUserLanguageId(LocalPluginContext localContext)
+        private int GetUserLanguageId(Plugin.LocalPluginContext localContext)
         {
-            int userLanguageId = 0;
-            string UILanguageId = "uilanguageid";
-            string uLocalId = "UserLocaleId";
-
-            if (localContext.PluginExecutionContext.SharedVariables.ContainsKey(uLocalId))
+            string attributeLogicalName = "uilanguageid";
+            string key = "UserLocaleId";
+            int num;
+            if (localContext.PluginExecutionContext.SharedVariables.ContainsKey(key))
             {
-                userLanguageId = (int)localContext.PluginExecutionContext.SharedVariables[uLocalId];
+                num = (int)localContext.PluginExecutionContext.SharedVariables[key];
             }
             else
             {
-                Entity userSettings = localContext.OrganizationService.Retrieve(
-                    "usersettings",
-                    localContext.PluginExecutionContext.InitiatingUserId,
-                    new ColumnSet(UILanguageId));
-                userLanguageId = userSettings.GetAttributeValue<int>(UILanguageId);
-                localContext.PluginExecutionContext.SharedVariables.Add(uLocalId, (object)userLanguageId);
+                num = localContext.OrganizationService.Retrieve("usersettings", localContext.PluginExecutionContext.InitiatingUserId, new ColumnSet(new string[1]
+                {
+          attributeLogicalName
+                })).GetAttributeValue<int>(attributeLogicalName);
+                localContext.PluginExecutionContext.SharedVariables.Add(key, (object)num);
             }
-            return userLanguageId;
+            return num;
         }
 
-        /// <summary>
-        /// Get a value from the target if present, otherwise from the preImage
-        /// </summary>
         private T GetAttributeValue<T>(string attributeName, Entity preImage, Entity targetImage)
         {
             if (targetImage.Contains(attributeName))
-            {
                 return targetImage.GetAttributeValue<T>(attributeName);
-            }
-            else if ((preImage != null) && (preImage.Contains(attributeName)))
-            {
+            if (preImage != null && preImage.Contains(attributeName))
                 return preImage.GetAttributeValue<T>(attributeName);
-            }
-            else
-                return default(T);
+            return default(T);
         }
 
         private void SetTargetAttribute(Entity target, string primaryAttributeName, string name)
         {
             if (!target.Contains(primaryAttributeName))
-            {
-                target.Attributes.Add(primaryAttributeName, name);
-            }
+                target.Attributes.Add(primaryAttributeName, (object)name);
             else
-            {
-                target[primaryAttributeName] = name;
-            }
+                target[primaryAttributeName] = (object)name;
         }
 
         private Entity GetTargetEntity(IPluginExecutionContext context)
         {
-            return (Entity)context.InputParameters[MLStatics.CONTEXT_TARGET];
+            return (Entity)context.InputParameters["Target"];
         }
 
         private Entity GetPreImageEntity(IPluginExecutionContext context)
         {
-            return (context.PreEntityImages != null && context.PreEntityImages.Contains(MLStatics.PreImageAlias)) ? context.PreEntityImages[MLStatics.PreImageAlias] : null;
+            return context.PreEntityImages == null || !context.PreEntityImages.Contains("PreImage") ? (Entity)null : context.PreEntityImages["PreImage"];
         }
 
+        private bool CheckInitiatingUserDisabled(
+          Plugin.LocalPluginContext localContext,
+          ITracingService tracer)
+        {
+            Entity entity = localContext.OrganizationService.Retrieve("systemuser", localContext.PluginExecutionContext.InitiatingUserId, new ColumnSet(new string[1]
+            {
+        "isdisabled"
+            }));
+            if (entity == null || !entity.Attributes.Contains("isdisabled"))
+                return true;
+            if (!(bool)entity.Attributes["isdisabled"])
+                return false;
+            tracer.Trace("the initiating user is disabled.");
+            return true;
+        }
     }
-
 }

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{1b601192-17c3-4108-978a-56074cf9aebd}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{4ae90b08-405d-408a-abfb-cfbdda44a768}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+            <label description="Général" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{290c700d-20d5-40c0-80c8-4e5636bc0b13}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                    <label description="Général" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b15a2414-c592-4aa4-b9b2-f9bca91d24fb}">
+                        <labels>
+                          <label description="Primary Entity" languagecode="1033" />
+                        </labels>
+                        <control id="chi_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0981da1-db97-51e0-d218-802d413cd703}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Fields" languagecode="1033" />
+                        </labels>
+                        <control id="chi_primaryfields" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_primaryfields" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14b201cb-a75d-51dc-2866-b13b5586be1b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Entities and Fields" languagecode="1033" />
+                        </labels>
+                        <control id="chi_relatedentitiesandfields" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_relatedentitiesandfields" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{817b8cab-cbc0-6978-c5a8-a50a03c271eb}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0a4c3d3b-2cd9-4a72-40d9-d77950183d20}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Step Guids" languagecode="1033" />
+                        </labels>
+                        <control id="chi_primarystepguids" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_primarystepguids" disabled="true" uniqueid="{518d1d4d-c8ec-1924-2014-43bac7e3a986}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2ebb400c-9ddc-43d0-c384-86b196dd85d0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Step Guids" languagecode="1033" />
+                        </labels>
+                        <control id="chi_relatedstepguids" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_relatedstepguids" disabled="true" uniqueid="{788410db-14bd-33c0-85bb-3b44992a24d0}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4de7cc7e-d547-1972-06d7-160d82784953}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{795df1be-6f36-4045-b4e1-b4f533df1af2}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{00f35f02-6d24-41cc-ac3f-9c2188e725cf}" columns="111">
+        <rows>
+          <row>
+            <cell id="{3f04c76f-9fa6-41c7-86c9-b2e984f0a066}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a7dd431a-0691-3769-d91d-ebec9d0009ab}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+                <label description="Statut" languagecode="1036" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell id="{5b522109-1a70-6433-3061-43cb834c1449}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

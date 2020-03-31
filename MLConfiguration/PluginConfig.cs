@@ -1,276 +1,216 @@
-﻿
+﻿using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Messages;
+using Microsoft.Xrm.Sdk.Query;
 using System;
 using System.Text;
-using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Query;
-using MLShared;
 
 namespace MLConfiguration
 {
     public class PluginConfig : Plugin
     {
-        public PluginConfig() : base(typeof(PluginConfig))
+        public PluginConfig()
+          : base(typeof(PluginConfig))
         {
-            RegisterEntityEvents();
+            this.RegisterEntityEvents();
         }
 
         private void RegisterEntityEvents()
         {
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, 
-                PluginMessages.Create,
-                MLStatics.ML_CONFIGURATION, new Action<LocalPluginContext>(OnCreateEntity)));
-
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, 
-                PluginMessages.Update,
-                MLStatics.ML_CONFIGURATION, new Action<LocalPluginContext>(OnUpdateEntity)));
-
-            base.RegisteredEvents.Add(new Tuple<int, string, string, Action<LocalPluginContext>>(PluginStages.PostOperation, 
-                PluginMessages.Delete,
-                MLStatics.ML_CONFIGURATION, new Action<LocalPluginContext>(OnDeleteEntity)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "Create", "chi_multilinguallookupconfiguration", new Action<Plugin.LocalPluginContext>(this.OnCreateEntity)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "Update", "chi_multilinguallookupconfiguration", new Action<Plugin.LocalPluginContext>(this.OnUpdateEntity)));
+            this.RegisteredEvents.Add(new Tuple<int, string, string, Action<Plugin.LocalPluginContext>>(40, "Delete", "chi_multilinguallookupconfiguration", new Action<Plugin.LocalPluginContext>(this.OnDeleteEntity)));
         }
 
-        private void OnCreateEntity(LocalPluginContext localContext)
+        private void OnCreateEntity(Plugin.LocalPluginContext localContext)
         {
-            string primaryEntityName = string.Empty;
+            string str1 = string.Empty;
             string primaryAttributes = string.Empty;
             string relatedAttributes = string.Empty;
-            IOrganizationService service = localContext.OrganizationService;
-            IPluginExecutionContext context = localContext.PluginExecutionContext;
-
-            Entity entity = ConfigHelper.GetTargetEntity(context);
-
-            if (entity.Attributes.Contains(MLStatics.ML_PRIMARY_ENTITY))
-                primaryEntityName = entity.GetAttributeValue<string>(MLStatics.ML_PRIMARY_ENTITY);
-
-            if(String.IsNullOrEmpty(primaryEntityName))
-            {
+            IOrganizationService organizationService = localContext.OrganizationService;
+            Entity targetEntity = ConfigHelper.GetTargetEntity(localContext.PluginExecutionContext);
+            if (targetEntity.Attributes.Contains("chi_name"))
+                str1 = targetEntity.GetAttributeValue<string>("chi_name");
+            if (string.IsNullOrEmpty(str1))
                 throw new InvalidPluginExecutionException("Primary Entity Can Not be NULL.");
-            }
-
-            // if entity does not exist, an exception is thrown
-            ConfigHelper.IfEntityExist(service, primaryEntityName);
-
-            if (entity.Attributes.Contains(MLStatics.ML_PRIMARY_FIELDS))
-                primaryAttributes = entity.GetAttributeValue<string>(MLStatics.ML_PRIMARY_FIELDS);
-            if (entity.Attributes.Contains(MLStatics.ML_RELATED_FIELDS))
-                relatedAttributes = entity.GetAttributeValue<string>(MLStatics.ML_RELATED_FIELDS);
-
-            StringBuilder responseGuidList = new StringBuilder();
-
-            responseGuidList.Append(ConfigHelper.RegisterStep(service, PluginMessages.Create, PluginStep.PluginStepStage.PreOperation, primaryEntityName, primaryAttributes, relatedAttributes));
-            responseGuidList.Append(MLStatics.COMMA);
-            responseGuidList.Append(ConfigHelper.RegisterStep(service, PluginMessages.Update, PluginStep.PluginStepStage.PreOperation, primaryEntityName, primaryAttributes, relatedAttributes) );
-            responseGuidList.Append(MLStatics.COMMA);
-            responseGuidList.Append(ConfigHelper.RegisterStep(service, PluginMessages.Retrieve, PluginStep.PluginStepStage.PostOperation, primaryEntityName, primaryAttributes, relatedAttributes));
-            responseGuidList.Append(MLStatics.COMMA);
-            responseGuidList.Append(ConfigHelper.RegisterStep(service, PluginMessages.RetrieveMultiple, PluginStep.PluginStepStage.PostOperation, primaryEntityName, primaryAttributes, relatedAttributes));
-
-            ConfigHelper.SetAttribute(entity, MLStatics.ML_PRIMARY_STEP_GUIDS, responseGuidList.ToString());
-
-            // Two more registration for the entity where the lookup to multilingual record is to be placed
+            ConfigHelper.IfEntityExist(organizationService, str1);
+            if (targetEntity.Attributes.Contains("chi_primaryfields"))
+                primaryAttributes = targetEntity.GetAttributeValue<string>("chi_primaryfields");
+            if (targetEntity.Attributes.Contains("chi_relatedentitiesandfields"))
+                relatedAttributes = targetEntity.GetAttributeValue<string>("chi_relatedentitiesandfields");
+            StringBuilder stringBuilder1 = new StringBuilder();
+            stringBuilder1.Append((object)ConfigHelper.RegisterStep(organizationService, "Create", PluginStep.PluginStepStage.PreOperation, str1, primaryAttributes, relatedAttributes));
+            stringBuilder1.Append(',');
+            stringBuilder1.Append((object)ConfigHelper.RegisterStep(organizationService, "Update", PluginStep.PluginStepStage.PreOperation, str1, primaryAttributes, relatedAttributes));
+            stringBuilder1.Append(',');
+            stringBuilder1.Append((object)ConfigHelper.RegisterStep(organizationService, "Retrieve", PluginStep.PluginStepStage.PostOperation, str1, primaryAttributes, relatedAttributes));
+            stringBuilder1.Append(',');
+            stringBuilder1.Append((object)ConfigHelper.RegisterStep(organizationService, "RetrieveMultiple", PluginStep.PluginStepStage.PostOperation, str1, primaryAttributes, relatedAttributes));
+            ConfigHelper.SetAttribute(targetEntity, "chi_primarystepguids", stringBuilder1.ToString());
             if (!string.IsNullOrEmpty(relatedAttributes))
             {
-                responseGuidList = new StringBuilder();
-
-                string[] all = relatedAttributes.Split(MLStatics.COMMA);
-                foreach (string str in all)
+                StringBuilder stringBuilder2 = new StringBuilder();
+                string str2 = relatedAttributes;
+                char[] chArray1 = new char[1] { ',' };
+                foreach (string str3 in str2.Split(chArray1))
                 {
-                    string[] pair = str.Split(MLStatics.PIPE);
-                    if (primaryEntityName != pair[0])
+                    char[] chArray2 = new char[1] { '|' };
+                    string[] strArray = str3.Split(chArray2);
+                    if (str1 != strArray[0])
                     {
-                        responseGuidList.Append(ConfigHelper.RegisterStep(service, PluginMessages.Retrieve, PluginStep.PluginStepStage.PostOperation, pair[0], primaryAttributes, relatedAttributes));
-                        responseGuidList.Append(MLStatics.COMMA);
-                        responseGuidList.Append(ConfigHelper.RegisterStep(service, PluginMessages.RetrieveMultiple, PluginStep.PluginStepStage.PostOperation, pair[0], primaryAttributes, relatedAttributes));
-                        responseGuidList.Append(MLStatics.COMMA);
+                        stringBuilder2.Append((object)ConfigHelper.RegisterStep(organizationService, "Retrieve", PluginStep.PluginStepStage.PostOperation, strArray[0], primaryAttributes, relatedAttributes));
+                        stringBuilder2.Append(',');
+                        stringBuilder2.Append((object)ConfigHelper.RegisterStep(organizationService, "RetrieveMultiple", PluginStep.PluginStepStage.PostOperation, strArray[0], primaryAttributes, relatedAttributes));
+                        stringBuilder2.Append(',');
                     }
                 }
-                if (!string.IsNullOrEmpty(responseGuidList.ToString()))
+                if (!string.IsNullOrEmpty(stringBuilder2.ToString()))
                 {
-                    responseGuidList.Remove(responseGuidList.Length - 1, 1);
-                    ConfigHelper.SetAttribute(entity, MLStatics.ML_RELATED_STEP_GUIDS, responseGuidList.ToString());
+                    stringBuilder2.Remove(stringBuilder2.Length - 1, 1);
+                    ConfigHelper.SetAttribute(targetEntity, "chi_relatedstepguids", stringBuilder2.ToString());
                 }
             }
-
-            service.Update(entity);
+            organizationService.Update(targetEntity);
         }
 
-        private void OnUpdateEntity(LocalPluginContext localContext)
+        private void OnUpdateEntity(Plugin.LocalPluginContext localContext)
         {
-            if(localContext.PluginExecutionContext.Depth > 1)
-            {
+            if (localContext.PluginExecutionContext.Depth > 1)
                 return;
-            }
-
-            // Using pre and post images for update
-            Entity preEntity = localContext.PluginExecutionContext.PreEntityImages[MLStatics.PreImageAlias];
-            Entity postEntity = localContext.PluginExecutionContext.PostEntityImages[MLStatics.PostImageAlias];
-
-            string primaryEntityName = postEntity.GetAttributeValue<string>(MLStatics.ML_PRIMARY_ENTITY);
-            string primaryAttributes = postEntity.GetAttributeValue<string>(MLStatics.ML_PRIMARY_FIELDS);
-            string preImageAttributes = string.Empty;
-            string relatedAttributes = postEntity.GetAttributeValue<string>(MLStatics.ML_RELATED_FIELDS);
-
-            string[] GUIDList = postEntity.GetAttributeValue<string>(MLStatics.ML_PRIMARY_STEP_GUIDS).Split(MLStatics.COMMA);
-            string targetName = "OnUpdate" + primaryEntityName;
-
-            foreach (var GUIDString in GUIDList)
+            Entity preEntityImage = localContext.PluginExecutionContext.PreEntityImages["PreImage"];
+            Entity postEntityImage = localContext.PluginExecutionContext.PostEntityImages["PostImage"];
+            string attributeValue1 = postEntityImage.GetAttributeValue<string>("chi_name");
+            string attributeValue2 = postEntityImage.GetAttributeValue<string>("chi_primaryfields");
+            string empty1 = string.Empty;
+            string attributeValue3 = postEntityImage.GetAttributeValue<string>("chi_relatedentitiesandfields");
+            string[] strArray1 = postEntityImage.GetAttributeValue<string>("chi_primarystepguids").Split(',');
+            string str1 = "OnUpdate" + attributeValue1;
+            foreach (string g in strArray1)
             {
-                Guid GUID = new Guid(GUIDString);
-                if (GUID != Guid.Empty)
+                Guid id = new Guid(g);
+                if (id != Guid.Empty)
                 {
-                    Entity RetrievedStepById = localContext.OrganizationService.Retrieve(
-                        "sdkmessageprocessingstep", GUID, new ColumnSet(true));
-
-                    if (RetrievedStepById != null)
+                    Entity entity1 = localContext.OrganizationService.Retrieve("sdkmessageprocessingstep", id, new ColumnSet(true));
+                    if (entity1 != null)
                     {
-                        preImageAttributes = string.Empty;
-
-                        RetrievedStepById.Attributes["configuration"] = ConfigHelper.ProcessAttributes(
-                            primaryEntityName, primaryAttributes, ref preImageAttributes, relatedAttributes);
-
-                        string stepName = RetrievedStepById.GetAttributeValue<string>("name");
-                        localContext.OrganizationService.Update(RetrievedStepById);                            
-
-                        if (stepName.StartsWith(targetName, StringComparison.InvariantCultureIgnoreCase) && !string.IsNullOrEmpty(preImageAttributes))
+                        string empty2 = string.Empty;
+                        entity1.Attributes["configuration"] = (object)ConfigHelper.ProcessAttributes(attributeValue1, attributeValue2, ref empty2, attributeValue3);
+                        string attributeValue4 = entity1.GetAttributeValue<string>("name");
+                        localContext.OrganizationService.Update(entity1);
+                        if (attributeValue4.StartsWith(str1, StringComparison.InvariantCultureIgnoreCase) && !string.IsNullOrEmpty(empty2))
                         {
-                            Entity stepEntityImage = ConfigHelper.RetrieveEntity(localContext.OrganizationService, "sdkmessageprocessingstepimage", new string[1]
+                            Entity entity2 = ConfigHelper.RetrieveEntity(localContext.OrganizationService, "sdkmessageprocessingstepimage", new string[1]
                             {
-                                "sdkmessageprocessingstepid"
-                            }, new string[1]
+                "sdkmessageprocessingstepid"
+                            }, (object[])new string[1] { g }, new ColumnSet(new string[1]
                             {
-                                GUIDString
-                            }, new ColumnSet(new string[] { "attributes" }), 0);
-
-                            if (stepEntityImage != null && stepEntityImage.Attributes.Contains("attributes"))
+                "attributes"
+                            }), ConditionOperator.Equal);
+                            if (entity2 != null && entity2.Attributes.Contains("attributes"))
                             {
-                                stepEntityImage["attributes"] = preImageAttributes;
-                                localContext.OrganizationService.Update(stepEntityImage);
+                                entity2["attributes"] = (object)empty2;
+                                UpdateRequest updateRequest = new UpdateRequest()
+                                {
+                                    Target = entity2
+                                };
+                                localContext.OrganizationService.Execute((OrganizationRequest)updateRequest);
                             }
                         }
                     }
                 }
             }
-
-            string preFields = preEntity.GetAttributeValue<string>(MLStatics.ML_RELATED_FIELDS);
-            string postFields = postEntity.GetAttributeValue<string>(MLStatics.ML_RELATED_FIELDS);
-
-            // Original nothing
-            if(string.IsNullOrEmpty(preFields))
+            string attributeValue5 = preEntityImage.GetAttributeValue<string>("chi_relatedentitiesandfields");
+            string attributeValue6 = postEntityImage.GetAttributeValue<string>("chi_relatedentitiesandfields");
+            if (string.IsNullOrEmpty(attributeValue5))
             {
-                if (string.IsNullOrEmpty(postFields))
-                {
-                    // Nothing to do
+                if (string.IsNullOrEmpty(attributeValue6))
                     return;
-                }
-                else
+                StringBuilder stringBuilder = new StringBuilder();
+                string str2 = attributeValue6;
+                char[] chArray1 = new char[1] { ',' };
+                foreach (string str3 in str2.Split(chArray1))
                 {
-                    // register the new ones
-                    StringBuilder responseGuidList = new StringBuilder();
-
-                    string[] all = postFields.Split(MLStatics.COMMA);
-                    foreach (string str in all)
+                    char[] chArray2 = new char[1] { '|' };
+                    string[] strArray2 = str3.Split(chArray2);
+                    if (attributeValue1 != strArray2[0])
                     {
-                        string[] pair = str.Split(MLStatics.PIPE);
-                        if (primaryEntityName != pair[0])
-                        {
-                            responseGuidList.Append(ConfigHelper.RegisterStep(localContext.OrganizationService, PluginMessages.Retrieve, PluginStep.PluginStepStage.PostOperation, pair[0],
-                            primaryAttributes, relatedAttributes));
-                            responseGuidList.Append(MLStatics.COMMA);
-                            responseGuidList.Append(ConfigHelper.RegisterStep(localContext.OrganizationService, PluginMessages.RetrieveMultiple, PluginStep.PluginStepStage.PostOperation, pair[0],
-                                primaryAttributes, relatedAttributes));
-                            responseGuidList.Append(MLStatics.COMMA);
-                        }
-                    }
-                    if (!string.IsNullOrEmpty(responseGuidList.ToString()))
-                    {
-                        responseGuidList.Remove(responseGuidList.Length - 1, 1);
-                        ConfigHelper.SetAttribute(postEntity, MLStatics.ML_RELATED_STEP_GUIDS, responseGuidList.ToString());
-                        localContext.OrganizationService.Update(postEntity);
+                        stringBuilder.Append((object)ConfigHelper.RegisterStep(localContext.OrganizationService, "Retrieve", PluginStep.PluginStepStage.PostOperation, strArray2[0], attributeValue2, attributeValue3));
+                        stringBuilder.Append(',');
+                        stringBuilder.Append((object)ConfigHelper.RegisterStep(localContext.OrganizationService, "RetrieveMultiple", PluginStep.PluginStepStage.PostOperation, strArray2[0], attributeValue2, attributeValue3));
+                        stringBuilder.Append(',');
                     }
                 }
+                if (string.IsNullOrEmpty(stringBuilder.ToString()))
+                    return;
+                stringBuilder.Remove(stringBuilder.Length - 1, 1);
+                ConfigHelper.SetAttribute(postEntityImage, "chi_relatedstepguids", stringBuilder.ToString());
+                localContext.OrganizationService.Update(postEntityImage);
             }
             else
             {
-                if (preFields == postFields)
-                {
-                    // nothing to do
+                if (attributeValue5 == attributeValue6)
                     return;
+                string[] strArray2 = preEntityImage.GetAttributeValue<string>("chi_relatedstepguids").Split(',');
+                Guid empty2 = Guid.Empty;
+                foreach (string input in strArray2)
+                {
+                    Guid result = Guid.Empty;
+                    if (!string.IsNullOrEmpty(input) && Guid.TryParse(input, out result))
+                        ConfigHelper.UnRegisterStep(localContext.OrganizationService, result);
+                }
+                if (string.IsNullOrEmpty(attributeValue6))
+                {
+                    ConfigHelper.SetAttribute(postEntityImage, "chi_relatedstepguids", (string)null);
+                    localContext.OrganizationService.Update(postEntityImage);
                 }
                 else
                 {
-                    // get the difference and register/unregister
-                    string[] relatedStepGuids = preEntity.GetAttributeValue<string>(MLStatics.ML_RELATED_STEP_GUIDS).Split(MLStatics.COMMA);
-                    Guid guidToDelete = Guid.Empty;
-                    foreach (string str in relatedStepGuids)
+                    StringBuilder stringBuilder = new StringBuilder();
+                    string str2 = attributeValue6;
+                    char[] chArray1 = new char[1] { ',' };
+                    foreach (string str3 in str2.Split(chArray1))
                     {
-                        guidToDelete = Guid.Empty;
-                        if ((!string.IsNullOrEmpty(str)) && (Guid.TryParse(str, out guidToDelete)))
+                        char[] chArray2 = new char[1] { '|' };
+                        string[] strArray3 = str3.Split(chArray2);
+                        if (attributeValue1 != strArray3[0])
                         {
-                            ConfigHelper.UnRegisterStep(localContext.OrganizationService, guidToDelete);
+                            stringBuilder.Append((object)ConfigHelper.RegisterStep(localContext.OrganizationService, "Retrieve", PluginStep.PluginStepStage.PostOperation, strArray3[0], attributeValue2, attributeValue3));
+                            stringBuilder.Append(',');
+                            stringBuilder.Append((object)ConfigHelper.RegisterStep(localContext.OrganizationService, "RetrieveMultiple", PluginStep.PluginStepStage.PostOperation, strArray3[0], attributeValue2, attributeValue3));
+                            stringBuilder.Append(',');
                         }
                     }
-
-                    if (string.IsNullOrEmpty(postFields))
+                    if (!string.IsNullOrEmpty(stringBuilder.ToString()))
                     {
-                        // nothing to do
-                        ConfigHelper.SetAttribute(postEntity, MLStatics.ML_RELATED_STEP_GUIDS, null);
-                        localContext.OrganizationService.Update(postEntity);
-                        return;
-                    }
-
-                    StringBuilder responseGuidList = new StringBuilder();
-
-                    string[] all = postFields.Split(MLStatics.COMMA);
-                    foreach (string str in all)
-                    {
-                        string[] pair = str.Split(MLStatics.PIPE);
-                        if (primaryEntityName != pair[0])
-                        {
-                            responseGuidList.Append(ConfigHelper.RegisterStep(localContext.OrganizationService, PluginMessages.Retrieve, PluginStep.PluginStepStage.PostOperation, pair[0],
-                            primaryAttributes, relatedAttributes));
-                            responseGuidList.Append(MLStatics.COMMA);
-                            responseGuidList.Append(ConfigHelper.RegisterStep(localContext.OrganizationService, PluginMessages.RetrieveMultiple, PluginStep.PluginStepStage.PostOperation, pair[0],
-                                primaryAttributes, relatedAttributes));
-                            responseGuidList.Append(MLStatics.COMMA);
-                        }
-                    }
-                    if (!string.IsNullOrEmpty(responseGuidList.ToString()))
-                    {
-                        responseGuidList.Remove(responseGuidList.Length - 1, 1);
-                        ConfigHelper.SetAttribute(postEntity, MLStatics.ML_RELATED_STEP_GUIDS, responseGuidList.ToString());
-                        localContext.OrganizationService.Update(postEntity);
+                        stringBuilder.Remove(stringBuilder.Length - 1, 1);
+                        ConfigHelper.SetAttribute(postEntityImage, "chi_relatedstepguids", stringBuilder.ToString());
+                        localContext.OrganizationService.Update(postEntityImage);
                     }
                 }
             }
         }
 
-        private void OnDeleteEntity(LocalPluginContext localContext)
+        private void OnDeleteEntity(Plugin.LocalPluginContext localContext)
         {
-            // Using pre image for delete
-            Entity entity = (Entity)localContext.PluginExecutionContext.PreEntityImages[MLStatics.PreImageAlias];
-            Guid guidToDelete = Guid.Empty;
-
-            string[] GUIDList = entity.Attributes[MLStatics.ML_PRIMARY_STEP_GUIDS].ToString().Split(MLStatics.COMMA);
-            foreach (var GUIDString in GUIDList)
+            Entity preEntityImage = localContext.PluginExecutionContext.PreEntityImages["PreImage"];
+            Guid empty = Guid.Empty;
+            string str1 = preEntityImage.Attributes["chi_primarystepguids"].ToString();
+            char[] chArray1 = new char[1] { ',' };
+            Guid result;
+            foreach (string input in str1.Split(chArray1))
             {
-                guidToDelete = Guid.Empty;
-                if ((!string.IsNullOrEmpty(GUIDString)) && (Guid.TryParse(GUIDString, out guidToDelete)))
-                {
-                    ConfigHelper.UnRegisterStep(localContext.OrganizationService, guidToDelete);
-                }
+                result = Guid.Empty;
+                if (!string.IsNullOrEmpty(input) && Guid.TryParse(input, out result))
+                    ConfigHelper.UnRegisterStep(localContext.OrganizationService, result);
             }
-
-            if (entity.Attributes.Contains(MLStatics.ML_RELATED_STEP_GUIDS))
+            if (!preEntityImage.Attributes.Contains("chi_relatedstepguids"))
+                return;
+            string str2 = preEntityImage.Attributes["chi_relatedstepguids"].ToString();
+            char[] chArray2 = new char[1] { ',' };
+            foreach (string input in str2.Split(chArray2))
             {
-                GUIDList = entity.Attributes[MLStatics.ML_RELATED_STEP_GUIDS].ToString().Split(MLStatics.COMMA);
-                foreach (var GUIDString in GUIDList)
-                {
-                    guidToDelete = Guid.Empty;
-                    if ((!string.IsNullOrEmpty(GUIDString)) && (Guid.TryParse(GUIDString, out guidToDelete)))
-                    {
-                        ConfigHelper.UnRegisterStep(localContext.OrganizationService, guidToDelete);
-                    }
-                }
+                result = Guid.Empty;
+                if (!string.IsNullOrEmpty(input) && Guid.TryParse(input, out result))
+                    ConfigHelper.UnRegisterStep(localContext.OrganizationService, result);
             }
         }
     }

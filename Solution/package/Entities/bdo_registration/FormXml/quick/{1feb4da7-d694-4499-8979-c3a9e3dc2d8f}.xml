@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{1feb4da7-d694-4499-8979-c3a9e3dc2d8f}</formid>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="400">
+      <tabs>
+        <tab id="{1f587922-3b20-442e-924f-2ca975ea4676}" name="tab_1" showlabel="false" locklevel="0" expanded="true">
+          <labels>
+            <label description="Registration Status" languagecode="1033" />
+            <label description="État de l’inscription" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="{983632fc-1486-4c1b-ad3a-1fa207b1d365}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ae957ede-bd46-9ce8-906b-8920a250322b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Registration Status" languagecode="1033" />
+                          <label description="État de l’inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_registrationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_registrationstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{171a52e0-b34b-0631-b909-7ec6ca82668d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="DEV Key" languagecode="1033" />
+                          <label description="Clé DEV" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_devkey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_devkey" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ab40da6-11dc-60c7-8765-b3c77b201099}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Application Instance ID" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_applicationinstanceid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_applicationinstanceid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Reg card for Account" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

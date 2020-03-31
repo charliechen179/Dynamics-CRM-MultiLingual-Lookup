@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{cb8be49a-53ce-e811-a971-000d3af43d1a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bdo_name" select="1" icon="1" preview="1">
+        <row name="result" id="bdo_registrationid">
+          <cell name="bdo_registrationnumber" width="100" />
+          <cell name="bdo_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_registrationtype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_applicationname" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_registrationstatus" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_sitestatus" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_streetcity" width="100" disableSorting="1" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="bdo_registration">
+          <attribute name="createdon" />
+          <order attribute="createdon" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="bdo_registrationstatus" />
+          <attribute name="bdo_applicationname" />
+          <attribute name="bdo_registrationtype" />
+          <attribute name="bdo_name" />
+          <attribute name="bdo_sitestatus" />
+          <attribute name="bdo_registrationnumber" />
+          <link-entity alias="a_9d5316a3bec1e811a976000d3af438b6" name="account" from="accountid" to="bdo_organization" link-type="outer" visible="false">
+            <attribute name="bdo_streetcity" />
+          </link-entity>
+          <attribute name="bdo_registrationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Registration by Site Status" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

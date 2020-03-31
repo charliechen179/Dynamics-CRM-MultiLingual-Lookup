@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{2562cab7-c21d-ea11-a810-000d3af42f4a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bdo_name" select="1" preview="1" icon="1">
+        <row name="result" id="bdo_registrationid">
+          <cell name="bdo_name" width="150" />
+          <cell name="bdo_applicationinstanceid" width="100" />
+          <cell name="bdo_organizationcprid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="bdo_registration">
+          <attribute name="bdo_name" />
+          <order attribute="bdo_name" descending="false" />
+          <attribute name="bdo_organizationcprid" />
+          <attribute name="bdo_applicationinstanceid" />
+          <attribute name="bdo_registrationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="APPid" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

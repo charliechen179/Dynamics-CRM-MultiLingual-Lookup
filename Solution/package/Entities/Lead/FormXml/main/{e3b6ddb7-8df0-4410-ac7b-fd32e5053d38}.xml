@@ -1,0 +1,1812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{e3b6ddb7-8df0-4410-ac7b-fd32e5053d38}</formid>
+    <IntroducedVersion>5.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form showImage="true">
+      <ancestor id="{e3b6ddb7-8df0-4410-ac7b-fd32e5053d38}" />
+      <hiddencontrols>
+        <data id="fullname" datafieldname="fullname" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="parentaccountid" datafieldname="parentaccountid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="parentcontactid" datafieldname="parentcontactid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab name="Summary" verticallayout="true" id="{f7109214-c3bd-4734-ad5b-4054499a43d6}" IsUserDefined="0" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+            <label description="Résumé" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section name="Contact" showlabel="true" showbar="false" id="{5693ad37-350f-4f0e-b03a-4212e78c9b6e}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelposition="Left">
+                  <labels>
+                    <label description="CONTACT" languagecode="1033" />
+                    <label description="CONTACT" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="1" id="{26e6720b-6c8c-4848-a8c1-4b8c8abe59f2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Topic" languagecode="1033" />
+                          <label description="Rubrique" languagecode="1036" />
+                        </labels>
+                        <control id="subject" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="subject" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1cb1307-d61a-ca8b-6111-e16e613d533d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Lead Type" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_leadtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_leadtype" disabled="false" uniqueid="{c5d00b23-b2a2-74e7-8c5d-0443b68d39d9}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{653ee145-d6db-09b0-4970-d33a2800a92c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Salutation" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_salutationglobal" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_salutationglobal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{deccc6b6-e5ce-6ca2-d683-16a58247e459}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="fullname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="fullname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b8afa97d-100e-4f46-8ee8-38081d8a4404}">
+                        <labels>
+                          <label description="Job Title" languagecode="1033" />
+                          <label description="Fonction" languagecode="1036" />
+                        </labels>
+                        <control id="jobtitle" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="jobtitle" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c5c04eb-beea-433f-994a-5b3ddde2b924}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Business Phone" languagecode="1033" />
+                          <label description="Téléphone au travail" languagecode="1036" />
+                        </labels>
+                        <control id="telephone1" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="telephone1" uniqueid="{d5d8c19d-9bce-b117-365c-e72e32842087}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36854ca6-e703-2b9c-84c6-86aec1e3a294}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Business Phone Ext" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_extbusinessphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_extbusinessphone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4622149f-38d7-4ea6-b305-f2cb7be244d0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mobile Phone" languagecode="1033" />
+                          <label description="Téléphone mobile" languagecode="1036" />
+                        </labels>
+                        <control id="mobilephone" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="mobilephone" uniqueid="{b333506d-2000-11ed-e553-914866864669}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a4d6539c-ac0b-4006-a423-72e898ad65ad}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                          <label description="Courrier électronique" languagecode="1036" />
+                        </labels>
+                        <control id="emailaddress1" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="emailaddress1" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="company" showlabel="true" showbar="false" id="{b10ae496-2d57-4158-b595-2d83a250c001}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelposition="Left">
+                  <labels>
+                    <label description="COMPANY" languagecode="1033" />
+                    <label description="SOCIÉTÉ" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{cd70ad75-fa8d-491a-a9e6-9164c0274dd8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Company" languagecode="1033" />
+                          <label description="Société" languagecode="1036" />
+                        </labels>
+                        <control id="companyname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="companyname" uniqueid="{5ab77374-7b01-9421-5d0a-346e79240ec1}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{582ca22b-95e3-4d0e-9d81-e29bc8100e7a}">
+                        <labels>
+                          <label description="Website" languagecode="1033" />
+                          <label description="Site Web" languagecode="1036" />
+                        </labels>
+                        <control id="websiteurl" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="websiteurl" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Summary_section_8" showlabel="true" showbar="false" locklevel="0" id="{707c8092-82b8-205d-774b-84ab55a19dc5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Address" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1bd9dcaa-382c-2cc5-438a-cc3c33bd5436}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Unit Number" languagecode="1033" />
+                          <label description="Rue 2" languagecode="1036" />
+                        </labels>
+                        <control id="address1_line2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_line2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42acb93a-5627-0605-1c75-45b38e4792e1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Number" languagecode="1033" />
+                          <label description="Numéro de rue" languagecode="1036" />
+                        </labels>
+                        <control id="address1_line3" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_line3" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80e23a07-6b0c-dbd0-a2c0-0cc2ded40dd0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Name" languagecode="1033" />
+                          <label description="Nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="address1_line1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_line1" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c94cc723-7737-10a3-a444-755d7dbb305a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="address1_city" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{730111bc-571c-c34c-a19e-e20eae282cb0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Province" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_province" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_province" disabled="false" uniqueid="{7a516b5a-572c-a4be-90eb-8b3c9892eaae}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10839dc1-6b3a-39a5-873a-5d4b9169c756}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="address1_postalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_postalcode" disabled="false" uniqueid="{b3c4b6a5-4502-e373-0c6e-b378eb39379e}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="MapSection" showlabel="false" showbar="false" id="{2f19ca26-1948-46ea-8a85-3b152fdac3da}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5a137fc9-49fc-49a1-98d6-2926a1448148}" showlabel="false" rowspan="8" colspan="1" auto="false">
+                        <labels>
+                          <label description="Map View" languagecode="1033" />
+                          <label description="Vue Carte" languagecode="1036" />
+                        </labels>
+                        <control id="mapcontrol" classid="{62B0DF79-0464-470F-8AF7-4483CFEA0C7D}">
+                          <parameters>
+                            <AddressField>address1_composite</AddressField>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="BusinessCard" showlabel="true" showbar="false" locklevel="0" id="{097bc91c-86e7-8993-21aa-a956e7229db4}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="Business Card" languagecode="1033" />
+                    <label description="Carte de visite" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ca22ebe3-6165-842d-e963-75eb171c251e}" showlabel="false">
+                        <labels>
+                          <label description="Business Card" languagecode="1033" />
+                          <label description="Carte de visite" languagecode="1036" />
+                        </labels>
+                        <control id="businesscard" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="businesscard" disabled="false" uniqueid="{e1a0eed7-7d87-4446-a2ed-3fea375b4403}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="42%">
+              <sections>
+                <section name="SOCIAL_PANE" showlabel="false" showbar="false" locklevel="0" id="{bac826a8-ee3e-412a-828a-f192e6d8dc6e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Top">
+                  <labels>
+                    <label description="SOCIAL PANE" languagecode="1033" />
+                    <label description="VOLET SOCIAL" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell colspan="1" showlabel="false" rowspan="18" id="{fd6855b3-9d55-489e-9322-70b510b2987d}" locklevel="0" auto="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-C143-495E-A496-C962E5B4488E}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="25%">
+              <sections>
+                <section name="Summary_section_9" showlabel="false" showbar="false" locklevel="0" id="{2c476082-1ae4-79cd-a24c-5c70b2436330}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c3b92849-7a4e-3303-75bd-5423503d43e7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Preferred Language" languagecode="1033" />
+                        </labels>
+                        <control id="chi_preferredlanguage" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="chi_preferredlanguage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{122304a9-9a72-e459-0e60-95804c0406c7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Responsible" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_responsible" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_responsible" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d6153aa7-9e08-65e9-1a1b-272c3b168a55}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Lead Originated By" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_leadoriginatedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_leadoriginatedby" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="Summary_section_7" showlabel="false" showbar="false" locklevel="0" id="{82bc6dbb-7eaa-2c3b-a200-9c6a891978c1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c54eb280-a686-970d-ee9c-ad90ee871c94}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Contact Permissions" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_contactpermissions" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="bdo_contactpermissions" disabled="false" uniqueid="{c2c0359a-3494-d9ea-0567-ac238b77621b}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{10b75e6c-54f9-4c13-8850-5b90cad35c6f}" showlabel="true" locklevel="0" rowspan="4">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" uniqueid="{237a241b-6988-5add-21b2-ca3b884eeb6d}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_3" id="{d136e08e-2646-5b68-aa19-b6eb845e7981}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="PrescribeIT Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="true" showbar="false" locklevel="0" id="{504353ed-cee9-73a0-3951-7e4039820462}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Prescriber" languagecode="1033" />
+                    <label description="Prescripteur" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{de3aa885-441d-0d2c-e617-ac4a6b683cee}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinic Practice Type" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globalclinictype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalclinictype" disabled="false" uniqueid="{5c5a86b7-2487-7eab-1c51-3197d900519d}" />
+                      </cell>
+                      <cell id="{6c75cbd4-d8ba-7336-d016-9bc1d2e16a35}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="EMR" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globalemr" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalemr" disabled="false" uniqueid="{25e787bc-834c-609a-7404-16635cee2c31}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62759b8c-945d-408e-01d3-e1232ad73952}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="No. of Prescribers" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_noofprescribers" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_noofprescribers" disabled="false" uniqueid="{76eee8b7-a751-3077-9732-2a4ba275a8e5}" />
+                      </cell>
+                      <cell id="{e047c6da-b838-2045-eae5-277e9bbca4b0}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="EMR Other" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_emrother" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_emrother" disabled="false" uniqueid="{8d958a83-61d2-41c6-3686-60da8a737d22}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a5e7ab49-b812-787d-6b95-4ea655871148}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Patients per week" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_patientsperweek" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_patientsperweek" disabled="false" uniqueid="{0b86057a-a98b-4ac9-7d6c-3e6c5747aeb6}" />
+                      </cell>
+                      <cell id="{c0bdea46-195e-1c4a-3692-bce3e2308e32}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Generate Prescriptions" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globalgenerateclinic" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalgenerateclinic" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b15211e4-162d-176a-d7bc-be7c0a53a55e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{dbcb225c-a153-2de0-4012-ab2ead606d64}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Prescription Delivery Method" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globalprescriberdelivery" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalprescriberdelivery" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_1" showlabel="true" showbar="false" locklevel="0" id="{2b39b369-08a2-7052-3495-1079e0d770cd}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Pharmacy" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{31591052-c852-5418-31e2-40ad094515c2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type of Pharmacy" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globaltypepharmacy" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globaltypepharmacy" disabled="false" />
+                      </cell>
+                      <cell id="{826c143c-9c4c-dccb-cb4c-17824139a7d2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PMS" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globalpms" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalpms" disabled="false" uniqueid="{350227bb-5867-eadd-a1d3-e4b806dea68a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5c278457-8436-663e-3330-41ad808b2d52}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Number of Prescriptions Daily" languagecode="1033" />
+                        </labels>
+                        <control id="new_numberofprescriptions" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="new_numberofprescriptions" disabled="false" uniqueid="{3917137a-146a-8b81-d9bd-c1ace5ebcbb9}" />
+                      </cell>
+                      <cell id="{3a3dca77-3bec-d0bb-ddce-37c605853d75}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="PMS Other" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_pmsother" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_pmsother" disabled="false" uniqueid="{a44aec53-b06a-ece6-ca02-41751a098dcd}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4a65d6a5-4c8d-9061-9d7a-126a1dc63981}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Methadone" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_methadone" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_methadone" disabled="false" uniqueid="{cc9ae5bd-1389-b6e2-7ab6-717129ab2c8d}" />
+                      </cell>
+                      <cell id="{0a7b394a-ab9a-8322-aa29-7972c58c7d82}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pharmacy Delivery" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_globalpharmacydelivery" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalpharmacydelivery" disabled="false" uniqueid="{e01533ab-c808-5698-887b-cad004a1309a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{963e10d0-3d61-958b-ba30-b88dda536c28}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pharmacy Engagement" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_pharmacyengagement" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_pharmacyengagement" disabled="false" />
+                      </cell>
+                      <cell id="{52d104a7-0c4a-9949-de12-2c27306da5d0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Site count" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_sitecount" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="bdo_sitecount" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{51e32b75-1463-1502-b52c-37579698b579}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Marketing" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="true" showbar="false" locklevel="0" id="{21ec85e3-d29d-d033-1295-66c62b3d0d5e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Consent" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{850b562a-966c-815c-cb4c-a6e7eb17914c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Lead Source" languagecode="1033" />
+                          <label description="Source du prospect" languagecode="1036" />
+                        </labels>
+                        <control id="leadsourcecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="leadsourcecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{444a9215-42dd-2b13-97a7-e23401973a50}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Consent Type" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_consenttype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_consenttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6340ec8c-59b2-718e-36c9-6d6e794de47e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Consent Date" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_consentdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_consentdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{629bd86b-6e2a-31ad-1c17-1a1a283a4004}" showlabel="true" locklevel="0" rowspan="2">
+                        <labels>
+                          <label description="Consent Details" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_consentdetails" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="bdo_consentdetails" disabled="false" uniqueid="{6d5c50c8-a3ae-a22c-b315-7d325866d15b}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row>
+                      <cell id="{bee51cac-83c9-60be-c3a6-266040397c26}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PrescribeIT Consent" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_prescribeitconsent" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_prescribeitconsent" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_5_section_2" showlabel="true" showbar="false" locklevel="0" id="{419aaede-6a70-31a4-d2a3-6a33b46c16a9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Unsubscribe" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{97577421-25c7-264e-c0bb-ab134bdd0eb7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Unsubscribe" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_unsubscribe" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_unsubscribe" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7aa8765a-4a3e-7834-e8ec-39b09848a2aa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Unsubscribe Date" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_unsubscribedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_unsubscribedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="documents_sharepoint" id="{581F1058-2723-4ECA-9D4B-3EB7800EFF85}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Files" languagecode="1033" />
+            <label description="Fichiers" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="documents_sharepoint_section" showlabel="false" showbar="false" locklevel="0" id="{154B1FC7-5CA6-4E51-9F37-47D11C2BB750}" IsUserDefined="0" layout="varwidth" columns="1">
+                  <labels>
+                    <label description="Documents Section" languagecode="1033" />
+                    <label description="Section Documents" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1FA8B52A-AEDA-4987-AB2B-B56F6350E62C}" showlabel="false" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Documents" languagecode="1033" />
+                          <label description="Documents" languagecode="1036" />
+                        </labels>
+                        <control id="DocumentsSubGrid" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{65280F76-C520-4FDB-AF88-3C39E47AB5F3}">
+                          <parameters>
+                            <ViewId>{0016F9F3-41CC-4276-9D11-04308D15858D}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>Lead_SharepointDocument</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <ViewIds />
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="linkedin_v2_tab" id="{ed24dd95-ea14-3aad-0915-27394ee34d3e}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" availableforphone="false" visible="false">
+          <labels>
+            <label description="LinkedIn Sales Navigator" languagecode="1033" />
+            <label description="LinkedIn Sales Navigator" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="linkedin_v2_tab_section_1" showlabel="true" showbar="false" locklevel="0" id="{185b5bd0-3550-c1a6-3549-103bdee67a75}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="LinkedIn Member Profile" languagecode="1033" />
+                    <label description="Profil de membre LinkedIn" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b1733a80-ed2c-9835-07ee-2b0de53bc0a0}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="lastname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="lastname" disabled="false" uniqueid="{1c9e5cab-d120-322e-527d-796059d68207}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="linkedin_v2_tab_section_2" showlabel="true" showbar="false" locklevel="0" id="{38aeaa9e-7795-05ab-4218-921d66564da9}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="LinkedIn Account Profile" languagecode="1033" />
+                    <label description="Profil de compte LinkedIn" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e7c1a28d-d2aa-7bb6-6018-b1b5b6284d34}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Company Name" languagecode="1033" />
+                          <label description="Nom de la société" languagecode="1036" />
+                        </labels>
+                        <control id="companyname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="companyname" disabled="false" uniqueid="{6232d974-9cb2-e230-5673-33d05b649368}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="linkedin_v2_tab_section_3" showlabel="true" showbar="false" locklevel="0" id="{6aac1870-3344-d5d4-43b2-669b59e7ec44}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="LinkedIn InMail" languagecode="1033" />
+                    <label description="LinkedIn InMail" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7adc9506-be91-3035-572e-9124c653b972}" showlabel="false" locklevel="0">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="lastname" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="lastname" disabled="false" uniqueid="{243da0ea-6c06-13c0-cb5a-cec96bccbe0c}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="details_tab" id="{9008acae-4b08-4be6-a5d3-aef9155a7f16}" IsUserDefined="0" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Details" languagecode="1033" />
+            <label description="Détails" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="contact_methods" showlabel="true" showbar="false" id="{e1925535-689c-4536-9170-93c752121734}" IsUserDefined="0" columns="1" locklevel="0" labelwidth="115" celllabelposition="Left">
+                  <labels>
+                    <label description="Contact method" languagecode="1033" />
+                    <label description="Mode de communication" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{238dc0d1-c7bb-48bf-bd46-81c9358c864b}">
+                        <labels>
+                          <label description="Preferred" languagecode="1033" />
+                          <label description="Privilégié" languagecode="1036" />
+                        </labels>
+                        <control id="preferredcontactmethodcode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="preferredcontactmethodcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0665bd70-8884-bd1c-9b6d-4082d4466a5d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Best Day" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_bestday" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_bestday" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b8b086c-6d89-49e8-9c00-682104a71a11}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Best Time" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_besttime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_besttime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a5230208-77c9-427d-a961-c8dc9b94aa5a}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                          <label description="Courrier électronique" languagecode="1036" />
+                        </labels>
+                        <control id="donotemail" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="donotemail" uniqueid="{e5ade895-e7a3-6d31-d320-a46a084011d9}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1de94f13-a476-4765-bd9a-b8ffe2f29ed0}">
+                        <labels>
+                          <label description="Follow email" languagecode="1033" />
+                          <label description="Suivre l'activité de courrier électronique" languagecode="1036" />
+                        </labels>
+                        <control id="followemail" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="followemail" uniqueid="{abaa7c46-49a8-6a26-1b72-9ba7ca1ded89}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bbe784ab-23b6-40a5-8c83-142190b2af1d}">
+                        <labels>
+                          <label description="Bulk email" languagecode="1033" />
+                          <label description="Envoi en nombre" languagecode="1036" />
+                        </labels>
+                        <control id="donotbulkemail" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="donotbulkemail" uniqueid="{ec27ead4-0e38-18dd-86b7-ad1de590745b}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{86185452-683d-4ac1-9798-9fc5280bdae0}">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="donotphone" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="donotphone" uniqueid="{5814d5ec-1c83-55d0-be55-69c66b3a0a53}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93bb851c-4a32-4bab-a4ef-ee0e97226ad9}">
+                        <labels>
+                          <label description="Mail" languagecode="1033" />
+                          <label description="Courrier" languagecode="1036" />
+                        </labels>
+                        <control id="donotpostalmail" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="donotpostalmail" uniqueid="{957b3ec0-72a0-1b92-d528-e6e5ed211571}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{C76E9552-0868-4DD1-A6B6-01E7C8DED166}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80409594-2950-4A04-8D5E-6502A28FB077}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="marketing_information" showlabel="true" showbar="false" locklevel="0" id="{9ae60f89-6507-4cd3-8c5a-c26915a7e315}" IsUserDefined="0" layout="varheight" columns="1" labelwidth="115" celllabelposition="Left" celllabelalignment="Left">
+                  <labels>
+                    <label description="Campaign Information" languagecode="1033" />
+                    <label description="INFORMATIONS MARKETING" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{d3a5f17c-30bb-4d2b-bb7f-4ef968727df7}">
+                        <labels>
+                          <label description="Marketing Materials" languagecode="1033" />
+                          <label description="Documents marketing" languagecode="1036" />
+                        </labels>
+                        <control id="donotsendmm" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotsendmm" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{a5b3e9c6-2cc7-4273-bd86-12fca3a85e4a}">
+                        <labels>
+                          <label description="Last Campaign Date" languagecode="1033" />
+                          <label description="Dernière date de la campagne" languagecode="1036" />
+                        </labels>
+                        <control id="lastusedincampaign" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="lastusedincampaign" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell showlabel="true" locklevel="0" id="{09513d13-bb7d-43b6-ad5c-9598b82b099e}">
+                        <labels>
+                          <label description="Source Campaign" languagecode="1033" />
+                          <label description="Campagne source" languagecode="1036" />
+                        </labels>
+                        <control id="campaignid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="campaignid" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{0E76DC73-2052-484E-8C00-A760F8D522EC}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1c88d054-4662-8387-c65d-57e0a920b80b}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="LeadRegistration" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_leadregistration" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_leadregistration" disabled="false" uniqueid="{5e25d77a-25c7-184d-7cc8-a7a4d65d2b14}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{09DCB191-1702-4E03-8F2E-E7EB9A31C533}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{B98BF452-2653-4EFE-B9A8-3F28A7AB52B9}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{E20AA3DE-FC72-4ADF-9B78-9E96ACD08731}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_6" id="{040d392a-1343-97d6-9b15-aa972e551a27}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Lead Import" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="false" showbar="false" locklevel="0" id="{be6ce1ab-972a-35cd-d2ae-b275e7874a44}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{050344be-e29c-2947-bcc8-9b2761cb5d99}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Follow up call Prescriber" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_followupcallprescriber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_followupcallprescriber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32c15659-8969-124e-6560-4377a151dba4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Follow up call pharmacist" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_followupcallpharmacist" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_followupcallpharmacist" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7384bd70-d004-e49d-11c7-5244528e5aae}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Parent Contact for lead" languagecode="1033" />
+                          <label description="Contact parent du prospect" languagecode="1036" />
+                        </labels>
+                        <control id="parentcontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="parentcontactid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_6_section_2" showlabel="false" showbar="false" locklevel="0" id="{e69275b8-0219-02d9-c387-567aa09daec7}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2b799801-ba21-a2b3-6cca-e4b18512d7ad}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Add to mailing list" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_addtomailinglist" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_addtomailinglist" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{17913274-1b81-3815-9248-040d47ed92ad}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="State/Province" languagecode="1033" />
+                          <label description="Département/Province" languagecode="1036" />
+                        </labels>
+                        <control id="address1_stateorprovince" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="address1_stateorprovince" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.LeadMainSystemLibraryWebResource.formOnload" libraryName="LeadManagement/Lead/Lead_main_system_library.js" handlerUniqueId="cf83ccb0-95f8-4d3c-8856-de668ce6341c" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="Sales.Lead.Instance.Form_onload" libraryName="Sales/Lead/Lead_main_system_library.js" handlerUniqueId="4350abb7-b430-426d-a157-d415b1c185f2" enabled="true" passExecutionContext="true" />
+            <Handler functionName="MarketingSales.Lead.LeadLibrary.formOnload" libraryName="MarketingSales/Lead/Lead_main_system_library.js" handlerUniqueId="d24314f8-1caf-436e-b391-a60d700f653d" enabled="true" />
+          </InternalHandlers>
+          <Handlers>
+            <Handler functionName="Sales.DocumentsTabController.shouldShowDocumentsTab" libraryName="Sales/ClientCommon/Sales_ClientCommon.js" handlerUniqueId="{F9F679E2-99A1-47FE-A237-E579754D5649}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="LinkedInIntegration.LinkedInIntegrationCommon.Instance.Form_OnLoad" libraryName="LinkedInIntegration/Common/msdyn_LinkedInIntegrationCommon.js" handlerUniqueId="{9c75121d-1a00-9daa-b1e9-aae8a97a7c2c}" enabled="true" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.LeadMainSystemLibraryWebResource.form_OnSave" libraryName="LeadManagement/Lead/Lead_main_system_library.js" handlerUniqueId="6fe1ba11-b792-4717-a746-4a7141530952" enabled="true" />
+          </InternalHandlers>
+        </event>
+      </events>
+      <header id="{af5017db-93b9-4316-8323-de1d83b41d58}" celllabelposition="Top" columns="1111">
+        <rows>
+          <row>
+            <cell id="{4d00c627-7497-1ea7-219c-2ee7d51251b1}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Date Submitted" languagecode="1033" />
+              </labels>
+              <control id="header_bdo_datesubmitted" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_datesubmitted" disabled="false" uniqueid="{1807e46e-18d5-a148-b721-a7844d9b12b3}" />
+            </cell>
+            <cell id="{57ab39e0-de49-1441-5ceb-180a27d948c1}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Send Registration" languagecode="1033" />
+              </labels>
+              <control id="header_bdo_sendregistrationtext" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_sendregistrationtext" disabled="false" uniqueid="{e3d7a18c-2646-0d5b-e58a-61552ea3e6e1}" />
+            </cell>
+            <cell id="{a05a784c-4246-4827-0871-ccb006dcab07}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status" languagecode="1033" />
+                <label description="Statut" languagecode="1036" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+            </cell>
+            <cell id="{7da0c9b6-8289-4b50-ab33-b5f0568cadb9}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:LeadManagement/Lead/Lead_main_system_library.js" />
+            <internaljscriptfile src="$webresource:Sales/ClientCommon/Sales_ClientCommon.js" />
+            <internaljscriptfile src="$webresource:Sales/Lead/Lead_main_system_library.js" />
+            <internaljscriptfile src="$webresource:MarketingSales/Lead/Lead_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="Lead_ActivityPointers" Id="navActivities" Icon="/_imgs/ico_18_act.gif" Sequence="10" Area="Info">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Activities" />
+              <Title LCID="1025" Text="أنشطة" />
+              <Title LCID="1026" Text="Дейности" />
+              <Title LCID="1027" Text="Activitats" />
+              <Title LCID="1029" Text="Aktivity" />
+              <Title LCID="1030" Text="Aktiviteter" />
+              <Title LCID="1031" Text="Aktivitäten" />
+              <Title LCID="1032" Text="Δραστηριότητες" />
+              <Title LCID="3082" Text="Actividades" />
+              <Title LCID="1061" Text="Tegevused" />
+              <Title LCID="1069" Text="Jarduerak" />
+              <Title LCID="1035" Text="Aktiviteetit" />
+              <Title LCID="1036" Text="Activités" />
+              <Title LCID="1110" Text="Actividades" />
+              <Title LCID="1037" Text="פעילויות" />
+              <Title LCID="1081" Text="गतिविधियाँ" />
+              <Title LCID="1050" Text="Aktivnosti" />
+              <Title LCID="1038" Text="Tevékenységek" />
+              <Title LCID="1057" Text="Aktivitas" />
+              <Title LCID="1040" Text="Impegni" />
+              <Title LCID="1041" Text="活動" />
+              <Title LCID="1087" Text="Әрекеттер" />
+              <Title LCID="1042" Text="활동" />
+              <Title LCID="1063" Text="Veikla" />
+              <Title LCID="1062" Text="Darbības" />
+              <Title LCID="1086" Text="Aktiviti" />
+              <Title LCID="1044" Text="Aktiviteter" />
+              <Title LCID="1043" Text="Activiteiten" />
+              <Title LCID="1045" Text="Działania" />
+              <Title LCID="1046" Text="Atividades" />
+              <Title LCID="2070" Text="Atividades" />
+              <Title LCID="1048" Text="Activități" />
+              <Title LCID="1049" Text="Действия" />
+              <Title LCID="1051" Text="Aktivity" />
+              <Title LCID="1060" Text="Dejavnosti" />
+              <Title LCID="10266" Text="Активности" />
+              <Title LCID="9242" Text="Aktivnosti" />
+              <Title LCID="1053" Text="Aktiviteter" />
+              <Title LCID="1054" Text="กิจกรรม" />
+              <Title LCID="1055" Text="Etkinlikler" />
+              <Title LCID="1058" Text="Справи" />
+              <Title LCID="1066" Text="Hoạt động" />
+              <Title LCID="2052" Text="活动" />
+              <Title LCID="3076" Text="活動" />
+              <Title LCID="1028" Text="活動" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="20" Area="Marketing" Id="navCampaignsInSFA" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Campaigns" />
+              <Title LCID="1025" Text="الحملات" />
+              <Title LCID="1026" Text="Кампании" />
+              <Title LCID="1027" Text="Campanyes" />
+              <Title LCID="1029" Text="Kampaně" />
+              <Title LCID="1030" Text="Kampagner" />
+              <Title LCID="1031" Text="Kampagnen" />
+              <Title LCID="1032" Text="Εκστρατείες" />
+              <Title LCID="3082" Text="Campañas" />
+              <Title LCID="1061" Text="Kampaaniad" />
+              <Title LCID="1069" Text="Kanpainak" />
+              <Title LCID="1035" Text="Kampanjat" />
+              <Title LCID="1036" Text="Campagnes" />
+              <Title LCID="1110" Text="Campañas" />
+              <Title LCID="1037" Text="קמפיינים" />
+              <Title LCID="1081" Text="अभियान" />
+              <Title LCID="1050" Text="Kampanje" />
+              <Title LCID="1038" Text="Kampányok" />
+              <Title LCID="1057" Text="Kampanye" />
+              <Title LCID="1040" Text="Campagne" />
+              <Title LCID="1041" Text="キャンペーン" />
+              <Title LCID="1087" Text="Науқандар" />
+              <Title LCID="1042" Text="캠페인" />
+              <Title LCID="1063" Text="Kampanijos" />
+              <Title LCID="1062" Text="Kampaņas" />
+              <Title LCID="1086" Text="Kempen" />
+              <Title LCID="1044" Text="Kampanjer" />
+              <Title LCID="1043" Text="Campagnes" />
+              <Title LCID="1045" Text="Kampanie" />
+              <Title LCID="1046" Text="Campanhas" />
+              <Title LCID="2070" Text="Campanhas" />
+              <Title LCID="1048" Text="Campanii" />
+              <Title LCID="1049" Text="Кампании" />
+              <Title LCID="1051" Text="Kampane" />
+              <Title LCID="1060" Text="Akcije" />
+              <Title LCID="10266" Text="Кампање" />
+              <Title LCID="9242" Text="Kampanje" />
+              <Title LCID="1053" Text="Kampanjer" />
+              <Title LCID="1054" Text="การส่งเสริมการขาย" />
+              <Title LCID="1055" Text="Kampanyalar" />
+              <Title LCID="1058" Text="Кампанії" />
+              <Title LCID="1066" Text="Chiến dịch" />
+              <Title LCID="2052" Text="市场活动" />
+              <Title LCID="3076" Text="行銷活動" />
+              <Title LCID="1028" Text="行銷活動" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navConnections" Id="navConnections" Sequence="9000" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Connections" />
+              <Title LCID="1025" Text="الاتصالات" />
+              <Title LCID="1026" Text="Връзки" />
+              <Title LCID="1027" Text="Connexions" />
+              <Title LCID="1029" Text="Propojení" />
+              <Title LCID="1030" Text="Forbindelser" />
+              <Title LCID="1031" Text="Verbindungen" />
+              <Title LCID="1032" Text="Συνδέσεις" />
+              <Title LCID="3082" Text="Conexiones" />
+              <Title LCID="1061" Text="Ühendused" />
+              <Title LCID="1069" Text="Konexioak" />
+              <Title LCID="1035" Text="Yhteydet" />
+              <Title LCID="1036" Text="Connexions" />
+              <Title LCID="1110" Text="Conexións" />
+              <Title LCID="1037" Text="חיבורים" />
+              <Title LCID="1081" Text="कनेक्शन" />
+              <Title LCID="1050" Text="Veze" />
+              <Title LCID="1038" Text="Kapcsolatok" />
+              <Title LCID="1057" Text="Sambungan" />
+              <Title LCID="1040" Text="Connessioni" />
+              <Title LCID="1041" Text="つながり" />
+              <Title LCID="1087" Text="Қосылымдар" />
+              <Title LCID="1042" Text="연결" />
+              <Title LCID="1063" Text="Ryšiai" />
+              <Title LCID="1062" Text="Savienojumi" />
+              <Title LCID="1086" Text="Sambungan" />
+              <Title LCID="1044" Text="Tilkoblinger" />
+              <Title LCID="1043" Text="Verbindingen" />
+              <Title LCID="1045" Text="Połączenia" />
+              <Title LCID="1046" Text="Conexões" />
+              <Title LCID="2070" Text="Ligações" />
+              <Title LCID="1048" Text="Conexiuni" />
+              <Title LCID="1049" Text="Подключения" />
+              <Title LCID="1051" Text="Kontaktné osoby" />
+              <Title LCID="1060" Text="Povezave" />
+              <Title LCID="10266" Text="Везе" />
+              <Title LCID="9242" Text="Veze" />
+              <Title LCID="1053" Text="Anslutningar" />
+              <Title LCID="1054" Text="การเชื่อมต่อ" />
+              <Title LCID="1055" Text="Bağlantılar" />
+              <Title LCID="1058" Text="Підключення" />
+              <Title LCID="1066" Text="Kết nối" />
+              <Title LCID="2052" Text="连接" />
+              <Title LCID="3076" Text="人脈" />
+              <Title LCID="1028" Text="人脈" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAsyncOperations" Id="navAsyncOperations" Show="true" Sequence="10003" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Background Processes" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAudit" Sequence="9600" Area="Info" Id="navAudit">
+            <Titles>
+              <Title LCID="1033" Text="Audit History" />
+              <Title LCID="1025" Text="محفوظات التدقيق" />
+              <Title LCID="1026" Text="Хронология на проверка" />
+              <Title LCID="1027" Text="Historial de l'auditoria" />
+              <Title LCID="1029" Text="Historie auditu" />
+              <Title LCID="1030" Text="Oversigt over overvågning" />
+              <Title LCID="1031" Text="Überwachungsverlauf" />
+              <Title LCID="1032" Text="Ιστορικό ελέγχου" />
+              <Title LCID="3082" Text="Historial de auditoría" />
+              <Title LCID="1061" Text="Auditeerimisajalugu" />
+              <Title LCID="1069" Text="Auditoretza-historia" />
+              <Title LCID="1035" Text="Seurantahistoria" />
+              <Title LCID="1036" Text="Historique d'audit" />
+              <Title LCID="1110" Text="Historial de auditoría" />
+              <Title LCID="1037" Text="היסטוריית ביקורת" />
+              <Title LCID="1081" Text="ऑडिट इतिहास" />
+              <Title LCID="1050" Text="Povijest nadzora" />
+              <Title LCID="1038" Text="Auditnapló előzményei" />
+              <Title LCID="1057" Text="Riwayat Audit" />
+              <Title LCID="1040" Text="Cronologia controllo" />
+              <Title LCID="1041" Text="監査履歴" />
+              <Title LCID="1087" Text="Тексеру журналы" />
+              <Title LCID="1042" Text="감사 기록" />
+              <Title LCID="1063" Text="Tikrinimo retrospektyva" />
+              <Title LCID="1062" Text="Audita vēsture" />
+              <Title LCID="1086" Text="Sejarah Audit" />
+              <Title LCID="1044" Text="Logg for sporing av endringer" />
+              <Title LCID="1043" Text="Controlegeschiedenis" />
+              <Title LCID="1045" Text="Historia inspekcji" />
+              <Title LCID="1046" Text="Histórico de Auditoria" />
+              <Title LCID="2070" Text="Histórico de Auditoria" />
+              <Title LCID="1048" Text="Istoric auditare" />
+              <Title LCID="1049" Text="Журнал аудита" />
+              <Title LCID="1051" Text="História auditov" />
+              <Title LCID="1060" Text="Zgodovina spremljanja sprememb" />
+              <Title LCID="10266" Text="Историја надгледања" />
+              <Title LCID="9242" Text="Istorija nadgledanja" />
+              <Title LCID="1053" Text="Granskningshistorik" />
+              <Title LCID="1054" Text="ประวัติการตรวจสอบ" />
+              <Title LCID="1055" Text="Denetim Geçmişi" />
+              <Title LCID="1058" Text="Журнал відстеження" />
+              <Title LCID="1066" Text="Lịch sử Kiểm tra" />
+              <Title LCID="2052" Text="审核历史记录" />
+              <Title LCID="3076" Text="稽核歷程記錄" />
+              <Title LCID="1028" Text="稽核歷程記錄" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProcessSessions" Id="navProcessSessions" Show="true" Sequence="10002" Area="Info">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="leadcompetitors_association" Id="navLeadCompetitor" Area="Sales" Icon="/_imgs/ico_18_123.gif" Sequence="40" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadCompetitor" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Competitors" />
+              <Title LCID="1025" Text="المنافسون" />
+              <Title LCID="1026" Text="Конкуренти" />
+              <Title LCID="1027" Text="Competidors" />
+              <Title LCID="1029" Text="Konkurence" />
+              <Title LCID="1030" Text="Konkurrenter" />
+              <Title LCID="1031" Text="Mitbewerber" />
+              <Title LCID="1032" Text="Ανταγωνιστές" />
+              <Title LCID="3082" Text="Competidores" />
+              <Title LCID="1061" Text="Konkurendid" />
+              <Title LCID="1069" Text="Lehiakideak" />
+              <Title LCID="1035" Text="Kilpailijat" />
+              <Title LCID="1036" Text="Concurrents" />
+              <Title LCID="1110" Text="Competidores" />
+              <Title LCID="1037" Text="מתחרים" />
+              <Title LCID="1081" Text="प्रतिस्पर्धी" />
+              <Title LCID="1050" Text="Konkurenti" />
+              <Title LCID="1038" Text="Versenytársak" />
+              <Title LCID="1057" Text="Pesaing" />
+              <Title LCID="1040" Text="Concorrenti" />
+              <Title LCID="1041" Text="競合企業" />
+              <Title LCID="1087" Text="Бәсекелестер" />
+              <Title LCID="1042" Text="경쟁 업체" />
+              <Title LCID="1063" Text="Konkurentai" />
+              <Title LCID="1062" Text="Konkurenti" />
+              <Title LCID="1086" Text="Pesaing" />
+              <Title LCID="1044" Text="Konkurrenter" />
+              <Title LCID="1043" Text="Concurrenten" />
+              <Title LCID="1045" Text="Konkurenci" />
+              <Title LCID="1046" Text="Concorrentes" />
+              <Title LCID="2070" Text="Concorrentes" />
+              <Title LCID="1048" Text="Concurenți" />
+              <Title LCID="1049" Text="Конкуренты" />
+              <Title LCID="1051" Text="Konkurenti" />
+              <Title LCID="1060" Text="Konkurenčna podjetja" />
+              <Title LCID="10266" Text="Конкуренти" />
+              <Title LCID="9242" Text="Konkurenti" />
+              <Title LCID="1053" Text="Konkurrenter" />
+              <Title LCID="1054" Text="คู่แข่ง" />
+              <Title LCID="1055" Text="Rakipler" />
+              <Title LCID="1058" Text="Конкуренти" />
+              <Title LCID="1066" Text="Đối thủ cạnh tranh" />
+              <Title LCID="2052" Text="竞争对手" />
+              <Title LCID="3076" Text="競爭對手" />
+              <Title LCID="1028" Text="競爭對手" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_lead_bdo_registration_OriginatingLead" Sequence="10001" Area="Info" Id="nav_bdo_lead_bdo_registration_OriginatingLead">
+            <Titles>
+              <Title LCID="1033" Text="Registrations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_pageview" Sequence="10001" Area="Info" Id="nav_cdi_lead_cdi_pageview">
+            <Titles>
+              <Title LCID="1033" Text="Page Views" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_unsubscribe" Sequence="10001" Area="Marketing" Id="nav_cdi_lead_cdi_unsubscribe">
+            <Titles>
+              <Title LCID="1033" Text="Unsubscribes" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="adobe_lead_adobe_agreement" Sequence="10001" Area="Info" Id="nav_adobe_lead_adobe_agreement">
+            <Titles>
+              <Title LCID="1033" Text="Agreements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_importlog_Lead" Sequence="10002" Area="Info" Id="nav_cdi_importlog_Lead">
+            <Titles>
+              <Title LCID="1033" Text="Import Logs" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_postedfield" Sequence="10002" Area="Info" Id="nav_cdi_lead_cdi_postedfield">
+            <Titles>
+              <Title LCID="1033" Text="Posted Fields" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_anonymousvisitor" Sequence="10003" Area="Info" Id="nav_cdi_lead_cdi_anonymousvisitor">
+            <Titles>
+              <Title LCID="1033" Text="Anonymous Visitors" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_postedform" Sequence="10003" Area="Info" Id="nav_cdi_lead_cdi_postedform">
+            <Titles>
+              <Title LCID="1033" Text="Posted Forms" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_emailevent" Sequence="10004" Area="Marketing" Id="nav_cdi_lead_cdi_emailevent">
+            <Titles>
+              <Title LCID="1033" Text="Email Events" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_lead_cdi_sentemail" Sequence="10004" Area="Marketing" Id="nav_cdi_lead_cdi_sentemail">
+            <Titles>
+              <Title LCID="1033" Text="Sent Emails" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+              <Title LCID="1025" Text="مبيعات" />
+              <Title LCID="1026" Text="Продажби" />
+              <Title LCID="1027" Text="Vendes" />
+              <Title LCID="1029" Text="Prodej" />
+              <Title LCID="1030" Text="Salg" />
+              <Title LCID="1031" Text="Vertrieb" />
+              <Title LCID="1032" Text="Πωλήσεις" />
+              <Title LCID="3082" Text="Ventas" />
+              <Title LCID="1061" Text="Müük" />
+              <Title LCID="1069" Text="Salmentak" />
+              <Title LCID="1035" Text="Myynti" />
+              <Title LCID="1036" Text="Ventes" />
+              <Title LCID="1110" Text="Vendas" />
+              <Title LCID="1037" Text="מכירות" />
+              <Title LCID="1081" Text="विक्रय" />
+              <Title LCID="1050" Text="Prodaja" />
+              <Title LCID="1038" Text="Értékesítés" />
+              <Title LCID="1057" Text="Penjualan" />
+              <Title LCID="1040" Text="Vendite" />
+              <Title LCID="1041" Text="営業" />
+              <Title LCID="1087" Text="Сатылым" />
+              <Title LCID="1042" Text="영업" />
+              <Title LCID="1063" Text="Pardavimas" />
+              <Title LCID="1062" Text="Pārdošana" />
+              <Title LCID="1086" Text="Jualan" />
+              <Title LCID="1044" Text="Salg" />
+              <Title LCID="1043" Text="Verkoop" />
+              <Title LCID="1045" Text="Sprzedaż" />
+              <Title LCID="1046" Text="Vendas" />
+              <Title LCID="2070" Text="Vendas" />
+              <Title LCID="1048" Text="Vânzări" />
+              <Title LCID="1049" Text="Продажи" />
+              <Title LCID="1051" Text="Predaj" />
+              <Title LCID="1060" Text="Prodaja" />
+              <Title LCID="10266" Text="Продаја" />
+              <Title LCID="9242" Text="Prodaja" />
+              <Title LCID="1053" Text="Försäljning" />
+              <Title LCID="1054" Text="การขาย" />
+              <Title LCID="1055" Text="Satış" />
+              <Title LCID="1058" Text="Збут" />
+              <Title LCID="1066" Text="Bán hàng" />
+              <Title LCID="2052" Text="销售" />
+              <Title LCID="3076" Text="銷售" />
+              <Title LCID="1028" Text="銷售" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+              <Title LCID="1025" Text="خدمة" />
+              <Title LCID="1026" Text="Услуга" />
+              <Title LCID="1027" Text="Servei" />
+              <Title LCID="1029" Text="Služby" />
+              <Title LCID="1030" Text="Service" />
+              <Title LCID="1031" Text="Service" />
+              <Title LCID="1032" Text="Εξυπηρέτηση" />
+              <Title LCID="3082" Text="Servicio" />
+              <Title LCID="1061" Text="Teenindus" />
+              <Title LCID="1069" Text="Zerbitzua" />
+              <Title LCID="1035" Text="Palvelu" />
+              <Title LCID="1036" Text="Service" />
+              <Title LCID="1110" Text="Servizo" />
+              <Title LCID="1037" Text="שירות" />
+              <Title LCID="1081" Text="सेवा" />
+              <Title LCID="1050" Text="Usluga" />
+              <Title LCID="1038" Text="Szolgáltatás" />
+              <Title LCID="1057" Text="Layanan" />
+              <Title LCID="1040" Text="Servizio" />
+              <Title LCID="1041" Text="サービス" />
+              <Title LCID="1087" Text="Қызмет" />
+              <Title LCID="1042" Text="서비스" />
+              <Title LCID="1063" Text="Paslauga" />
+              <Title LCID="1062" Text="Serviss" />
+              <Title LCID="1086" Text="Perkhidmatan" />
+              <Title LCID="1044" Text="Service" />
+              <Title LCID="1043" Text="Service" />
+              <Title LCID="1045" Text="Usługa" />
+              <Title LCID="1046" Text="Serviço" />
+              <Title LCID="2070" Text="Serviço" />
+              <Title LCID="1048" Text="Serviciu" />
+              <Title LCID="1049" Text="Сервис" />
+              <Title LCID="1051" Text="Služba" />
+              <Title LCID="1060" Text="Storitev" />
+              <Title LCID="10266" Text="Услуга" />
+              <Title LCID="9242" Text="Usluga" />
+              <Title LCID="1053" Text="Service" />
+              <Title LCID="1054" Text="การบริการ" />
+              <Title LCID="1055" Text="Servis" />
+              <Title LCID="1058" Text="Обслуговування" />
+              <Title LCID="1066" Text="Dịch vụ" />
+              <Title LCID="2052" Text="服务" />
+              <Title LCID="3076" Text="服務" />
+              <Title LCID="1028" Text="服務" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+              <Title LCID="1025" Text="التسويق" />
+              <Title LCID="1026" Text="Маркетинг" />
+              <Title LCID="1027" Text="Màrqueting" />
+              <Title LCID="1029" Text="Marketing" />
+              <Title LCID="1030" Text="Marketing" />
+              <Title LCID="1031" Text="Marketing" />
+              <Title LCID="1032" Text="Μάρκετινγκ" />
+              <Title LCID="3082" Text="Marketing" />
+              <Title LCID="1061" Text="Turundus" />
+              <Title LCID="1069" Text="Marketina" />
+              <Title LCID="1035" Text="Markkinointi" />
+              <Title LCID="1036" Text="Marketing" />
+              <Title LCID="1110" Text="Márketing" />
+              <Title LCID="1037" Text="שיווק" />
+              <Title LCID="1081" Text="मार्केटिंग" />
+              <Title LCID="1050" Text="Marketing" />
+              <Title LCID="1038" Text="Marketing" />
+              <Title LCID="1057" Text="Pemasaran" />
+              <Title LCID="1040" Text="Marketing" />
+              <Title LCID="1041" Text="マーケティング" />
+              <Title LCID="1087" Text="Маркетинг" />
+              <Title LCID="1042" Text="마케팅" />
+              <Title LCID="1063" Text="Rinkodara" />
+              <Title LCID="1062" Text="Mārketings" />
+              <Title LCID="1086" Text="Pemasaran" />
+              <Title LCID="1044" Text="Markedsføring" />
+              <Title LCID="1043" Text="Marketing" />
+              <Title LCID="1045" Text="Marketing" />
+              <Title LCID="1046" Text="Marketing" />
+              <Title LCID="2070" Text="Marketing" />
+              <Title LCID="1048" Text="Marketing" />
+              <Title LCID="1049" Text="Маркетинг" />
+              <Title LCID="1051" Text="Marketing" />
+              <Title LCID="1060" Text="Trženje" />
+              <Title LCID="10266" Text="Маркетинг" />
+              <Title LCID="9242" Text="Marketing" />
+              <Title LCID="1053" Text="Marknadsföring" />
+              <Title LCID="1054" Text="การตลาด" />
+              <Title LCID="1055" Text="Pazarlama" />
+              <Title LCID="1058" Text="Маркетинг" />
+              <Title LCID="1066" Text="Tiếp thị" />
+              <Title LCID="2052" Text="市场营销" />
+              <Title LCID="3076" Text="行銷" />
+              <Title LCID="1028" Text="行銷" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Processes" />
+              <Title LCID="1025" Text="العمليات" />
+              <Title LCID="1026" Text="Процеси" />
+              <Title LCID="1027" Text="Processos" />
+              <Title LCID="1029" Text="Procesy" />
+              <Title LCID="1030" Text="Processer" />
+              <Title LCID="1031" Text="Prozesse" />
+              <Title LCID="1032" Text="Διεργασίες" />
+              <Title LCID="3082" Text="Procesos" />
+              <Title LCID="1061" Text="Protsessid" />
+              <Title LCID="1069" Text="Prozesuak" />
+              <Title LCID="1035" Text="Prosessit" />
+              <Title LCID="1036" Text="Processus" />
+              <Title LCID="1110" Text="Procesos" />
+              <Title LCID="1037" Text="תהליכים" />
+              <Title LCID="1081" Text="प्रक्रियाएँ" />
+              <Title LCID="1050" Text="Procesi" />
+              <Title LCID="1038" Text="Folyamatok" />
+              <Title LCID="1057" Text="Proses" />
+              <Title LCID="1040" Text="Processi" />
+              <Title LCID="1041" Text="プロセス" />
+              <Title LCID="1087" Text="Процестер" />
+              <Title LCID="1042" Text="프로세스" />
+              <Title LCID="1063" Text="Procesai" />
+              <Title LCID="1062" Text="Procesi" />
+              <Title LCID="1086" Text="Proses" />
+              <Title LCID="1044" Text="Prosesser" />
+              <Title LCID="1043" Text="Processen" />
+              <Title LCID="1045" Text="Procesy" />
+              <Title LCID="1046" Text="Processos" />
+              <Title LCID="2070" Text="Processos" />
+              <Title LCID="1048" Text="Procese" />
+              <Title LCID="1049" Text="Процессы" />
+              <Title LCID="1051" Text="Procesy" />
+              <Title LCID="1060" Text="Procesi" />
+              <Title LCID="10266" Text="Процеси" />
+              <Title LCID="9242" Text="Procesi" />
+              <Title LCID="1053" Text="Processer" />
+              <Title LCID="1054" Text="กระบวนการ" />
+              <Title LCID="1055" Text="İşlemler" />
+              <Title LCID="1058" Text="Процеси" />
+              <Title LCID="1066" Text="Quy trình" />
+              <Title LCID="2052" Text="流程" />
+              <Title LCID="3076" Text="程序" />
+              <Title LCID="1028" Text="程序" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+              <Title LCID="1025" Text="عام‬" />
+              <Title LCID="1026" Text="Общо" />
+              <Title LCID="1027" Text="Comú" />
+              <Title LCID="1029" Text="Společné" />
+              <Title LCID="1030" Text="Fælles" />
+              <Title LCID="1031" Text="Gemeinsam verwendet" />
+              <Title LCID="1032" Text="Κοινό" />
+              <Title LCID="3082" Text="Común" />
+              <Title LCID="1061" Text="Ühised" />
+              <Title LCID="1069" Text="Ohikoak" />
+              <Title LCID="1035" Text="Yhteiset" />
+              <Title LCID="1036" Text="Éléments communs" />
+              <Title LCID="1110" Text="Común" />
+              <Title LCID="1037" Text="פריטים נפוצים" />
+              <Title LCID="1081" Text="सामान्य" />
+              <Title LCID="1050" Text="Zajednički" />
+              <Title LCID="1038" Text="Általános" />
+              <Title LCID="1057" Text="Umum" />
+              <Title LCID="1040" Text="Elementi comuni" />
+              <Title LCID="1041" Text="共通" />
+              <Title LCID="1087" Text="Байланысты" />
+              <Title LCID="1042" Text="일반" />
+              <Title LCID="1063" Text="Bendra" />
+              <Title LCID="1062" Text="Kopējs" />
+              <Title LCID="1086" Text="Biasa" />
+              <Title LCID="1044" Text="Felles" />
+              <Title LCID="1043" Text="Algemeen" />
+              <Title LCID="1045" Text="Wspólne" />
+              <Title LCID="1046" Text="Comum" />
+              <Title LCID="2070" Text="Comum" />
+              <Title LCID="1048" Text="Comun" />
+              <Title LCID="1049" Text="Общие" />
+              <Title LCID="1051" Text="Spoločné" />
+              <Title LCID="1060" Text="Splošno" />
+              <Title LCID="10266" Text="Уобичајено" />
+              <Title LCID="9242" Text="Uobičajeno" />
+              <Title LCID="1053" Text="Gemensamt" />
+              <Title LCID="1054" Text="ทั่วไป" />
+              <Title LCID="1055" Text="Ortak" />
+              <Title LCID="1058" Text="Спільні" />
+              <Title LCID="1066" Text="Thông thường" />
+              <Title LCID="2052" Text="公共" />
+              <Title LCID="3076" Text="一般" />
+              <Title LCID="1028" Text="一般" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{e1a0eed7-7d87-4446-a2ed-3fea375b4403}">
+          <customControl formFactor="0" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <DefaultImage type="Multiple">businesscard</DefaultImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <DefaultImage type="Multiple">businesscard</DefaultImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="Intelligence.BusinessCardReaderControl.BusinessCardReader">
+            <parameters>
+              <value>businesscard</value>
+              <DefaultImage type="Multiple">businesscard</DefaultImage>
+              <AdvancedCustomization>businesscardattributes</AdvancedCustomization>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{e5ade895-e7a3-6d31-d320-a46a084011d9}">
+          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotemail</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{abaa7c46-49a8-6a26-1b72-9ba7ca1ded89}">
+          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>followemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>followemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>followemail</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{ec27ead4-0e38-18dd-86b7-ad1de590745b}">
+          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotbulkemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotbulkemail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotbulkemail</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{5814d5ec-1c83-55d0-be55-69c66b3a0a53}">
+          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotphone</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotphone</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotphone</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{957b3ec0-72a0-1b92-d528-e6e5ed211571}">
+          <customControl formFactor="0" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotpostalmail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotpostalmail</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FlipSwitch.FlipSwitchControl">
+            <parameters>
+              <value>donotpostalmail</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{1c9e5cab-d120-322e-527d-796059d68207}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" formFactor="0">
+            <parameters>
+              <datafieldname>lastname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" formFactor="1">
+            <parameters>
+              <datafieldname>lastname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.LinkedInIntegration.LinkedInLeadControl">
+            <parameters>
+              <TopCard2 static="true" type="Enum">true</TopCard2>
+              <Icebreakers static="true" type="Enum">true</Icebreakers>
+              <GetIntroduced static="true" type="Enum">true</GetIntroduced>
+              <RelatedLeads static="true" type="Enum">true</RelatedLeads>
+              <ShowChrome static="true" type="Enum">false</ShowChrome>
+              <LastName>lastname</LastName>
+              <FirstName>firstname</FirstName>
+              <Email>emailaddress1</Email>
+              <JobTitle>jobtitle</JobTitle>
+              <CompanyName>companyname</CompanyName>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{6232d974-9cb2-e230-5673-33d05b649368}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" formFactor="0">
+            <parameters>
+              <datafieldname>companyname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" formFactor="1">
+            <parameters>
+              <datafieldname>companyname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.LinkedInIntegration.LinkedInAccountControl">
+            <parameters>
+              <TopCard static="true" type="Enum">true</TopCard>
+              <Connections static="true" type="Enum">true</Connections>
+              <RecommendedLeads static="true" type="Enum">true</RecommendedLeads>
+              <News static="true" type="Enum">true</News>
+              <ShowChrome static="true" type="Enum">false</ShowChrome>
+              <CompanyName>companyname</CompanyName>
+              <CompanyWebsite>websiteurl</CompanyWebsite>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{243da0ea-6c06-13c0-cb5a-cec96bccbe0c}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" formFactor="0">
+            <parameters>
+              <datafieldname>lastname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" formFactor="1">
+            <parameters>
+              <datafieldname>lastname</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.LinkedInIntegration.LinkedInLeadControl">
+            <parameters>
+              <TopCard2 static="true" type="Enum">false</TopCard2>
+              <Icebreakers static="true" type="Enum">false</Icebreakers>
+              <GetIntroduced static="true" type="Enum">false</GetIntroduced>
+              <RelatedLeads static="true" type="Enum">false</RelatedLeads>
+              <ShowChrome static="true" type="Enum">true</ShowChrome>
+              <Messaging static="true" type="Enum">true</Messaging>
+              <LastName>lastname</LastName>
+              <FirstName>firstname</FirstName>
+              <Email>emailaddress1</Email>
+              <JobTitle>jobtitle</JobTitle>
+              <CompanyName>companyname</CompanyName>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{d5d8c19d-9bce-b117-365c-e72e32842087}">
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>telephone1</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>telephone1</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>telephone1</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{b333506d-2000-11ed-e553-914866864669}">
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>mobilephone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>mobilephone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>mobilephone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <DisplayConditions FallbackForm="true" Order="2">
+        <Everyone />
+      </DisplayConditions>
+      <formLibraries>
+        <Library name="LinkedInIntegration/Common/msdyn_LinkedInIntegrationCommon.js" libraryUniqueId="{b95de126-c720-176a-8231-deb961886028}" />
+        <Library name="bdo_/Forms/Lead.js" libraryUniqueId="{7e1bce41-c5d0-8745-3e42-cdbc36e7cc98}" />
+      </formLibraries>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Lead" languagecode="1033" />
+      <LocalizedName description="Prospect" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Lead form" languagecode="1033" />
+      <Description description="Formulaire de prospect par défaut mis à jour" languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

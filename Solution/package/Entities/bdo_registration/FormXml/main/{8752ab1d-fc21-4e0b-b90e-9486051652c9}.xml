@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{8752ab1d-fc21-4e0b-b90e-9486051652c9}</formid>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{bbb5fd1c-d5f6-4c3b-838b-e2b72ed9e01e}" IsUserDefined="1" name="{bbb5fd1c-d5f6-4c3b-838b-e2b72ed9e01e}" locklevel="0" expanded="true" showlabel="true" labelid="{d2c828e4-77dd-4c94-923a-10b415c3e95f}">
+          <labels>
+            <label description="Status" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{30104af8-beda-49ac-bca9-51fb98c32432}" name="{30104af8-beda-49ac-bca9-51fb98c32432}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" labelid="{38bf368d-b464-4500-8877-f3e5da2d3dce}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1b0c09dd-6060-58ea-a647-14084b149180}" showlabel="true" locklevel="0" labelid="{3062863f-3a5a-4364-b157-e969bba2364e}">
+                        <labels>
+                          <label description="Organization" languagecode="1033" />
+                          <label description="Organisation" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_organization" disabled="true" uniqueid="{817458ad-5aa7-315e-a50a-608cb39ae70a}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{5007e394-6aa3-b28e-1601-a2c17451e6bc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Registration Number" languagecode="1033" />
+                          <label description="Numéro d'enregistrement" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_registrationnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_registrationnumber" disabled="true" uniqueid="{6024e05c-66c3-6078-ae30-ddd8383a9620}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c72b579d-400a-7567-1d3b-d6131286b9de}" showlabel="true" locklevel="0" labelid="{05c3c5bb-c514-4339-b9a1-a782f6c5f40e}">
+                        <labels>
+                          <label description="Contact Responsible for Registration" languagecode="1033" />
+                          <label description="Contact responsable de l'inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_contactresponsibleforregistration" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_contactresponsibleforregistration" disabled="true" uniqueid="{60013217-e599-007c-8d74-e83ecd15c155}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{22827ec5-2486-0595-c372-58274963b880}" showlabel="true" locklevel="0" labelid="{0f87cd5f-da5c-47c5-b91f-03fae735fd80}">
+                        <labels>
+                          <label description="Registration Type" languagecode="1033" />
+                          <label description="Type d'inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_registrationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_registrationtype" disabled="true" uniqueid="{2bc36860-eb6c-937a-4462-7707de354240}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9e6569e2-6da6-9693-8dd9-316a8b45403c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="DEV Key" languagecode="1033" />
+                          <label description="Clé DEV" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_devkey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_devkey" disabled="true" uniqueid="{12191a30-07be-5b27-785d-874ec20e74b6}" />
+                      </cell>
+                      <cell id="{10b83eb0-5e67-d088-7596-15253a67d2b9}" showlabel="true" locklevel="0" labelid="{55669d8d-a5b6-4bc2-b8fe-803bd3ccfd70}">
+                        <labels>
+                          <label description="Registration Status" languagecode="1033" />
+                          <label description="État de l’inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_registrationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_registrationstatus" disabled="true" uniqueid="{1bbacd40-29b5-50cb-e19e-8bb0e4b59422}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e34901ed-5442-1b84-050e-28db1e8893cc}" showlabel="true" locklevel="0" labelid="{5a46cbcb-c422-41fb-a5e9-d188651a1fff}" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_name" disabled="false" uniqueid="{622199b8-085d-5393-d7ac-b45a6aa83ab3}" />
+                      </cell>
+                      <cell id="{03088d74-8abe-9750-a30c-b2eb4d5abec9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_11" id="{48ad9bba-0654-5503-beab-765569986c49}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{f43baf37-7554-4848-a6fb-f1b05876370c}">
+          <labels>
+            <label description="Implementation Checklist" languagecode="1033" />
+            <label description="Liste de contrôle de mise en œuvre" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_11_section_1" showlabel="false" showbar="false" locklevel="0" id="{029e966e-973b-e460-371a-dca89abacb53}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="200" celllabelalignment="Left" celllabelposition="Left" labelid="{9945a1d7-d0d3-47c1-9631-80c939a08a38}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{16010703-0383-54ca-2834-a0ee66d5822a}" showlabel="true" locklevel="0" labelid="{94f560a4-ee66-4c00-bb49-a9285cb1db4e}">
+                        <labels>
+                          <label description="Implementation Checklist Complete" languagecode="1033" />
+                          <label description="Implantation terminée " languagecode="1036" />
+                        </labels>
+                        <control id="bdo_implementationchecklistcomplete" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_implementationchecklistcomplete" disabled="true" uniqueid="{c000ec0d-3843-a975-56d4-9890579a74d6}" />
+                      </cell>
+                      <cell id="{e74da8ca-11cb-8de2-8abb-d77cd0ced348}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{c2834513-5ea4-c944-0052-c2d36ae17658}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_11_section_2" showlabel="true" showbar="false" locklevel="0" id="{d270340e-9440-8a09-3556-4e01a1d9a6a2}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Milestone Dates" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{34ed369a-9194-e872-b711-b89259ade800}" showlabel="true" locklevel="0" labelid="{0924fcf5-5b0b-442d-b81f-a328a16e98a5}">
+                        <labels>
+                          <label description="Kick Off Meeting Date" languagecode="1033" />
+                          <label description="Date de la réunion de démarrage" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_kickoffmeetingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_kickoffmeetingdate" disabled="true" uniqueid="{6c7bcc5c-a6e0-1b37-a4b7-648814d11cd3}" />
+                      </cell>
+                      <cell id="{66ebed73-3abb-ee9d-e631-1eab55d3ce68}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Technical Test Date" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_technicaltestdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_technicaltestdate" disabled="true" uniqueid="{86c4b95a-3702-5066-15a8-82d94a32da31}" />
+                      </cell>
+                      <cell id="{6507b8ad-70d4-2828-8737-e08c34a33b8d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Technical Test" languagecode="1033" />
+                          <label description="Test technique" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_technicaltestchk" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_technicaltestchk" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9d454dad-46a5-e788-cc89-ab79ea71d4c7}" showlabel="true" locklevel="0" labelid="{79852aa8-6e60-4203-82e0-96d1677112ca}">
+                        <labels>
+                          <label description="Configuration Date" languagecode="1033" />
+                          <label description="Date de la configuration " languagecode="1036" />
+                        </labels>
+                        <control id="bdo_installationdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_installationdate" disabled="true" uniqueid="{a28d6cda-d590-62c7-0c91-62b85e92b512}" />
+                      </cell>
+                      <cell id="{27e0d25e-8d95-2362-2c08-d7aba333950d}" showlabel="true" locklevel="0" labelid="{547b1464-d1b5-462e-8893-93c532f9e2e6}">
+                        <labels>
+                          <label description="Training Date" languagecode="1033" />
+                          <label description="Date de la formation" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_trainingdate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_trainingdate" disabled="true" uniqueid="{4ecab439-c227-a38b-ecc0-1594b683e246}" />
+                      </cell>
+                      <cell id="{2c889464-de65-6584-6a25-59556cbb0672}" showlabel="true" locklevel="0" labelid="{94c871b5-2a1d-428f-9874-7d5abf510c47}">
+                        <labels>
+                          <label description="Go Live Date" languagecode="1033" />
+                          <label description="Date de mise en service" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_golivedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_golivedate" disabled="true" uniqueid="{7114b12a-347b-e767-4710-d06c979c5a9d}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{92154d2a-267e-2ce5-8c74-2cd91cbab0e9}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{ce914976-1211-4f66-af72-e45c6e19d50e}">
+          <labels>
+            <label description="Vendor" languagecode="1033" />
+            <label description="Fournisseur" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{4a562437-42bc-6193-4d4e-9b07e4d275d5}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{93c94042-cc63-4e3a-ba58-e673a564f221}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8c074d01-14ad-47c8-3acc-6bb271d9a894}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vendor" languagecode="1033" />
+                          <label description="Fournisseur" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_account" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_account" disabled="true" uniqueid="{e6ea12cb-b669-ca26-d785-62e14e9a72de}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{d1c2ce4a-cd13-b74c-6b83-24a026682009}" showlabel="true" locklevel="0" labelid="{92499cdd-fbbf-48c0-872d-f8b509aeb4e7}">
+                        <labels>
+                          <label description="Application Name" languagecode="1033" />
+                          <label description="Nom du logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_applicationname" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_applicationname" disabled="true" uniqueid="{1b1cd9e8-a892-337b-bb70-a8d738c1489b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{FD3DC96E-FE4B-41A0-9E7B-1CF891DE7D32}</DefaultViewId>
+                            <FilterRelationshipName>bdo_bdo_vendor_bdo_softwareapplication_Vendor</FilterRelationshipName>
+                            <DependentAttributeName>bdo_registration.bdo_vendor</DependentAttributeName>
+                            <DependentAttributeType>bdo_vendor</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{44bd9772-739b-49b6-3883-7d289be44740}" showlabel="true" locklevel="0" labelid="{fe2b3b52-fd23-4bdd-abe9-f3e7e053d719}">
+                        <labels>
+                          <label description="Application Version" languagecode="1033" />
+                          <label description="Version du logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_applicationversion" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_applicationversion" disabled="true" uniqueid="{d0b16bbb-5ad4-5a58-22ed-5a5d30a916cd}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{FBC52DBD-4550-4C00-A6C1-49044473E3B4}</DefaultViewId>
+                            <FilterRelationshipName>bdo_bdo_softwareapplication_bdo_softwareversion_Application</FilterRelationshipName>
+                            <DependentAttributeName>bdo_registration.bdo_applicationname</DependentAttributeName>
+                            <DependentAttributeType>bdo_softwareapplication</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{8d548ab4-da52-25d7-4eb9-785cc0b26090}" showlabel="true" locklevel="0" labelid="{66b91708-539b-42fb-9ef3-902749bc09a8}">
+                        <labels>
+                          <label description="Backup at Site?" languagecode="1033" />
+                          <label description="Sauvegarde sur site" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_backupatsite" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_backupatsite" disabled="true" uniqueid="{2964c3e5-a70c-7c18-c8e0-33e32107947a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{280134d1-8939-5ee5-d767-367440dd6160}" showlabel="true" locklevel="0" colspan="2" labelid="{3b1d8372-08cb-45df-b8c3-3d5da45550c8}">
+                        <labels>
+                          <label description="Backup Frequency" languagecode="1033" />
+                          <label description="Fréquence de sauvegarde" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_backupfrequency" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_backupfrequency" disabled="true" uniqueid="{e2a2920a-844a-3647-9360-e9079c86375a}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{efd7f38d-0764-459f-96dd-ea1477593633}" columns="111">
+        <rows>
+          <row>
+            <cell id="{bac3e019-927d-bc20-06a2-5e8b9e6a5532}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3dcd6ae9-2415-c03c-97ab-47b0059eb8d6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{81c19c33-75c8-e0e5-6da3-627b8e1d890e}" showlabel="true" locklevel="0" labelid="{6ac9146f-5bc0-4559-8933-192ddfbd00df}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="bdo_/Forms/Registration.js" libraryUniqueId="{45ab407b-2651-6a4c-d07e-b13acb72122b}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="Registration_OnLoad" libraryName="bdo_/Forms/Registration.js" handlerUniqueId="{1867e67c-3e06-3b49-47d0-9985ba1d5d22}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="5">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Portal - Pharmacy Onboarding Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

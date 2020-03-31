@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="MLConfiguration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a40a880e6e15f6d0" PluginAssemblyId="2507d461-12b1-4ccc-9f97-5647467cc34b" CustomizationLevel="1">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/MLConfiguration-2507D461-12B1-4CCC-9F97-5647467CC34B/MLConfiguration.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="MLConfiguration.PluginConfig, MLConfiguration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a40a880e6e15f6d0" PluginTypeId="6ab0a1ee-7eac-4881-8aff-a588e36db3cf" Name="MLConfiguration.PluginConfig">
+      <FriendlyName>287e906b-16af-463c-8ec3-467697a219a9</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

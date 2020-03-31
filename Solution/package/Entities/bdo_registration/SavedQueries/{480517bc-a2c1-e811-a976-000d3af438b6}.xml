@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{480517bc-a2c1-e811-a976-000d3af438b6}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bdo_name" select="1" preview="1" icon="1">
+        <row name="result" id="bdo_registrationid">
+          <cell name="bdo_name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_primarycontact" width="100" />
+          <cell name="bdo_streetaddress1" width="100" />
+          <cell name="bdo_streetcity" width="100" />
+          <cell name="bdo_region" width="100" />
+          <cell name="bdo_applicationname" width="100" />
+          <cell name="bdo_applicationversion" width="100" />
+          <cell name="bdo_registrationstatus" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="bdo_registration">
+          <attribute name="bdo_streetcity" />
+          <attribute name="bdo_streetaddress1" />
+          <attribute name="bdo_registrationstatus" />
+          <attribute name="bdo_primarycontact" />
+          <attribute name="bdo_applicationversion" />
+          <attribute name="bdo_applicationname" />
+          <attribute name="bdo_region" />
+          <attribute name="bdo_name" />
+          <order attribute="bdo_name" descending="false" />
+          <filter type="and">
+            <condition attribute="bdo_registrationstatus" operator="in">
+              <value>755390005</value>
+              <value>755390006</value>
+              <value>755390004</value>
+              <value>755390008</value>
+            </condition>
+            <condition attribute="bdo_contactresponsibleforregistration" operator="eq" uiname="Portal Filter" uitype="contact" value="{99A64F66-83C2-E811-A976-000D3AF438B6}" />
+          </filter>
+          <attribute name="bdo_registrationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Portal - Engaged Registrations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{c98d4b15-5ac6-e811-a971-000d3af43d1a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bdo_name" select="1" preview="1" icon="1">
+        <row name="result" id="bdo_registrationid">
+          <cell name="bdo_name" width="150" />
+          <cell name="bdo_registrationstatus" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_kickoffmeetingdate" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_installationdate" width="100" />
+          <cell name="bdo_trainingdate" width="100" />
+          <cell name="bdo_implementationchecklistcomplete" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bdo_golivedate" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="bdo_registration">
+          <attribute name="bdo_name" />
+          <attribute name="bdo_registrationstatus" />
+          <order attribute="bdo_name" descending="false" />
+          <filter type="and">
+            <condition attribute="bdo_registrationstatus" operator="not-in">
+              <value>755390008</value>
+              <value>755390000</value>
+              <value>755390001</value>
+            </condition>
+            <condition attribute="bdo_contactresponsibleforregistration" operator="eq" uiname="Portal Filter" uitype="contact" value="{99A64F66-83C2-E811-A976-000D3AF438B6}" />
+            <condition attribute="bdo_registrationtype" operator="eq" value="755390001" />
+          </filter>
+          <attribute name="bdo_trainingdate" />
+          <attribute name="bdo_kickoffmeetingdate" />
+          <attribute name="bdo_installationdate" />
+          <attribute name="bdo_implementationchecklistcomplete" />
+          <attribute name="bdo_golivedate" />
+          <attribute name="bdo_registrationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Portal - Pharmacy Submitted Registrations" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

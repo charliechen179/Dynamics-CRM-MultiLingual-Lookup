@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{997eb525-0ba8-4dd5-a675-2d62b8476b04}</formid>
+    <IntroducedVersion>8.1.0009</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{4a2055b2-5a59-4b5a-b7dc-fb77886069a6}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{286a659b-1589-4dfb-9997-ef5e816eaee9}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{748ee013-877e-4948-af75-688808fa2a57}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="adx_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="adx_name" uniqueid="{aa29626d-52b2-c504-4ed7-5a38dae29821}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ae8ac11-8acd-0e45-aabc-baa31a835149}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="English Field Name" languagecode="1033" />
+                        </labels>
+                        <control id="chi_name_en" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_name_en" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bc2616c-c9de-7cb8-2b34-58d84838b964}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="French Field Name" languagecode="1033" />
+                        </labels>
+                        <control id="chi_name_fr" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_name_fr" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e1d884f-1bdf-4025-9e88-71dc18d4d1d5}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                          <label description="Propriétaire" languagecode="1036" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information" languagecode="1036" />
+    </LocalizedNames>
+  </systemform>
+</forms>

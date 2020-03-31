@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="chi.bdo.contact.Button11.Button.dev1.ActivateClinicalComm.RunWorkflowGrid.Button.CustomAction" Location="Mscrm.SubGrid.contact.MainTab.Collaborate.Controls._children" Sequence="85">
+      <CommandUIDefinition>
+        <Button Command="bdo.contact.Button11.Button.dev1.ActivateClinicalComm.RunWorkflowGrid.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Activate Clinical Comm Service&quot;,&quot;workflowname&quot;:&quot;Activate Contacts Clinical Comm Service&quot;,&quot;callback&quot;:&quot;Xrm.Utility.alertDialog(\&quot;Workflow has been started\&quot;)&quot;,&quot;confirm&quot;:&quot;Click Ok to toggle the selected Contacts Clinc Communication Status&quot;}" Id="bdo.contact.Button11.Button.dev1.ActivateClinicalComm.RunWorkflowGrid.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:bdo.contact.Button11.Button.dev1.ActivateClinicalComm.RunWorkflowGrid.Button.LabelText" Sequence="85" TemplateAlias="o4" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo.contact.Button12.Button.dev1.ActivatePrescribeIT.RunWorkflowGrid.Button.CustomAction" Location="Mscrm.SubGrid.contact.MainTab.Collaborate.Controls._children" Sequence="90">
+      <CommandUIDefinition>
+        <Button Command="bdo.contact.Button12.Button.dev1.ActivatePrescribeIT.RunWorkflowGrid.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Activate PrescribeIT Service&quot;,&quot;workflowname&quot;:&quot;Activate Contacts PrescribeIT Service&quot;,&quot;callback&quot;:&quot;Xrm.Utility.alertDialog(\&quot;Workflow has been started\&quot;)&quot;,&quot;confirm&quot;:&quot;Click Ok to activate the selected Contacts PrescribeIT-RX Status&quot;}" Id="bdo.contact.Button12.Button.dev1.ActivatePrescribeIT.RunWorkflowGrid.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:bdo.contact.Button12.Button.dev1.ActivatePrescribeIT.RunWorkflowGrid.Button.LabelText" Sequence="90" TemplateAlias="o4" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo.contact.Button14.Button.dev1.DeactivatePrescribeITService.RunWorkflowGrid.Button.CustomAction" Location="Mscrm.SubGrid.contact.MainTab.Collaborate.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <Button Command="bdo.contact.Button14.Button.dev1.DeactivatePrescribeITService.RunWorkflowGrid.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Deactivate PrescribeIT Service&quot;,&quot;workflowname&quot;:&quot;Deactivate PrescribeIT Contact Service&quot;,&quot;callback&quot;:&quot;Xrm.Utility.alertDialog(\&quot;Workflow has been started\&quot;)&quot;,&quot;confirm&quot;:&quot;Click Ok to deactivate the selected Clinic Prescribers&quot;}" Id="bdo.contact.Button14.Button.dev1.DeactivatePrescribeITService.RunWorkflowGrid.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:bdo.contact.Button14.Button.dev1.DeactivatePrescribeITService.RunWorkflowGrid.Button.LabelText" Sequence="95" TemplateAlias="o4" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo.contact.Button16.Button.dev1.SendPrivacyInvitation.RunWorkflowGrid.Button.CustomAction" Location="Mscrm.SubGrid.contact.MainTab.Collaborate.Controls._children" Sequence="1">
+      <CommandUIDefinition>
+        <Button Command="bdo.contact.Button16.Button.dev1.SendPrivacyInvitation.RunWorkflowGrid.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Send Privacy Invitation&quot;,&quot;workflowname&quot;:&quot;Send Invitation to Contact for Privacy Training&quot;,&quot;callback&quot;:&quot;Xrm.Utility.alertDialog(\&quot;Workflow has been started\&quot;)&quot;,&quot;confirm&quot;:&quot;Click Ok to send a Privacy Invitation to the selected Contact(s)&quot;}" Id="bdo.contact.Button16.Button.dev1.SendPrivacyInvitation.RunWorkflowGrid.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:bdo.contact.Button16.Button.dev1.SendPrivacyInvitation.RunWorkflowGrid.Button.LabelText" Sequence="1" TemplateAlias="o4" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo.contact.Button9.Button.dev1.SendAgreement.RunWorkflowGrid.Button.CustomAction" Location="Mscrm.SubGrid.contact.MainTab.Collaborate.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Command="bdo.contact.Button9.Button.dev1.SendAgreement.RunWorkflowGrid.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Send Agreement&quot;,&quot;workflowname&quot;:&quot;Send Participation Agreement To Clinic Prescribers&quot;,&quot;callback&quot;:&quot;Xrm.Utility.alertDialog(\&quot;Workflow has been started\&quot;)&quot;,&quot;confirm&quot;:&quot;Click Ok to send a Participation Agreement to the selected Clinic Prescribers&quot;}" Id="bdo.contact.Button9.Button.dev1.SendAgreement.RunWorkflowGrid.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:bdo.contact.Button9.Button.dev1.SendAgreement.RunWorkflowGrid.Button.LabelText" Sequence="0" TemplateAlias="o4" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo.contact.UpdatePractitioner.Button.CustomAction" Location="Mscrm.Form.contact.MainTab.Save.Controls._children" Sequence="71">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:bdo.contact.UpdatePractitioner.Button.Alt" Command="bdo.contact.UpdatePractitioner.Command" Id="bdo.contact.UpdatePractitioner.Button" Image32by32="$webresource:bdo_TelusAPI_32" Image16by16="$webresource:bdo_TelusAPI_16" LabelText="$LocLabels:bdo.contact.UpdatePractitioner.Button.LabelText" Sequence="71" TemplateAlias="isv" ToolTipTitle="$LocLabels:bdo.contact.UpdatePractitioner.Button.ToolTipTitle" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="bdo.contact.Button11.Button.dev1.ActivateClinicalComm.RunWorkflowGrid.Button">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.HideForTabletExperience" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowMultiple" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Activate Contacts Clinical Comm Service" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Click Ok to toggle the selected Contacts Clinc Communication Status" />
+          <StringParameter Value="Xrm.Utility.alertDialog(&quot;Workflow has been started&quot;)" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.contact.Button12.Button.dev1.ActivatePrescribeIT.RunWorkflowGrid.Button">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.HideForTabletExperience" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowMultiple" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Activate Contacts PrescribeIT Service" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Click Ok to activate the selected Contacts PrescribeIT-RX Status" />
+          <StringParameter Value="Xrm.Utility.alertDialog(&quot;Workflow has been started&quot;)" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.contact.Button14.Button.dev1.DeactivatePrescribeITService.RunWorkflowGrid.Button">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.HideForTabletExperience" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowMultiple" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Deactivate PrescribeIT Contact Service" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Click Ok to deactivate the selected Clinic Prescribers" />
+          <StringParameter Value="Xrm.Utility.alertDialog(&quot;Workflow has been started&quot;)" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.contact.Button16.Button.dev1.SendPrivacyInvitation.RunWorkflowGrid.Button">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.HideForTabletExperience" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowMultiple" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Send Invitation to Contact for Privacy Training" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Click Ok to send a Privacy Invitation to the selected Contact(s)" />
+          <StringParameter Value="Xrm.Utility.alertDialog(&quot;Workflow has been started&quot;)" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.contact.Button9.Button.dev1.SendAgreement.RunWorkflowGrid.Button">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+      </EnableRules>
+      <DisplayRules>
+        <DisplayRule Id="Mscrm.HideForTabletExperience" />
+      </DisplayRules>
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowMultiple" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Send Participation Agreement To Clinic Prescribers" />
+          <CrmParameter Value="SelectedControlSelectedItemIds" />
+          <StringParameter Value="Click Ok to send a Participation Agreement to the selected Clinic Prescribers" />
+          <StringParameter Value="Xrm.Utility.alertDialog(&quot;Workflow has been started&quot;)" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.contact.UpdatePractitioner.Command">
+      <EnableRules>
+        <EnableRule Id="bdo.contact.UpdatePractitioner.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CallTelusAPI" Library="$webresource:bdo_/Forms/Contact.js">
+          <CrmParameter Value="FirstPrimaryItemId" />
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="bdo.contact.UpdatePractitioner.EnableRule">
+        <ValueRule Field="bdo_cprid" Value="null" InvertResult="true" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="bdo.contact.Button11.Button.dev1.ActivateClinicalComm.RunWorkflowGrid.Button.LabelText">
+      <Titles>
+        <Title description="Activate Clinical Comm Service" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.Button12.Button.dev1.ActivatePrescribeIT.RunWorkflowGrid.Button.LabelText">
+      <Titles>
+        <Title description="Activate PrescribeIT Service" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.Button14.Button.dev1.DeactivatePrescribeITService.RunWorkflowGrid.Button.LabelText">
+      <Titles>
+        <Title description="Deactivate PrescribeIT Service" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.Button16.Button.dev1.SendPrivacyInvitation.RunWorkflowGrid.Button.LabelText">
+      <Titles>
+        <Title description="Send Privacy Invitation" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.Button9.Button.dev1.SendAgreement.RunWorkflowGrid.Button.LabelText">
+      <Titles>
+        <Title description="Send Agreement" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.UpdatePractitioner.Button.Alt">
+      <Titles>
+        <Title description="Update Practitioner" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.UpdatePractitioner.Button.LabelText">
+      <Titles>
+        <Title description="Update Practitioner" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.contact.UpdatePractitioner.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Send Updated Demographics To Telus" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

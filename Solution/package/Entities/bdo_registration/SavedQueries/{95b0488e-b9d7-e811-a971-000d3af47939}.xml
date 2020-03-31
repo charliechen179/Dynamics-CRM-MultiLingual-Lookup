@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries>
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{95b0488e-b9d7-e811-a971-000d3af47939}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bdo_name" select="1" preview="1" icon="1">
+        <row name="result" id="bdo_registrationid">
+          <cell name="bdo_registrationnumber" width="100" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.accountnumber" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_organizationcprid" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.name" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_organizationlegalname" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.websiteurl" width="100" disableSorting="1" />
+          <cell name="bdo_headofficecprid" width="100" />
+          <cell name="bdo_firstapplicationinstance" width="100" />
+          <cell name="bdo_devkey" width="100" />
+          <cell name="bdo_applicationinstanceid" width="100" />
+          <cell name="bdo_vendorapplicationid" width="100" />
+          <cell name="bdo_applicationversionid" width="100" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_streetaddress1" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_streetaddress2" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_streetcity" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_streetpostalcode" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_streetprovince" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.telephone1" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.fax" width="100" disableSorting="1" />
+          <cell name="bdo_globalapilanguage" width="100" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.emailaddress1" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_stakeholdertype" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.statuscode" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_organizationid" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_prescribeitstatus" width="100" disableSorting="1" />
+          <cell name="a_9d5316a3bec1e811a976000d3af438b6.bdo_communicationstatus" width="100" disableSorting="1" />
+          <cell name="bdo_globallicensingcollege" width="100" />
+          <cell name="a_aa79e7bb4cdde811a96f000d3af45d23.bdo_code" width="100" disableSorting="1" />
+          <cell name="bdo_globallicensingstatus" width="100" />
+          <cell name="a_36807f18c4c0e811a976000d3af438b6.firstname" width="100" disableSorting="1" />
+          <cell name="a_36807f18c4c0e811a976000d3af438b6.lastname" width="100" disableSorting="1" />
+          <cell name="a_36807f18c4c0e811a976000d3af438b6.middlename" width="100" disableSorting="1" />
+          <cell name="a_36807f18c4c0e811a976000d3af438b6.bdo_salutationglobal" width="100" disableSorting="1" />
+          <cell name="a_36807f18c4c0e811a976000d3af438b6.bdo_orgrole" width="100" disableSorting="1" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+        <entity name="bdo_registration">
+          <attribute name="bdo_registrationnumber" />
+          <order attribute="bdo_registrationnumber" descending="false" />
+          <filter type="and">
+            <condition attribute="bdo_registrationstatus" operator="eq" value="755390010" />
+          </filter>
+          <attribute name="bdo_vendorapplicationid" />
+          <attribute name="bdo_devkey" />
+          <attribute name="bdo_applicationversionid" />
+          <attribute name="bdo_applicationinstanceid" />
+          <link-entity alias="a_36807f18c4c0e811a976000d3af438b6" name="contact" from="contactid" to="bdo_contactresponsibleforregistration" link-type="outer" visible="false">
+            <attribute name="bdo_salutationglobal" />
+            <attribute name="bdo_orgrole" />
+            <attribute name="middlename" />
+            <attribute name="lastname" />
+            <attribute name="firstname" />
+          </link-entity>
+          <link-entity name="account" from="accountid" to="bdo_organization" visible="false" link-type="outer" alias="a_9d5316a3bec1e811a976000d3af438b6">
+            <attribute name="bdo_organizationlegalname" />
+            <attribute name="bdo_organizationcprid" />
+            <attribute name="accountnumber" />
+            <attribute name="name" />
+            <attribute name="websiteurl" />
+            <attribute name="bdo_streetprovince" />
+            <attribute name="bdo_streetpostalcode" />
+            <attribute name="bdo_streetcity" />
+            <attribute name="bdo_streetaddress2" />
+            <attribute name="bdo_streetaddress1" />
+            <attribute name="telephone1" />
+            <attribute name="fax" />
+            <attribute name="statuscode" />
+            <attribute name="emailaddress1" />
+            <attribute name="bdo_stakeholdertype" />
+            <attribute name="bdo_organizationid" />
+            <attribute name="bdo_prescribeitstatus" />
+            <attribute name="bdo_communicationstatus" />
+          </link-entity>
+          <attribute name="bdo_headofficecprid" />
+          <attribute name="bdo_firstapplicationinstance" />
+          <attribute name="bdo_globalapilanguage" />
+          <attribute name="bdo_globallicensingstatus" />
+          <attribute name="bdo_globallicensingcollege" />
+          <link-entity alias="a_aa79e7bb4cdde811a96f000d3af45d23" name="bdo_licensingcollege" from="bdo_licensingcollegeid" to="bdo_globallicensingcollege" link-type="outer" visible="false">
+            <attribute name="bdo_code" />
+          </link-entity>
+          <attribute name="bdo_registrationid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Telus Export" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

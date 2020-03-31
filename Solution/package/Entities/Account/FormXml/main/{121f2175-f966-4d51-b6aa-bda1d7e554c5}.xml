@@ -1,0 +1,2615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{121f2175-f966-4d51-b6aa-bda1d7e554c5}</formid>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form showImage="true" shownavigationbar="true" maxWidth="1900">
+      <ancestor id="{8448b78f-8f42-454e-8e2a-f8196b0419af}" />
+      <hiddencontrols>
+        <data id="address1_addressid" datafieldname="address1_addressid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="address2_addressid" datafieldname="address2_addressid" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <tabs>
+        <tab name="SUMMARY_TAB" id="{3b0b63a9-d379-689a-0ec3-e71eb4c6a841}" IsUserDefined="0" showlabel="true" expanded="true" locklevel="0" labelid="{b4f16e92-3508-4342-8a7c-e98a97eebd4b}">
+          <labels>
+            <label description="Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section name="ACCOUNT_INFORMATION" showlabel="true" showbar="false" id="{0eb92e6c-bcb8-0d52-a188-d81543ddb7cd}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" labelid="{d3ec5c4d-6ba8-4296-9f89-138b10d8bc49}">
+                  <labels>
+                    <label description="ACCOUNT INFORMATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c7b2606c-7775-b548-9853-a4bb3d451d3d}" showlabel="true" locklevel="0" labelid="{30de5ca2-e886-4902-92ac-6b5b4cd6988c}">
+                        <labels>
+                          <label description="Account Number" languagecode="1033" />
+                          <label description="Numéro de compte" languagecode="1036" />
+                        </labels>
+                        <control id="accountnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="accountnumber" disabled="true" uniqueid="{d92410ad-0867-9ec5-4b6b-08a8a7db4808}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9a73a6a-26a8-4813-4947-c3763838d60a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Organization CPR ID" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_organizationcprid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationcprid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9b68810-853d-a3b2-0a2e-12169669aece}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vendor ID" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_vendorid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_vendorid" disabled="false" uniqueid="{96a521b6-4cb3-0b82-64c2-7d8dd3264bdc}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0e82a7e-5683-d90c-308a-0d779377ea8a}" showlabel="true" labelid="{c5cf0152-3bd7-4dec-93b6-848f2ae35e23}">
+                        <labels>
+                          <label description="Account Name" languagecode="1033" />
+                          <label description="Nom usuel de la clinique" languagecode="1036" />
+                        </labels>
+                        <control id="name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="name" disabled="false" uniqueid="{a6e85364-690a-cd05-8441-cdbc22573e13}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ecdc523-948b-21d7-c662-ad03b41db459}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="License No." languagecode="1033" />
+                        </labels>
+                        <control id="bdo_organizationid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationid" disabled="false" uniqueid="{bd3ae036-a416-290e-d4e1-0a5399d39444}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22c64aa0-ce1a-bc0e-072d-e5c0414962e0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Organization Legal Name" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_organizationlegalname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationlegalname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3441a91e-47c5-672c-7a20-902d6baa9036}" showlabel="true" labelid="{a83c56f1-d116-4f50-8ede-610aa68532c1}" locklevel="0">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                          <label description="Téléphone au travail" languagecode="1036" />
+                        </labels>
+                        <control id="telephone1" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="telephone1" disabled="false" uniqueid="{8b33e15d-730d-cd8b-10ba-de5d95d6d67c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{14dbd73c-2600-0c1a-acc2-e43063c18949}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Phone Ext" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_extphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_extphone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8b98a55e-a345-b20e-d46e-801e79d5c1c1}" showlabel="true" labelid="{b14d688c-914a-4eb9-952c-4e45404eceef}" locklevel="0">
+                        <labels>
+                          <label description="Fax" languagecode="1033" />
+                          <label description="Télécopie" languagecode="1036" />
+                        </labels>
+                        <control id="fax" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="fax" disabled="false" uniqueid="{11b5a519-be69-3dc7-a3e1-85e057dd3a0b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9088dd65-b072-9290-8de7-800960c8ca5d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="emailaddress1" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="emailaddress1" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8861474c-39a1-c645-0376-5146106a7c93}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Preferred Language" languagecode="1033" />
+                          <label description="Langue de préférence" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_preferredlanguage" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_preferredlanguage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e6441984-4343-813a-aa7e-e2747ad35390}" showlabel="true" labelid="{100dbd14-6254-4ad2-b11a-dde4000c8a0c}">
+                        <labels>
+                          <label description="Website" languagecode="1033" />
+                          <label description="Site Web" languagecode="1036" />
+                        </labels>
+                        <control id="websiteurl" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="websiteurl" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68484cb3-b34d-4ae1-b1e5-33ea8c475422}" showlabel="true" locklevel="0" labelid="{779a8bc0-f215-4b96-a09f-85910f0818b7}">
+                        <labels>
+                          <label description="Health Region" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_healthregion" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_healthregion" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="SUMMARY_TAB_section_10" showlabel="true" showbar="false" locklevel="0" id="{a31d2a99-9b9b-8d5d-5ceb-4826b7eaa8e5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Associated Accounts" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{87DE203E-B03C-44CC-8B06-438202B82553}" labelid="{65a59f22-2d25-4203-8cca-d38f88cca518}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Head Office" languagecode="1033" />
+                          <label description="Compte parent" languagecode="1036" />
+                        </labels>
+                        <events>
+                          <event name="setadditionalparams" application="true" active="true">
+                            <InternalHandlers>
+                              <Handler functionName="AppCommon.Account.Instance.parentaccountid_setadditionalparams" libraryName="AppCommon/Account/Account_main_system_library.js" handlerUniqueId="c5cc10db-58ac-4611-a529-c1ff599707b1" enabled="true" passExecutionContext="true" />
+                            </InternalHandlers>
+                          </event>
+                        </events>
+                        <control id="parentaccountid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="parentaccountid" uniqueid="{d61e3d67-d531-58ed-3868-633c37c0b94a}" disabled="false">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{6B0E0D65-AA45-E911-A987-000D3AF438B6}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d24758b1-b425-0578-8dc0-8ce9009c8e9a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Hub Account" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_hub" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_hub" disabled="false" uniqueid="{c99120d2-ec00-747a-1535-80828c8666a4}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{C6CE26CE-1844-E911-A97E-000D3AF475A9}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="MapSection" showlabel="false" showbar="false" id="{e1c565b8-7db7-4a44-b4e7-281614ff849b}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" labelid="{f3bba6bb-1b51-4537-9947-ace34b54a7fb}">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7c550a71-c8f5-469b-a221-cc4563525b70}" showlabel="false" rowspan="8" colspan="1" auto="false" labelid="{7fbca95d-b228-406a-ab4d-9ed6d38910da}">
+                        <labels>
+                          <label description="Map View" languagecode="1033" />
+                        </labels>
+                        <control id="mapcontrol" classid="{62B0DF79-0464-470F-8AF7-4483CFEA0C7D}">
+                          <parameters>
+                            <AddressField>address1_composite</AddressField>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="42%">
+              <sections>
+                <section name="SOCIAL_PANE_TAB" showlabel="false" showbar="false" id="{7a073b7c-5422-2418-3d26-b2a7eb290832}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Top" locklevel="0" celllabelalignment="Left" labelid="{4177a092-051f-415b-836b-7e02a1200268}">
+                  <labels>
+                    <label description="SOCIAL PANE" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7e87ab43-7321-21c7-5704-24c5c38000c6}" showlabel="false" rowspan="23" auto="false" colspan="1" labelid="{e0665b2c-ca15-4172-913a-a7e7f21347b0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="25%">
+              <sections>
+                <section name="SUMMARY_TAB_section_11" showlabel="false" showbar="false" locklevel="0" id="{de880866-3896-0302-a858-e1314beb204a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{98127672-296d-2c71-dc14-60a93965a9a9}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Language Preference" languagecode="1033" />
+                          <label description="Langue de préférence" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_languagepreference" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_languagepreference" disabled="false" uniqueid="{92a15762-15da-606c-1c60-1ae4696c3065}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{031c7768-5844-25c9-45ec-8bdd1143591b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Account Registration" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_accountregistration" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_accountregistration" disabled="true" uniqueid="{68b2c925-870e-6c92-64ce-d7a2a208ecae}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{09DCB191-1702-4E03-8F2E-E7EB9A31C533}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{de08da25-9582-e1d0-0a79-cb6211a65dc1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Responsible" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_responsible" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_responsible" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="SUMMARY_TAB_section_9" showlabel="false" showbar="false" locklevel="0" id="{dae029b1-1e71-94c6-3ed4-ddb2219c3b05}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Infoway Services" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c1589918-d347-261e-bc19-923612a8c946}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PrescribeIT-RX Status" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_prescribeitstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_prescribeitstatus" disabled="true" uniqueid="{826ce17b-955c-3a04-b65d-8a27c08b9d39}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ec348122-6e86-1906-21dc-9c95a7601e3c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinical Communication Status" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_communicationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_communicationstatus" disabled="true" uniqueid="{1669d652-25dc-5987-2866-5b44146e691d}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4bae2c94-e673-c6a4-09e3-d4d7a936916e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PrescribeIT Contract" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_prescribeitcontract" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_prescribeitcontract" disabled="true" uniqueid="{5e74d02c-a980-bb58-57dd-2a9d83762c7b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{308756eb-ee9c-3d46-c85d-6eaad2714b73}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Date Activated" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_dateactivated" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_dateactivated" disabled="true" uniqueid="{149b68e0-a8dc-ce14-1534-0e15cd073961}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="SUMMARY_TAB_section_8" showlabel="false" showbar="false" locklevel="0" id="{ad750e9e-9c54-6a25-a2d5-8856a2249662}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4202b080-25bb-0268-1825-ebc26c6730d2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Signatures Outstanding" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_calcpressign" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="bdo_calcpressign" disabled="false" uniqueid="{ab58728a-ba19-6d25-b037-3cbd325bc0c4}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{641de5c5-5b73-5a90-9edb-0664534b2c84}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Remaining ID" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_calcpresid" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="bdo_calcpresid" disabled="false" uniqueid="{794c0649-5a1d-a285-007c-23ab4e70546a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b07dd7c9-ce7d-e8ad-e3ac-98aa6ba48c9d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Remaining Privacy" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_calcpresprivacy" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="bdo_calcpresprivacy" disabled="false" uniqueid="{5c842eda-02a3-77e5-3b63-edcc3ee79bbd}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ad237cdc-6e45-1964-0d82-347acd539574}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Remaining License Validation" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_calcpresvalid" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="bdo_calcpresvalid" disabled="false" uniqueid="{1191d2b3-976d-b9d6-dce7-9a185e001069}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="SUMMARY_TAB_section_6" showlabel="false" showbar="false" locklevel="0" id="{d4c3ee9c-ba71-5cdb-31be-2aa505750472}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" height="auto" labelid="{ba6dbcb6-2fbd-41da-b769-de4e4fcff962}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{634c16c5-6385-4ad5-403b-b8dd9ec78981}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Registration Status" languagecode="1033" />
+                          <label description="État de l’inscription" languagecode="1036" />
+                        </labels>
+                        <control id="RegistrationStatus" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="bdo_accountregistration" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="bdo_registration"&gt;1feb4da7-d694-4499-8979-c3a9e3dc2d8f&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b187688c-8410-5990-16ec-e153968ab583}" showlabel="true" locklevel="0" labelid="{2b8dbfcf-b331-404a-8fb9-dc4d0dd52882}">
+                        <labels>
+                          <label description="Primary Contact" languagecode="1033" />
+                          <label description="Contact principal" languagecode="1036" />
+                        </labels>
+                        <control id="primarycontactid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="primarycontactid" disabled="false" uniqueid="{acd09272-ac9d-8b6d-9d40-e82a6bac08b8}">
+                          <parameters>
+                            <DependentAttributeType>account</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A2D479C5-53E3-4C69-ADDD-802327E67A0D}</DefaultViewId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0F664FFF-E39E-4676-9191-CBA16972B21D}" colspan="1" showlabel="false" labelid="{4ff353d2-069d-426d-bbd9-aad33c64a234}">
+                        <labels>
+                          <label description="Primary Contact" languagecode="1033" />
+                          <label description="Contact principal" languagecode="1036" />
+                        </labels>
+                        <control id="contactquickform" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="primarycontactid" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;29DE27BC-A257-4F29-99CF-BAB4A84E688F&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{718e6db6-60e2-e58a-7c9a-d0450c68846c}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="DETAILS_TAB_section_6" showlabel="true" showbar="false" locklevel="0" id="{e201b9ce-c3d5-c922-dba5-528c25066940}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Top" height="auto" labelid="{5024ad13-90b7-4333-ad55-30ff96e862fb}">
+                  <labels>
+                    <label description="Description" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a4a726a2-8e3e-79d0-02c3-0a04a6b71089}" showlabel="false" locklevel="0" rowspan="3" auto="true" labelid="{6fd1297b-d079-40e4-a04d-647e3e6776a9}">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="description" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_7" id="{4a6d2c02-d18e-0b02-0253-cd9a15d7b6a5}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Contacts and Organization Roles" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_8_section_1" showlabel="true" showbar="false" locklevel="0" id="{21b89990-1626-574d-c705-eb7a35ab2691}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Contacts" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8e24c7e3-6a40-5abb-eadb-254eba5478e2}" showlabel="true" colspan="1" auto="false" rowspan="8" labelid="{a021a915-e299-4ea6-86af-93a9a0dc84d5}">
+                        <labels>
+                          <label description="CONTACTS" languagecode="1033" />
+                          <label description="Cartes d'action" languagecode="1036" />
+                        </labels>
+                        <control id="Contacts" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{843ad921-793a-aa16-c411-0312d7990b8d}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001004}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>contact_customer_accounts</RelationshipName>
+                            <TargetEntityType>contact</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001004},{F9C90E36-986B-E911-A97F-000D3AF43D1A},{AF0A9ED4-976B-E911-A97F-000D3AF43D1A}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="SUMMARY_TAB_section_7" showlabel="true" showbar="false" locklevel="0" id="{97832936-edb6-bd71-2640-c2c0c68c5a0e}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Organization Roles" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{dbe42457-2b80-a3cb-1036-1d7c13a23991}" showlabel="true" colspan="1" auto="false" rowspan="8">
+                        <labels>
+                          <label description="Roles" languagecode="1033" />
+                          <label description="Cartes d'action" languagecode="1036" />
+                        </labels>
+                        <control id="Roles" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{b859bbe1-a325-c5d2-7d1b-5135c3a7cc18}">
+                          <parameters>
+                            <ViewId>{0E1B192B-D3D3-E811-A974-000D3AF42A5A}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>bdo_account_bdo_role_Account</RelationshipName>
+                            <TargetEntityType>bdo_role</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <ViewIds>{0E1B192B-D3D3-E811-A974-000D3AF42A5A},{1894A8DB-FA40-E911-A97E-000D3AF475A9}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>5</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_8_section_3" showlabel="true" showbar="false" locklevel="0" id="{ae30e64d-aea0-15a6-80c7-b980d63a5301}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Primary Contact" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e737c5d0-ca0b-409b-43a4-68d7a04daeee}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create New Primary Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createnewprimarycontact" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createnewprimarycontact" disabled="false" uniqueid="{4ec612a3-b996-065e-cb20-aac83b7e37d7}" />
+                      </cell>
+                      <cell id="{3cd821ce-54d4-6cd3-6b8c-46a875411c17}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationprimarycontactfirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationprimarycontactfirstname" disabled="false" uniqueid="{d6014ba7-e614-1571-6252-0712dbe99d22}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9cdceb01-1b03-71ca-76dd-4a5ee9751112}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Existing Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_existingcontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_existingcontact" disabled="false" />
+                      </cell>
+                      <cell id="{e0a54078-4731-e710-6d4a-2d06a4598dcc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationprimarycontactlastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationprimarycontactlastname" disabled="false" uniqueid="{2e3b6062-acd9-5161-7200-5d4359ebbc41}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ced64673-7909-b9de-6c41-3a29810441b3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create Primary Contact Role" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createprimarycontactrole" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createprimarycontactrole" disabled="false" uniqueid="{76b353ab-754b-b250-3cc1-4865985dc075}" />
+                      </cell>
+                      <cell id="{1015a8b2-d0d5-b21e-1413-6a831144e0c6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationprimarycontactemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_organizationprimarycontactemail" disabled="false" uniqueid="{5bd76c53-26c2-748d-a5a5-e9292751d102}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a6db78c-5ee3-db43-1b8a-d86062e2ee90}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{cd26a794-ed45-ed62-0d6e-6b9ba371e35a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationprimarycontactphone" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bdo_organizationprimarycontactphone" disabled="false" uniqueid="{e002034d-429e-50d7-5e9e-0a2a35c8989b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{564ed0d0-00b2-25e7-3447-45b57815a789}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3b316ca5-4d7b-8c72-8ec5-8c93e00a5b14}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Ext" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_extprimarycontact" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_extprimarycontact" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_8_section_4" showlabel="true" showbar="false" locklevel="0" id="{a7482841-9a8d-2d4e-518a-9e807ea62e94}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Health Information Custodian" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e8480865-99d9-47ac-98a7-b1838c5b514e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create New HIC Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createnewhiccontact" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createnewhiccontact" disabled="false" uniqueid="{e6012352-32e0-5c69-b427-8ad1edb6b57e}" />
+                      </cell>
+                      <cell id="{02a115d4-b92b-1115-7de0-e1e3012a4a45}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="HIC First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_hicfirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_hicfirstname" disabled="false" uniqueid="{eeeb1276-674c-a0ea-de94-8932384abd58}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32d4a685-9de9-9e4c-6874-8368674d37c5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Existing HIC Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_existinghiccontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_existinghiccontact" disabled="false" />
+                      </cell>
+                      <cell id="{9e00b633-404b-222e-e94d-61705da051ab}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="HIC Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_hiclastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_hiclastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e1543184-4782-ddd0-c5b6-923c22245498}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create HIC Role" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createhicrole" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createhicrole" disabled="false" uniqueid="{848732ad-744d-a433-7742-58b86112c62d}" />
+                      </cell>
+                      <cell id="{de10456b-b0c2-5ee4-27d8-271257e14327}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="HIC Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_hicemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_hicemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80ddaa38-8e55-d0b9-2e33-3747a57c03a8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{a28c2715-cd30-168e-5004-206b56a318de}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="HIC Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_hicphone" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bdo_hicphone" disabled="false" uniqueid="{41ed70e9-6e14-e307-e57a-c0121c3c62e7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{829b8b47-97d6-b81c-27e1-5dae1cca9b1e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{70851e74-b476-b00a-81aa-06c42442eeb1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="HIC phone Ext" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_exthicphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_exthicphone" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_8_section_6" showlabel="true" showbar="false" locklevel="0" id="{2e9d3530-8254-137d-b72d-1b30d4c0765e}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Pharmacy Owner" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{3a255bde-2e99-4d02-adc3-0265e4616190}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create New Pharmacy Owner Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createnewpharmacyownercontact" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createnewpharmacyownercontact" disabled="false" uniqueid="{33e677ee-54d8-ed02-e2a6-309852112967}" />
+                      </cell>
+                      <cell id="{7cea20e9-e4b6-6d1a-6385-84e8c5192455}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownerfirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_ownerfirstname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5e177933-9708-abb9-0b06-9b5c5296483b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Existing Pharmacy Owner Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_existingpharmacyownercontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_existingpharmacyownercontact" disabled="false" uniqueid="{ad092aac-8e55-8081-12a3-7885c541cc2a}" />
+                      </cell>
+                      <cell id="{0ac2843a-6975-748c-24a2-94505837c135}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownerlastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_ownerlastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b337e20e-e1dd-d1c9-0d05-e313b0242ae4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create Pharmacy Owner Role" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createpharmacyownerrole" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createpharmacyownerrole" disabled="false" uniqueid="{66b18a8b-3e54-a7be-db37-41d14c2a0582}" />
+                      </cell>
+                      <cell id="{e5eeac1c-4928-cc7a-b3bc-0ded05dac19b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_owneremail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_owneremail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2e679e1e-22ac-3ce2-4e4c-d0dbeec28530}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Agreement Status" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_owneragreementstatus" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_owneragreementstatus" disabled="false" uniqueid="{d8b08896-1d88-5a6b-5699-a594bd015021}" />
+                      </cell>
+                      <cell id="{5321ebe5-99e7-5460-7c05-24b4cacc08c3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownerphone" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bdo_ownerphone" disabled="false" uniqueid="{642b66aa-78e6-abca-cca3-21d698c734ba}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6b4eb15e-c610-3bc5-93be-acddb768a532}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Manual Agreement (Owner)" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_manualagreementowner" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_manualagreementowner" disabled="false" />
+                      </cell>
+                      <cell id="{3b734c79-a6ee-2b1e-4aa0-e11a47b09a44}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Phone Ext" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_extownerphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_extownerphone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{050b1183-7b49-3e63-8dc2-c1c25a9d7285}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Send Agreement" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_sendagreement" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_sendagreement" disabled="false" uniqueid="{c4ee9411-a62b-1539-8b59-ca5c121776c0}" />
+                      </cell>
+                      <cell id="{50cc4911-cc0e-0454-9923-630520274633}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Contact Privacy Owner" languagecode="1033" />
+                        </labels>
+                        <control id="privacyOwner" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="bdo_existingpharmacyownercontact" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;53fe9d32-31ad-4828-9e84-6efaa3f15924&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_8_section_5" showlabel="true" showbar="false" locklevel="0" id="{2896b39b-294c-a10c-d265-10ad9b7e1497}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Licensee Contact" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c90e399e-74e7-92bd-ce2c-b31c4b9e8aa3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create New Licensee Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createnewlicenseecontact" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createnewlicenseecontact" disabled="false" uniqueid="{aae271ba-4e10-9101-37c2-972c422967dc}" />
+                      </cell>
+                      <cell id="{22b403a6-6a35-bbd3-35b4-46a3b93b9ae7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseefirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_licenseefirstname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ebc010a-6096-c541-d590-bb0632d17338}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Existing Licensee Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_existinglicenseecontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_existinglicenseecontact" disabled="false" />
+                      </cell>
+                      <cell id="{353ed479-5edd-c15c-6c2a-022502b427b7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseelastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_licenseelastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80733048-6c62-7996-c679-4183ce88933d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create Licensee Role" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_createlicenseerole" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_createlicenseerole" disabled="false" uniqueid="{47ac052a-71ec-c55b-8a8d-03e328c62a16}" />
+                      </cell>
+                      <cell id="{40c013e1-ad0e-2ad8-a4ce-93616d163b93}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseeemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_licenseeemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5693dce-b8c2-1bbd-70e9-a2be28cee2d4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Agreement Status" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_licenseeagreementstatus" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_licenseeagreementstatus" disabled="false" uniqueid="{eb20c171-93c2-5634-ae3c-e544616eab9a}" />
+                      </cell>
+                      <cell id="{50228ae1-1b71-5478-9c0e-44bd00de10d4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseephone" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bdo_licenseephone" disabled="false" uniqueid="{6d0ab6a0-9095-ccb2-0c78-3e14d9ec5537}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9177a9bd-63dc-a465-942b-1b98685996d3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Manual Agreement (Licensee)" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_manualagreementlicensee" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_manualagreementlicensee" disabled="false" />
+                      </cell>
+                      <cell id="{8acc65ac-6124-7e96-d360-ed06e900e3d3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Phone Ext" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_extlicenseephone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_extlicenseephone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e671ed18-1531-1cbb-3400-ad242eb85ae6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d64b164c-d5e7-3227-5919-0d6cdce22e04}" showlabel="false" colspan="1" auto="false">
+                        <labels>
+                          <label description="Privacy Licensee" languagecode="1033" />
+                        </labels>
+                        <control id="privacyLicensee" classid="{5C5600E0-1D6E-4205-A272-BE80DA87FD42}" datafieldname="bdo_existinglicenseecontact" disabled="false">
+                          <parameters>
+                            <QuickForms>&lt;QuickFormIds&gt;&lt;QuickFormId entityname="contact"&gt;53fe9d32-31ad-4828-9e84-6efaa3f15924&lt;/QuickFormId&gt;&lt;/QuickFormIds&gt;</QuickForms>
+                            <ControlMode>Edit</ControlMode>
+                            <DisplayAsCustomer360Tile>false</DisplayAsCustomer360Tile>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_5" id="{b582ad91-65cb-3b2d-d167-0836e1d31453}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Addresses" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section name="ADDRESS" showlabel="true" locklevel="0" showbar="false" id="{cc0fe06e-4b5f-4648-A62d-84d1514e1fc5}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelposition="Left" labelid="{ff2f768d-a12d-4281-923c-b3a5af1a91a6}">
+                  <labels>
+                    <label description="ADDRESS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e694b7ab-694a-495d-e45c-7ba1794dda11}" showlabel="true" locklevel="0" labelid="{04d21676-fc1c-437f-a940-5f8292971f70}">
+                        <labels>
+                          <label description="Unit Number" languagecode="1033" />
+                          <label description="Unité" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetaddress2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetaddress2" disabled="false" uniqueid="{0063126d-8d5b-509c-b16b-a4603b4c5702}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{107d9a42-db25-7c34-d1b0-317d9be14160}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Number" languagecode="1033" />
+                          <label description="Numéro de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d783d2ba-245b-85d8-6c43-be932b7b2096}" showlabel="true" locklevel="0" labelid="{ddf024c6-e56e-4b2e-9d51-a5e7b19c6b0c}">
+                        <labels>
+                          <label description="Street Name" languagecode="1033" />
+                          <label description="Nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetaddress1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetaddress1" disabled="false" uniqueid="{d0a60236-8c41-78d2-e4e4-43e3e5e18ac9}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9846573-c8bc-d5db-4e3d-93cd5571e4c3}" showlabel="true" locklevel="0" labelid="{a223962b-6abf-4912-be74-e7dab0e17a7b}">
+                        <labels>
+                          <label description="Street City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetcity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5b7d994c-c3e1-9617-dd4a-ce576b4ac897}" showlabel="true" locklevel="0" labelid="{0794b8e4-f189-4cf9-b26f-66166e0c71a7}">
+                        <labels>
+                          <label description="Street Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_streetprovince" disabled="false" uniqueid="{d33201ca-802d-7665-1be8-e7ba957da612}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{93ce0909-59a0-8ac8-4a91-4185b7a154c8}" showlabel="true" locklevel="0" labelid="{cdd35474-222a-4bcd-977f-d051ea9d8fc7}">
+                        <labels>
+                          <label description="Street Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetpostalcode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_5_section_3" showlabel="true" showbar="false" locklevel="0" id="{e05b2bb6-b54d-8148-aaa3-b486e8e82c42}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Mailing Address" languagecode="1033" />
+                    <label description="Adresse postale" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b809ba35-8aab-a227-2b2e-62438dba1495}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Address Same As Street" languagecode="1033" />
+                          <label description="Même adresse que l’adresse municipale" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingaddresssameasstreet" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_mailingaddresssameasstreet" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a0140832-373a-90ab-9c59-1328ddec29ac}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Unit Number" languagecode="1033" />
+                          <label description="Unité" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingstreet2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingstreet2" disabled="false" uniqueid="{80a18ae5-1be2-0ce9-3925-d97a8209a3dc}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3bb50a2d-d07c-bb4b-1870-0b939bb3144b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Street Number" languagecode="1033" />
+                          <label description="Numéro de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingstreetnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingstreetnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72a6279c-b011-eb92-bda9-62180d26037e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Street Name" languagecode="1033" />
+                          <label description="Nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingstreet1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingstreet1" disabled="false" uniqueid="{62acb270-a354-2ce5-cd51-c34a310ea26a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38d06a70-b1ca-6c83-aeb2-90422560419a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingcity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aecb7da9-d4cc-84ee-8c6c-231d4b6a78a1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mailingprovince" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebd5881b-585d-29d7-8728-65142e8b2dd0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingpostalcode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section name="tab_5_section_2" showlabel="true" showbar="false" locklevel="0" id="{563600c6-422c-2753-8c76-2ec03a068215}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Billing Address" languagecode="1033" />
+                    <label description="Adresse de facturation" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ee4aecb8-5e85-8dd0-4bc9-ec1dc2a40ab3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Address Same As Street" languagecode="1033" />
+                          <label description="Même adresse que l’adresse municipale" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingaddresssameasstreet" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_billingaddresssameasstreet" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c5ea7547-c81e-7a55-62b1-0cda813bb8cc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Unit Number" languagecode="1033" />
+                          <label description="Unité" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingstreet2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreet2" disabled="false" uniqueid="{31678e1b-224e-0835-426a-25b86cbbc3db}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6a70a5d-da2e-6e61-8c07-0731e64ca996}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Street Number" languagecode="1033" />
+                          <label description="Numéro de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingstreetnumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreetnumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e14493e7-a968-5953-bed5-cd2a60da382d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Street Name" languagecode="1033" />
+                          <label description="Nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingstreet1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreet1" disabled="false" uniqueid="{22eab6c7-6b2b-db3b-6e82-51a5ed9c8baa}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{03c01268-0b7e-e237-ed86-32daab8335e2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingcity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{22bc37d3-6be9-72b1-276c-14043294e428}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_billingprovince" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0db9a099-e4ee-a73e-2e7e-d8e91718e529}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingpostalcode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Connections" id="{0e354e46-c0b2-5d9b-b39d-613e229c8e1b}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{98939279-497d-447e-8660-c05f24dc32ab}">
+          <labels>
+            <label description="Connections" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_3_section_1" showlabel="false" showbar="false" locklevel="0" id="{dbb8b865-1914-6ac8-2684-dc42e80e5d32}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" labelid="{f640be32-3416-48eb-b628-22d87c7b2194}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d6eb8d90-d1da-a55a-6d20-90408e19adac}" showlabel="true" colspan="1" auto="false" rowspan="7" labelid="{98090d90-bb30-415e-90e9-60bdbadbaf3a}">
+                        <labels>
+                          <label description="Connections" languagecode="1033" />
+                          <label description="Cartes d'action" languagecode="1036" />
+                        </labels>
+                        <control id="Connections" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{b59cd4d1-ca13-5b1e-54c6-b8ed7c97e2d2}">
+                          <parameters>
+                            <ViewId>{7C0E0725-CCD9-4525-9313-665FD075652F}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>account_connections1</RelationshipName>
+                            <TargetEntityType>connection</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{7C0E0725-CCD9-4525-9313-665FD075652F}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="ChildAccounts" showlabel="true" showbar="false" locklevel="0" id="{1e0e4517-ba6b-1540-53a9-09647d67443a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{ec624c53-30f5-4069-9809-f82bfbb4c1a6}">
+                  <labels>
+                    <label description="CHILD ACCOUNTS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8b1d7a7a-972c-78c1-d287-82ec5b33d167}" showlabel="false" colspan="1" auto="false" rowspan="12" labelid="{710ad197-bbc4-4286-9741-37e06a2a611d}">
+                        <labels>
+                          <label description="Child Accounts" languagecode="1033" />
+                          <label description="Cartes d'action" languagecode="1036" />
+                        </labels>
+                        <control id="ChildAccounts" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" uniqueid="{4b253aca-c4a8-24c2-38d0-a4c2e18be133}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001002}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>account_parent_account</RelationshipName>
+                            <TargetEntityType>account</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001002},{00000000-0000-0000-00AA-000010001001}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{74A622C0-5193-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="SpokeAccounts" showlabel="true" showbar="false" locklevel="0" id="{72c4aa12-64b3-b888-cb3b-6dee99572455}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="SPOKE ACCOUNTS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{21cd0841-a74d-d7c2-257b-5b203ab421dc}" showlabel="false" colspan="1" auto="false" rowspan="12">
+                        <labels>
+                          <label description="SPOKE ACCOUNTS" languagecode="1033" />
+                          <label description="Cartes d'action" languagecode="1036" />
+                        </labels>
+                        <control id="SpokeAccounts" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{6041a70d-3d78-a966-e374-d0515d572e62}">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001001}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>bdo_account_account_Hub</RelationshipName>
+                            <TargetEntityType>account</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001001}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{74A622C0-5193-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_9" id="{a8898d02-b20e-4c65-ad19-54d0c58ec999}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Province Specific Requirements" languagecode="1033" />
+            <label description="Exigence de la province/du territoire" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section name="tab_9_section_1" showlabel="false" showbar="false" locklevel="0" id="{494aa957-b121-072a-cd94-e1bd9b2e440d}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="No Title" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4d3dbb9a-46c3-0d8e-7284-e6d8160d0e6d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Organization WDFA Key" languagecode="1033" />
+                          <label description="Clé WDFA de l’organisation" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationwdfakey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationwdfakey" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2070b8e2-9969-da1b-8a03-bd20154ce94e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PORA Acceptance Date" languagecode="1033" />
+                          <label description="Date d’acceptation de la pORA" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_poraacceptancedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_poraacceptancedate" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="tab_9_section_2" showlabel="false" showbar="false" locklevel="0" id="{826679a5-8358-7247-2c9d-9e3228cb2267}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="No Title" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{55ac28e9-668e-a869-ee94-8a684ed4927a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PIA Number" languagecode="1033" />
+                          <label description="Numéro de l’EFVP" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_pianumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_pianumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{48ea24a6-dc48-110e-3567-3d00dde876c2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="AlbertaRequirementOther" languagecode="1033" />
+                          <label description="Autre" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_albertarequirementother" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_albertarequirementother" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="DETAILS_TAB" id="{11a42c72-9ded-ea04-253d-2143e731b795}" IsUserDefined="0" showlabel="true" expanded="true" labelid="{c1449953-5a27-4255-9f2d-000a934d069f}" locklevel="0">
+          <labels>
+            <label description="Hours and Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="DETAILS_TAB_section_4" showlabel="true" showbar="false" locklevel="0" id="{db1600d7-44dc-8799-3459-19c5b4c8e8ed}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Hours of Operation" languagecode="1033" />
+                    <label description="Heures d'ouverture" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{93bcbcd8-680e-2709-07e7-6664e46ea1bc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Monday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du lundi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mondayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mondayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{58db0dd9-93d7-a6dd-b785-54e8d04b91ab}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Monday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du lundi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mondayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mondayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{c7c94789-c8ac-ee11-d2bc-da77d4576801}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Copy Hours to Weekdays" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_copyhourstoweekdays" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_copyhourstoweekdays" disabled="false" uniqueid="{679e0137-e022-66ac-c099-d721616dc519}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3994c19b-6d9c-003e-ccdc-b534e305e302}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Tuesday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du mardi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_tuesdayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_tuesdayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{6915b964-8cea-3ec7-5aa2-b53328c46605}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Tuesday Closing Time" languagecode="1033" />
+                          <label description="Heure de fermeture du mardi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_tuesdayclosingtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_tuesdayclosingtime" disabled="false" />
+                      </cell>
+                      <cell id="{2b1c0aec-405e-c077-3641-3814d3890e74}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6792b2ae-c183-e2bd-23ae-1727496abdce}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Wednesday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du mercredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_wednesdayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_wednesdayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{7c39410b-a0b2-7a19-2617-d02524d5013e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Wednesday Closing Time" languagecode="1033" />
+                          <label description="Heure de fermeture du mercredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_wednesdayclosingtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_wednesdayclosingtime" disabled="false" />
+                      </cell>
+                      <cell id="{05a0695e-8d02-0b9c-bda5-7abedb5cde65}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4e9b4ce2-8aae-337d-895d-7858a6861652}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Thursday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du jeudi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_thursdayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_thursdayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{6c1daa64-11da-be07-438a-40711b1d5c96}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Thursday Closing Time" languagecode="1033" />
+                          <label description="Heure de fermeture du jeudi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_thursdayclosingtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_thursdayclosingtime" disabled="false" />
+                      </cell>
+                      <cell id="{040882d2-6093-dcb7-7c76-954c7749ab17}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a10de83-8388-87b9-820c-224d851a9557}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Friday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du vendredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_fridayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_fridayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{60110a75-c8b1-eca7-2a96-e11c12052719}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Friday Closing Time" languagecode="1033" />
+                          <label description="Heure de fermeture du vendredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_fridayclosingtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_fridayclosingtime" disabled="false" />
+                      </cell>
+                      <cell id="{4dabec49-b74a-826e-c444-673452a34c60}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{839ae4a8-17dd-d432-3e1b-065ae2369776}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Saturday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du samedi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_saturdayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_saturdayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{e42570bc-22b8-a770-a91d-d49a18a0a873}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Saturday Closing Time" languagecode="1033" />
+                          <label description="Heure de fermeture du samedi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_saturdayclosingtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_saturdayclosingtime" disabled="false" />
+                      </cell>
+                      <cell id="{25b5a990-a641-a89d-03d4-c542e4208a85}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e4713b6a-964c-5444-a6e3-6eba1b826b43}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sunday Opening Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du dimanche" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sundayopeningtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_sundayopeningtime" disabled="false" />
+                      </cell>
+                      <cell id="{c29ba542-13ab-4ce8-c29a-6c8551cdd465}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sunday Closing Time" languagecode="1033" />
+                          <label description="Heure de fermeture du dimanche" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sundayclosingtime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_sundayclosingtime" disabled="false" />
+                      </cell>
+                      <cell id="{becdcc80-1444-e7a5-29ca-b88b2a2c8e41}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CONTACT_PREFERENCES" showlabel="true" showbar="false" id="{2787a122-55d5-4c8d-9b21-c8d4ec8cc3fc}" IsUserDefined="0" columns="1" labelwidth="115" celllabelposition="Left" labelid="{b9660def-3406-46b9-ae03-bdd195cdc576}">
+                  <labels>
+                    <label description="CONTACT PREFERENCES" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e651d783-6c9f-4e8d-981c-c9577e344e7b}" labelid="{7ec3cf08-42d1-428e-88d6-f7e36c2f14ac}">
+                        <labels>
+                          <label description="Contact Method" languagecode="1033" />
+                          <label description="Mode de communication privilégié" languagecode="1036" />
+                        </labels>
+                        <control id="preferredcontactmethodcode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="preferredcontactmethodcode" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{496427db-ee8c-d37b-d854-0e8059bb5559}" showlabel="true" locklevel="0" labelid="{2b10ac76-f8cd-44a9-9b32-0fcd889ceea9}">
+                        <labels>
+                          <label description="Best Day" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_bestday" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_bestday" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5d295c96-4c28-9b47-eca5-1a4d215682e6}" showlabel="true" locklevel="0" labelid="{790c4b8b-265c-44b9-be5e-f0615b5758dd}">
+                        <labels>
+                          <label description="Best Time" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_besttime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_besttime" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0a536c64-788d-4f22-a388-fbddfdee8142}" labelid="{0df1c0db-62bc-4e9c-9669-888ae4748dfa}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                          <label description="Courrier" languagecode="1036" />
+                        </labels>
+                        <control id="donotemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotemail" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82b8410d-3b9c-4aca-9968-6b3e493ef92e}" labelid="{c9f745aa-c04e-44e6-988f-7f5f8fd5ef8e}">
+                        <labels>
+                          <label description="Follow Email" languagecode="1033" />
+                          <label description="Suivre l'activité de courrier électronique" languagecode="1036" />
+                        </labels>
+                        <control id="followemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="followemail" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cfa09fa5-ccb6-4f97-bd8d-d7e037a7aab1}" labelid="{844f31b9-8c41-4160-958e-4eec723a4a99}">
+                        <labels>
+                          <label description="Bulk Email" languagecode="1033" />
+                          <label description="Ne pas autoriser l’envoi de messages en nombre" languagecode="1036" />
+                        </labels>
+                        <control id="donotbulkemail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotbulkemail" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f587cb66-b142-47c9-bc7a-009875261840}" labelid="{9347b2a7-e94e-4ee6-ae81-087e4cfcd262}">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                          <label description="Ne pas autoriser les appels téléphoniques" languagecode="1036" />
+                        </labels>
+                        <control id="donotphone" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotphone" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{12927a20-3614-4546-89fc-9bdbd9b7432f}" labelid="{a92ba828-e9ec-4a97-826e-d97fb035b5ea}">
+                        <labels>
+                          <label description="Fax" languagecode="1033" />
+                          <label description="Ne pas autoriser la télécopie" languagecode="1036" />
+                        </labels>
+                        <control id="donotfax" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotfax" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ed50e866-7968-483d-8388-0e6313d3c784}" labelid="{54c2edb3-ee60-46d1-a5b6-47c56f871e86}">
+                        <labels>
+                          <label description="Mail" languagecode="1033" />
+                          <label description="Ne pas autoriser le courrier postal" languagecode="1036" />
+                        </labels>
+                        <control id="donotpostalmail" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotpostalmail" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="MARKETING" showlabel="true" locklevel="0" showbar="false" id="{767ab9cb-cb99-45f4-bd68-32742a864c7c}" IsUserDefined="0" layout="varheight" columns="1" labelwidth="115" celllabelposition="Left" labelid="{ccedba22-ab94-463d-a255-4b45ad97f451}">
+                  <labels>
+                    <label description="MARKETING" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b9c3d8fd-12a2-4474-b937-43da8Be00e6f}" labelid="{6d00deb5-803a-4a0e-8a8d-635d4c641713}">
+                        <labels>
+                          <label description="Originating Lead" languagecode="1033" />
+                          <label description="Prospect d'origine" languagecode="1036" />
+                        </labels>
+                        <control id="originatingleadid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="originatingleadid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b19c455-28c1-bb06-6ee6-2ad84ca05975}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Lead Originated By" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_leadoriginatedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_leadoriginatedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{86b0d247-2f08-455c-a135-91f73860575d}" labelid="{b1b704d0-04bc-46cf-b089-5980c661da38}">
+                        <labels>
+                          <label description="Last Campaign Date" languagecode="1033" />
+                          <label description="Dernière date incluse de la campagne" languagecode="1036" />
+                        </labels>
+                        <control id="lastusedincampaign" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="lastusedincampaign" disabled="true" uniqueid="{d18ac968-eb40-27c0-7357-732812a4e68a}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell auto="false" showlabel="true" locklevel="0" rowspan="1" colspan="1" id="{0013a9f1-6d23-4080-87a8-f040e1c673fb}" labelid="{69451b60-2dde-4b60-91d0-641a430d8e91}">
+                        <labels>
+                          <label description="Marketing Materials" languagecode="1033" />
+                          <label description="Envoyer les documents marketing" languagecode="1036" />
+                        </labels>
+                        <control id="donotsendmm" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="donotsendmm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{91865d5a-0869-620b-16b1-9bc50017bc02}" showlabel="false" userspacer="true" labelid="{73fcb4b7-005c-49a9-80ff-3b77399cbf69}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{35d598b1-2487-016a-0db3-8d17e8d2011d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Submission Status" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_submissionstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_submissionstatus" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{d5a03552-1183-4347-a237-1f894ba449eb}" columns="1111" celllabelposition="Top" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{706310a0-2091-e860-47ce-b739d9d5ba2c}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Vendor ID" languagecode="1033" />
+              </labels>
+              <control id="header_bdo_vendorid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_vendorid" disabled="false" uniqueid="{47215a28-c530-4b4a-b801-498650917a95}" />
+            </cell>
+            <cell id="{d9374d2d-c780-3784-daac-e03b2070e6a0}" showlabel="true" locklevel="0" labelid="{39b08cea-37bf-41a8-86b4-5c7babf92bd2}">
+              <labels>
+                <label description="Stakeholder Type" languagecode="1033" />
+              </labels>
+              <control id="header_bdo_stakeholdertype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_stakeholdertype" disabled="false" />
+            </cell>
+            <cell id="{06c519a2-ac99-abe1-d7bd-3046a73d02e1}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Stakeholder Status" languagecode="1033" />
+              </labels>
+              <control id="header_bdo_stakeholderstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_stakeholderstatus" disabled="false" uniqueid="{8c6cce5e-d175-a8b7-48b6-a71d30858875}" />
+            </cell>
+            <cell id="{54b2d0a2-eb77-b3cd-b60a-03ea6944e98e}" showlabel="true" locklevel="1" labelid="{baf28c26-98a0-4ecc-994f-4aa52a90085f}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{97afe733-d5a2-4f3e-b890-de6a2682511f}" columns="1111" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{0b2744d3-6180-1c04-ddc3-32c8710637e2}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created By" languagecode="1033" />
+                <label description="Créé par" languagecode="1036" />
+              </labels>
+              <control id="footer_createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="true" />
+            </cell>
+            <cell id="{292053a1-c635-7652-4601-3c6c7abb3a87}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Created On" languagecode="1033" />
+                <label description="Créé le" languagecode="1036" />
+              </labels>
+              <control id="footer_createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" />
+            </cell>
+            <cell id="{89c5243c-7eab-97b9-d895-4d8b6cb83854}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified By" languagecode="1033" />
+                <label description="Modifié par" languagecode="1036" />
+              </labels>
+              <control id="footer_modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" />
+            </cell>
+            <cell id="{ee66ac8d-cadc-6e95-b555-b2a02c33b176}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Modified On" languagecode="1033" />
+                <label description="Modifié le" languagecode="1036" />
+              </labels>
+              <control id="footer_modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" />
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:AppCommon/Account/Account_main_system_library.js" />
+          </clientincludes>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="msdyn_playbookinstance_account" Sequence="0" Area="Info" Id="navPlaybooks" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Playbooks" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_parent_account" Sequence="1" Area="Sales" Id="navOppsParent" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Opportunities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Account_CustomerAddress" Id="navAddresses" Sequence="10" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Addresses" />
+              <Title LCID="1025" Text="العناوين" />
+              <Title LCID="1026" Text="Адреси" />
+              <Title LCID="1027" Text="Adreces" />
+              <Title LCID="1029" Text="Adresy" />
+              <Title LCID="1030" Text="Adresser" />
+              <Title LCID="1031" Text="Adressen" />
+              <Title LCID="1032" Text="Διευθύνσεις" />
+              <Title LCID="3082" Text="Direcciones" />
+              <Title LCID="1061" Text="Aadressid" />
+              <Title LCID="1069" Text="Helbideak" />
+              <Title LCID="1035" Text="Osoitteet" />
+              <Title LCID="1036" Text="Adresses" />
+              <Title LCID="1110" Text="Enderezos" />
+              <Title LCID="1037" Text="כתובות" />
+              <Title LCID="1081" Text="पते" />
+              <Title LCID="1050" Text="Adrese" />
+              <Title LCID="1038" Text="Címek" />
+              <Title LCID="1057" Text="Alamat" />
+              <Title LCID="1040" Text="Indirizzi" />
+              <Title LCID="1041" Text="住所" />
+              <Title LCID="1087" Text="Мекенжайлар" />
+              <Title LCID="1042" Text="주소" />
+              <Title LCID="1063" Text="Adresai" />
+              <Title LCID="1062" Text="Adreses" />
+              <Title LCID="1086" Text="Alamat" />
+              <Title LCID="1044" Text="Adresser" />
+              <Title LCID="1043" Text="Adressen" />
+              <Title LCID="1045" Text="Adresy" />
+              <Title LCID="1046" Text="Endereços" />
+              <Title LCID="2070" Text="Endereços" />
+              <Title LCID="1048" Text="Adrese" />
+              <Title LCID="1049" Text="Адреса" />
+              <Title LCID="1051" Text="Adresy" />
+              <Title LCID="1060" Text="Naslovi" />
+              <Title LCID="10266" Text="Адресе" />
+              <Title LCID="9242" Text="Adrese" />
+              <Title LCID="1053" Text="Adresser" />
+              <Title LCID="1054" Text="ที่อยู่" />
+              <Title LCID="1055" Text="Adresler" />
+              <Title LCID="1058" Text="Адреси" />
+              <Title LCID="1066" Text="Địa chỉ" />
+              <Title LCID="2052" Text="地址" />
+              <Title LCID="3076" Text="地址" />
+              <Title LCID="1028" Text="地址" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="opportunity_customer_accounts" Sequence="11" Area="Sales" Id="navOpps" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Opportunities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="quote_customer_accounts" Id="navQuotes" TitleResourceId="Tab_Label_MoreQuotes" Sequence="11" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Quote" />
+              <Title LCID="1025" Text="عرض الأسعار" />
+              <Title LCID="1026" Text="Оферта" />
+              <Title LCID="1027" Text="Oferta" />
+              <Title LCID="1029" Text="Nabídka" />
+              <Title LCID="1030" Text="Tilbud" />
+              <Title LCID="1031" Text="Angebot" />
+              <Title LCID="1032" Text="Προσφορά" />
+              <Title LCID="3082" Text="Oferta" />
+              <Title LCID="1061" Text="Hinnapakkumine" />
+              <Title LCID="1069" Text="Eskaintza" />
+              <Title LCID="1035" Text="Tarjous" />
+              <Title LCID="1036" Text="Devis" />
+              <Title LCID="1110" Text="Oferta" />
+              <Title LCID="1037" Text="הצעת מחיר" />
+              <Title LCID="1081" Text="कोट" />
+              <Title LCID="1050" Text="Ponuda" />
+              <Title LCID="1038" Text="Árajánlat" />
+              <Title LCID="1057" Text="Kuotasi" />
+              <Title LCID="1040" Text="Offerta" />
+              <Title LCID="1041" Text="見積もり" />
+              <Title LCID="1087" Text="Баға ұсыну" />
+              <Title LCID="1042" Text="견적" />
+              <Title LCID="1063" Text="Pasiūlymas" />
+              <Title LCID="1062" Text="Piedāvājums" />
+              <Title LCID="1086" Text="Sebut Harga" />
+              <Title LCID="1044" Text="Tilbud" />
+              <Title LCID="1043" Text="Prijsopgave" />
+              <Title LCID="1045" Text="Oferta" />
+              <Title LCID="1046" Text="Cotação" />
+              <Title LCID="2070" Text="Proposta" />
+              <Title LCID="1048" Text="Ofertă" />
+              <Title LCID="1049" Text="Предложение с расценками" />
+              <Title LCID="1051" Text="Cenová ponuka" />
+              <Title LCID="1060" Text="Ponudba" />
+              <Title LCID="10266" Text="Понуда" />
+              <Title LCID="9242" Text="Ponuda" />
+              <Title LCID="1053" Text="Offert" />
+              <Title LCID="1054" Text="ใบเสนอราคา" />
+              <Title LCID="1055" Text="Teklif" />
+              <Title LCID="1058" Text="Цінова пропозиція" />
+              <Title LCID="1066" Text="Báo giá" />
+              <Title LCID="2052" Text="报价单" />
+              <Title LCID="3076" Text="報價" />
+              <Title LCID="1028" Text="報價" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="account_customer_relationship_customer" Id="navRelationships" TitleResourceId="Left_Nav_Area_Relationships" Sequence="12" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="CustomerRelationship" />
+              <Title LCID="1025" Text="CustomerRelationship" />
+              <Title LCID="1026" Text="CustomerRelationship" />
+              <Title LCID="1027" Text="CustomerRelationship" />
+              <Title LCID="1029" Text="CustomerRelationship" />
+              <Title LCID="1030" Text="CustomerRelationship" />
+              <Title LCID="1031" Text="CustomerRelationship" />
+              <Title LCID="1032" Text="CustomerRelationship" />
+              <Title LCID="3082" Text="CustomerRelationship" />
+              <Title LCID="1061" Text="CustomerRelationship" />
+              <Title LCID="1069" Text="CustomerRelationship" />
+              <Title LCID="1035" Text="CustomerRelationship" />
+              <Title LCID="1036" Text="CustomerRelationship" />
+              <Title LCID="1110" Text="CustomerRelationship" />
+              <Title LCID="1037" Text="CustomerRelationship" />
+              <Title LCID="1081" Text="CustomerRelationship" />
+              <Title LCID="1050" Text="CustomerRelationship" />
+              <Title LCID="1038" Text="CustomerRelationship" />
+              <Title LCID="1057" Text="CustomerRelationship" />
+              <Title LCID="1040" Text="CustomerRelationship" />
+              <Title LCID="1041" Text="CustomerRelationship" />
+              <Title LCID="1087" Text="CustomerRelationship" />
+              <Title LCID="1042" Text="CustomerRelationship" />
+              <Title LCID="1063" Text="CustomerRelationship" />
+              <Title LCID="1062" Text="CustomerRelationship" />
+              <Title LCID="1086" Text="CustomerRelationship" />
+              <Title LCID="1044" Text="CustomerRelationship" />
+              <Title LCID="1043" Text="CustomerRelationship" />
+              <Title LCID="1045" Text="CustomerRelationship" />
+              <Title LCID="1046" Text="CustomerRelationship" />
+              <Title LCID="2070" Text="CustomerRelationship" />
+              <Title LCID="1048" Text="CustomerRelationship" />
+              <Title LCID="1049" Text="CustomerRelationship" />
+              <Title LCID="1051" Text="CustomerRelationship" />
+              <Title LCID="1060" Text="CustomerRelationship" />
+              <Title LCID="10266" Text="CustomerRelationship" />
+              <Title LCID="9242" Text="CustomerRelationship" />
+              <Title LCID="1053" Text="CustomerRelationship" />
+              <Title LCID="1054" Text="CustomerRelationship" />
+              <Title LCID="1055" Text="CustomerRelationship" />
+              <Title LCID="1058" Text="CustomerRelationship" />
+              <Title LCID="1066" Text="CustomerRelationship" />
+              <Title LCID="2052" Text="CustomerRelationship" />
+              <Title LCID="3076" Text="CustomerRelationship" />
+              <Title LCID="1028" Text="CustomerRelationship" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="invoice_customer_accounts" Id="navInvoices" TitleResourceId="Tab_Label_MoreInvoices" Sequence="13" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Invoice" />
+              <Title LCID="1025" Text="الفاتورة" />
+              <Title LCID="1026" Text="Фактура" />
+              <Title LCID="1027" Text="Factura" />
+              <Title LCID="1029" Text="Faktura" />
+              <Title LCID="1030" Text="Faktura" />
+              <Title LCID="1031" Text="Rechnung" />
+              <Title LCID="1032" Text="Τιμολόγιο" />
+              <Title LCID="3082" Text="Factura" />
+              <Title LCID="1061" Text="Arve" />
+              <Title LCID="1069" Text="Faktura" />
+              <Title LCID="1035" Text="Lasku" />
+              <Title LCID="1036" Text="Facture" />
+              <Title LCID="1110" Text="Factura" />
+              <Title LCID="1037" Text="חשבונית" />
+              <Title LCID="1081" Text="इनवॉइस" />
+              <Title LCID="1050" Text="Faktura" />
+              <Title LCID="1038" Text="Számla" />
+              <Title LCID="1057" Text="Faktur" />
+              <Title LCID="1040" Text="Fattura" />
+              <Title LCID="1041" Text="請求書" />
+              <Title LCID="1087" Text="Есеп-шот" />
+              <Title LCID="1042" Text="송장" />
+              <Title LCID="1063" Text="Sąskaita faktūra" />
+              <Title LCID="1062" Text="Rēķins" />
+              <Title LCID="1086" Text="Invois" />
+              <Title LCID="1044" Text="Faktura" />
+              <Title LCID="1043" Text="Factuur" />
+              <Title LCID="1045" Text="Faktura" />
+              <Title LCID="1046" Text="Fatura" />
+              <Title LCID="2070" Text="Fatura" />
+              <Title LCID="1048" Text="Factură" />
+              <Title LCID="1049" Text="Счет" />
+              <Title LCID="1051" Text="Faktúra" />
+              <Title LCID="1060" Text="Račun" />
+              <Title LCID="10266" Text="Фактура" />
+              <Title LCID="9242" Text="Faktura" />
+              <Title LCID="1053" Text="Faktura" />
+              <Title LCID="1054" Text="ใบแจ้งหนี้" />
+              <Title LCID="1055" Text="Fatura" />
+              <Title LCID="1058" Text="Рахунок" />
+              <Title LCID="1066" Text="Hóa đơn" />
+              <Title LCID="2052" Text="发票" />
+              <Title LCID="3076" Text="發票" />
+              <Title LCID="1028" Text="發票" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="account_parent_account" Id="navSubAccts" TitleResourceId="Label_SubAccounts" Sequence="14" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Accounts" />
+              <Title LCID="1025" Text="الحسابات" />
+              <Title LCID="1026" Text="Акаунти" />
+              <Title LCID="1027" Text="Comptes" />
+              <Title LCID="1029" Text="Obchodní vztahy" />
+              <Title LCID="1030" Text="Firmaer" />
+              <Title LCID="1031" Text="Firmen" />
+              <Title LCID="1032" Text="Λογαριασμοί" />
+              <Title LCID="3082" Text="Cuentas" />
+              <Title LCID="1061" Text="Kontod" />
+              <Title LCID="1069" Text="Kontuak" />
+              <Title LCID="1035" Text="Asiakkaat" />
+              <Title LCID="1036" Text="Comptes" />
+              <Title LCID="1110" Text="Contas" />
+              <Title LCID="1037" Text="תיקי לקוחות" />
+              <Title LCID="1081" Text="खाते" />
+              <Title LCID="1050" Text="Kupci" />
+              <Title LCID="1038" Text="Partnerek" />
+              <Title LCID="1057" Text="Akun" />
+              <Title LCID="1040" Text="Account" />
+              <Title LCID="1041" Text="取引先企業" />
+              <Title LCID="1087" Text="Тіркелгілер" />
+              <Title LCID="1042" Text="거래처" />
+              <Title LCID="1063" Text="Klientai" />
+              <Title LCID="1062" Text="Uzņēmumi" />
+              <Title LCID="1086" Text="Akaun" />
+              <Title LCID="1044" Text="Forretningsforbindelser" />
+              <Title LCID="1043" Text="Accounts" />
+              <Title LCID="1045" Text="Klienci" />
+              <Title LCID="1046" Text="Contas" />
+              <Title LCID="2070" Text="Contas" />
+              <Title LCID="1048" Text="Conturi" />
+              <Title LCID="1049" Text="Организации" />
+              <Title LCID="1051" Text="Obchodné vzťahy" />
+              <Title LCID="1060" Text="Računi" />
+              <Title LCID="10266" Text="Пословни контакти" />
+              <Title LCID="9242" Text="Poslovni kontakti" />
+              <Title LCID="1053" Text="Konton" />
+              <Title LCID="1054" Text="บัญชี" />
+              <Title LCID="1055" Text="Firmalar" />
+              <Title LCID="1058" Text="Бізнес-партнери" />
+              <Title LCID="1066" Text="Khách hàng" />
+              <Title LCID="2052" Text="帐户" />
+              <Title LCID="3076" Text="客戶" />
+              <Title LCID="1028" Text="客戶" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="contract_customer_accounts" Id="navContracts" TitleResourceId="Tab_Label_MoreContracts" Sequence="15" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Contract" />
+              <Title LCID="1025" Text="العقد" />
+              <Title LCID="1026" Text="Договор" />
+              <Title LCID="1027" Text="Contracte" />
+              <Title LCID="1029" Text="Smlouva" />
+              <Title LCID="1030" Text="Kontrakt" />
+              <Title LCID="1031" Text="Vertrag" />
+              <Title LCID="1032" Text="Σύμβαση" />
+              <Title LCID="3082" Text="Contrato" />
+              <Title LCID="1061" Text="Leping" />
+              <Title LCID="1069" Text="Kontratua" />
+              <Title LCID="1035" Text="Palvelusopimus" />
+              <Title LCID="1036" Text="Contrat" />
+              <Title LCID="1110" Text="Contrato" />
+              <Title LCID="1037" Text="חוזה" />
+              <Title LCID="1081" Text="संविदा" />
+              <Title LCID="1050" Text="Ugovor" />
+              <Title LCID="1038" Text="Szerződés" />
+              <Title LCID="1057" Text="Kontrak" />
+              <Title LCID="1040" Text="Contratto" />
+              <Title LCID="1041" Text="契約" />
+              <Title LCID="1087" Text="Келісім-шарт" />
+              <Title LCID="1042" Text="계약" />
+              <Title LCID="1063" Text="Sutartis" />
+              <Title LCID="1062" Text="Līgums" />
+              <Title LCID="1086" Text="Kontrak" />
+              <Title LCID="1044" Text="Kontrakt" />
+              <Title LCID="1043" Text="Contract" />
+              <Title LCID="1045" Text="Kontrakt" />
+              <Title LCID="1046" Text="Contrato" />
+              <Title LCID="2070" Text="Contrato" />
+              <Title LCID="1048" Text="Contract" />
+              <Title LCID="1049" Text="Контракт" />
+              <Title LCID="1051" Text="Zmluva" />
+              <Title LCID="1060" Text="Pogodba" />
+              <Title LCID="10266" Text="Уговор" />
+              <Title LCID="9242" Text="Ugovor" />
+              <Title LCID="1053" Text="Kontrakt" />
+              <Title LCID="1054" Text="สัญญา" />
+              <Title LCID="1055" Text="Sözleşme" />
+              <Title LCID="1058" Text="Сервісний договір" />
+              <Title LCID="1066" Text="Hợp đồng" />
+              <Title LCID="2052" Text="合同" />
+              <Title LCID="3076" Text="合約" />
+              <Title LCID="1028" Text="合約" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="order_customer_accounts" Id="navOrders" TitleResourceId="Tab_Label_MoreOrders" Sequence="16" Area="Info" Show="false">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="SalesOrder" />
+              <Title LCID="1025" Text="SalesOrder" />
+              <Title LCID="1026" Text="SalesOrder" />
+              <Title LCID="1027" Text="SalesOrder" />
+              <Title LCID="1029" Text="SalesOrder" />
+              <Title LCID="1030" Text="SalesOrder" />
+              <Title LCID="1031" Text="SalesOrder" />
+              <Title LCID="1032" Text="SalesOrder" />
+              <Title LCID="3082" Text="SalesOrder" />
+              <Title LCID="1061" Text="SalesOrder" />
+              <Title LCID="1069" Text="SalesOrder" />
+              <Title LCID="1035" Text="SalesOrder" />
+              <Title LCID="1036" Text="SalesOrder" />
+              <Title LCID="1110" Text="SalesOrder" />
+              <Title LCID="1037" Text="SalesOrder" />
+              <Title LCID="1081" Text="SalesOrder" />
+              <Title LCID="1050" Text="SalesOrder" />
+              <Title LCID="1038" Text="SalesOrder" />
+              <Title LCID="1057" Text="SalesOrder" />
+              <Title LCID="1040" Text="SalesOrder" />
+              <Title LCID="1041" Text="SalesOrder" />
+              <Title LCID="1087" Text="SalesOrder" />
+              <Title LCID="1042" Text="SalesOrder" />
+              <Title LCID="1063" Text="SalesOrder" />
+              <Title LCID="1062" Text="SalesOrder" />
+              <Title LCID="1086" Text="SalesOrder" />
+              <Title LCID="1044" Text="SalesOrder" />
+              <Title LCID="1043" Text="SalesOrder" />
+              <Title LCID="1045" Text="SalesOrder" />
+              <Title LCID="1046" Text="SalesOrder" />
+              <Title LCID="2070" Text="SalesOrder" />
+              <Title LCID="1048" Text="SalesOrder" />
+              <Title LCID="1049" Text="SalesOrder" />
+              <Title LCID="1051" Text="SalesOrder" />
+              <Title LCID="1060" Text="SalesOrder" />
+              <Title LCID="10266" Text="SalesOrder" />
+              <Title LCID="9242" Text="SalesOrder" />
+              <Title LCID="1053" Text="SalesOrder" />
+              <Title LCID="1054" Text="SalesOrder" />
+              <Title LCID="1055" Text="SalesOrder" />
+              <Title LCID="1058" Text="SalesOrder" />
+              <Title LCID="1066" Text="SalesOrder" />
+              <Title LCID="2052" Text="SalesOrder" />
+              <Title LCID="3076" Text="SalesOrder" />
+              <Title LCID="1028" Text="SalesOrder" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Socialprofile_customer_accounts" Sequence="21" Area="Info" Id="navSocialprofiles" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Social Profiles" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navConnections" Sequence="22" Area="Info" Id="navConnections">
+            <Titles>
+              <Title LCID="1033" Text="Connections" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Account_ActivityPointers" Sequence="23" Area="Info" Id="navActivities">
+            <Titles>
+              <Title LCID="1033" Text="Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navCampaignsInSFA" Sequence="24" Area="Marketing" Id="navCampaignsInSFA" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Campaigns" />
+              <Title LCID="1025" Text="الحملات" />
+              <Title LCID="1026" Text="Кампании" />
+              <Title LCID="1027" Text="Campanyes" />
+              <Title LCID="1029" Text="Kampaně" />
+              <Title LCID="1030" Text="Kampagner" />
+              <Title LCID="1031" Text="Kampagnen" />
+              <Title LCID="1032" Text="Εκστρατείες" />
+              <Title LCID="3082" Text="Campañas" />
+              <Title LCID="1061" Text="Kampaaniad" />
+              <Title LCID="1069" Text="Kanpainak" />
+              <Title LCID="1035" Text="Kampanjat" />
+              <Title LCID="1036" Text="Campagnes" />
+              <Title LCID="1110" Text="Campañas" />
+              <Title LCID="1037" Text="קמפיינים" />
+              <Title LCID="1081" Text="अभियान" />
+              <Title LCID="1050" Text="Kampanje" />
+              <Title LCID="1038" Text="Kampányok" />
+              <Title LCID="1057" Text="Kampanye" />
+              <Title LCID="1040" Text="Campagne" />
+              <Title LCID="1041" Text="キャンペーン" />
+              <Title LCID="1087" Text="Науқандар" />
+              <Title LCID="1042" Text="캠페인" />
+              <Title LCID="1063" Text="Kampanijos" />
+              <Title LCID="1062" Text="Kampaņas" />
+              <Title LCID="1086" Text="Kempen" />
+              <Title LCID="1044" Text="Kampanjer" />
+              <Title LCID="1043" Text="Campagnes" />
+              <Title LCID="1045" Text="Kampanie" />
+              <Title LCID="1046" Text="Campanhas" />
+              <Title LCID="2070" Text="Campanhas" />
+              <Title LCID="1048" Text="Campanii" />
+              <Title LCID="1049" Text="Кампании" />
+              <Title LCID="1051" Text="Kampane" />
+              <Title LCID="1060" Text="Akcije" />
+              <Title LCID="10266" Text="Кампање" />
+              <Title LCID="9242" Text="Kampanje" />
+              <Title LCID="1053" Text="Kampanjer" />
+              <Title LCID="1054" Text="การส่งเสริมการขาย" />
+              <Title LCID="1055" Text="Kampanyalar" />
+              <Title LCID="1058" Text="Кампанії" />
+              <Title LCID="1066" Text="Chiến dịch" />
+              <Title LCID="2052" Text="市场活动" />
+              <Title LCID="3076" Text="行銷活動" />
+              <Title LCID="1028" Text="行銷活動" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_role_Account" Sequence="51" Area="Info" Id="nav_bdo_account_bdo_role_Account">
+            <Titles>
+              <Title LCID="1033" Text="Roles" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="adx_invitation_assigntoaccount" Sequence="60" Area="Info" Id="nav_adx_invitation_assigntoaccount">
+            <Titles>
+              <Title LCID="1033" Text="Invitations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_registration_Organization" Sequence="61" Area="Info" Id="nav_bdo_account_bdo_registration_Organization">
+            <Titles>
+              <Title LCID="1033" Text="Registrations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="adobe_account_adobe_agreement" Sequence="62" Area="Info" Id="nav_adobe_account_adobe_agreement">
+            <Titles>
+              <Title LCID="1033" Text="Agreements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Account_SharepointDocument" Sequence="63" Area="Info" Id="navSPDocuments">
+            <Titles>
+              <Title LCID="1033" Text="Documents" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navProcessSessions" Id="navProcessSessions" Show="true" Sequence="1000" Area="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="hardcoded_{B7196B13-6B9D-42CD-BD58-B19A3953126F}navAsyncOperations" Id="navAsyncOperations" Show="true" Sequence="1001" Area="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Background Processes" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="account_entitlement_Customer" Sequence="9601" Area="Info" Id="navEntitlement" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Entitlements" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_softwareapplication_Account" Sequence="10000" Area="Info" Id="nav_bdo_account_bdo_softwareapplication_Account" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Software Applications" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_importlog_Account" Sequence="10000" Area="Info" Id="nav_cdi_importlog_Account" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Import Logs" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_registration_Account" Sequence="10001" Area="Info" Id="nav_bdo_account_bdo_registration_Account" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Registrations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_telusimportorg_OrganizationName" Sequence="10001" Area="Info" Id="nav_bdo_account_bdo_telusimportorg_OrganizationName" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Telus Import - Orgs" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_telusimportpractitioner_Organization" Sequence="10002" Area="Info" Id="nav_bdo_account_bdo_telusimportpractitioner_Organization" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Telus Import - Contacts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_endofdayreport_ClinicName" Sequence="10002" Area="Info" Id="nav_bdo_account_bdo_endofdayreport_ClinicName" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="End of Day Reports" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_account_Hub" Sequence="10003" Area="Info" Id="nav_bdo_account_account_Hub">
+            <Titles>
+              <Title LCID="1033" Text="Accounts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_eod_VendorName" Sequence="10003" Area="Info" Id="nav_bdo_account_bdo_eod_VendorName" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="EOD Incidents" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_telusimportorganization_OrganizationName" Sequence="10004" Area="Info" Id="nav_bdo_account_bdo_telusimportorganization_OrganizationName" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Telus Import Organizations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bpf_account_bdo_leadtoregistration" Sequence="10004" Area="Info" Id="nav_bpf_account_bdo_leadtoregistration" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Lead to Registration" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_telusimportorganization_OrgCRMID" Sequence="10005" Area="Info" Id="nav_bdo_account_bdo_telusimportorganization_OrgCRMID" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Telus Import Organizations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_telusimportorg_OrgCRMID" Sequence="10005" Area="Info" Id="nav_bdo_account_bdo_telusimportorg_OrgCRMID" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Telus Import - Orgs" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_registration_PharmacyAffiliation" Sequence="10006" Area="Info" Id="nav_bdo_account_bdo_registration_PharmacyAffiliation" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Registrations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_softwareapplication_SoftwareVendor" Sequence="10006" Area="Info" Id="nav_bdo_account_bdo_softwareapplication_SoftwareVendor" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Software Applications" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_bdo_registration_PairedOrganization" Sequence="10007" Area="Info" Id="nav_bdo_account_bdo_registration_PairedOrganization" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Registrations" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_account_cdi_sentemail" Sequence="10007" Area="Marketing" Id="nav_cdi_account_cdi_sentemail">
+            <Titles>
+              <Title LCID="1033" Text="Sent Emails" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="bdo_account_account_PharmacyAffiliation" Sequence="10008" Area="Info" Id="nav_bdo_account_account_PharmacyAffiliation" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Accounts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="cdi_account_cdi_emailevent" Sequence="10009" Area="Marketing" Id="nav_cdi_account_cdi_emailevent">
+            <Titles>
+              <Title LCID="1033" Text="Email Events" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msa_account_incident" Sequence="100100" Area="Service" Id="nav_msa_account_incident" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Partner Cases" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msa_partner_opportunity" Sequence="100100" Area="Sales" Id="nav_msa_partner_opportunity" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Partner Opportunities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msa_account_managingpartner" Sequence="100400" Area="Info" Id="nav_msa_account_managingpartner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Managed Accounts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="msa_contact_managingpartner" Sequence="100500" Area="Info" Id="nav_msa_contact_managingpartner" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Managed Contacts" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="adx_webrole_account" Sequence="100600" Area="Info" Id="nav_adx_webrole_account" Show="false">
+            <Titles>
+              <Title LCID="1033" Text="Web Roles" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{843ad921-793a-aa16-c411-0312d7990b8d}">
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="0">
+            <parameters>
+              <ViewId>{00000000-0000-0000-00AA-000010001004}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>contact_customer_accounts</RelationshipName>
+              <TargetEntityType>contact</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>true</EnableViewPicker>
+              <ViewIds>{00000000-0000-0000-00AA-000010001004},{F9C90E36-986B-E911-A97F-000D3AF43D1A},{AF0A9ED4-976B-E911-A97F-000D3AF43D1A}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>Grid</ChartGridMode>
+              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>false</EnableChartPicker>
+              <RecordsPerPage>5</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="1">
+            <parameters>
+              <ViewId>{00000000-0000-0000-00AA-000010001004}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>contact_customer_accounts</RelationshipName>
+              <TargetEntityType>contact</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>true</EnableViewPicker>
+              <ViewIds>{00000000-0000-0000-00AA-000010001004},{F9C90E36-986B-E911-A97F-000D3AF43D1A},{AF0A9ED4-976B-E911-A97F-000D3AF43D1A}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>Grid</ChartGridMode>
+              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>false</EnableChartPicker>
+              <RecordsPerPage>5</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl id="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" formFactor="2">
+            <parameters>
+              <ViewId>{00000000-0000-0000-00AA-000010001004}</ViewId>
+              <IsUserView>false</IsUserView>
+              <RelationshipName>contact_customer_accounts</RelationshipName>
+              <TargetEntityType>contact</TargetEntityType>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>true</EnableViewPicker>
+              <ViewIds>{00000000-0000-0000-00AA-000010001004},{F9C90E36-986B-E911-A97F-000D3AF43D1A},{AF0A9ED4-976B-E911-A97F-000D3AF43D1A}</ViewIds>
+              <EnableJumpBar>false</EnableJumpBar>
+              <ChartGridMode>Grid</ChartGridMode>
+              <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+              <IsUserChart>false</IsUserChart>
+              <EnableChartPicker>false</EnableChartPicker>
+              <RecordsPerPage>5</RecordsPerPage>
+              <HeaderColorCode>#F3F3F3</HeaderColorCode>
+            </parameters>
+          </customControl>
+          <customControl name="MscrmControls.Grid.GridControl" formFactor="-1">
+            <parameters>
+              <data-set name="Grid">
+                <ViewId>{00000000-0000-0000-00AA-000010001004}</ViewId>
+                <columnsDefaultView />
+                <IsUserView>false</IsUserView>
+                <RelationshipName>contact_customer_accounts</RelationshipName>
+                <TargetEntityType>contact</TargetEntityType>
+                <EnableViewPicker>true</EnableViewPicker>
+                <FilteredViewIds>{00000000-0000-0000-00AA-000010001004},{F9C90E36-986B-E911-A97F-000D3AF43D1A},{AF0A9ED4-976B-E911-A97F-000D3AF43D1A}</FilteredViewIds>
+              </data-set>
+              <EnableGroupBy static="true" type="Enum">yes</EnableGroupBy>
+              <EnableEditing static="true" type="Enum">yes</EnableEditing>
+              <ReflowBehavior static="true" type="Enum">GridOnly</ReflowBehavior>
+              <EnableFiltering static="true" type="Enum">yes</EnableFiltering>
+              <HideNestedGridColumnHeader static="true" type="Enum">no</HideNestedGridColumnHeader>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{8b33e15d-730d-cd8b-10ba-de5d95d6d67c}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>telephone1</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>telephone1</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>telephone1</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>telephone1</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{11b5a519-be69-3dc7-a3e1-85e057dd3a0b}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>fax</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>fax</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>fax</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>fax</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{e002034d-429e-50d7-5e9e-0a2a35c8989b}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>bdo_organizationprimarycontactphone</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_organizationprimarycontactphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_organizationprimarycontactphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_organizationprimarycontactphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{41ed70e9-6e14-e307-e57a-c0121c3c62e7}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>bdo_hicphone</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_hicphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_hicphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_hicphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{642b66aa-78e6-abca-cca3-21d698c734ba}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>bdo_ownerphone</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_ownerphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_ownerphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_ownerphone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{6d0ab6a0-9095-ccb2-0c78-3e14d9ec5537}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>bdo_licenseephone</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_licenseephone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_licenseephone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.InputMask.InputMaskControl">
+            <parameters>
+              <value>bdo_licenseephone</value>
+              <mask static="true" type="SingleLine.Text">(000) 000-0000</mask>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formparameters>
+        <querystringparameter name="iv_onLoadAction" type="SafeString" />
+      </formparameters>
+      <formLibraries>
+        <Library name="bdo_/Forms/Account.js" libraryUniqueId="{9aa38428-016a-5a3e-44da-9a990219894d}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <InternalHandlers>
+            <Handler functionName="AppCommon.Account.Instance.ra_onload" libraryName="AppCommon/Account/Account_main_system_library.js" handlerUniqueId="7927DD68-5AC5-4E9A-B39A-44F62467656A" enabled="true" />
+          </InternalHandlers>
+          <Handlers>
+            <Handler functionName="HideShowFields" libraryName="bdo_/Forms/Account.js" handlerUniqueId="{bcec820b-c761-5714-20ea-2be1a3aa71d8}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions FallbackForm="true" Order="13">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Account - Customers" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Account form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

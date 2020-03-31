@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{153bcea6-53e0-4447-b486-ccb77c1025f5}</formid>
+    <IntroducedVersion>8.1.0009</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{f1ff15bf-5bd3-4ea1-86a3-3eb2266a00df}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{aaaa25f1-3d36-4ae0-8a7a-e6ddc94c7167}" name="{aaaa25f1-3d36-4ae0-8a7a-e6ddc94c7167}" columns="11" locklevel="0" labelwidth="150" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1a6b7664-bb12-4ee9-a798-95019783591b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="adx_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="adx_name" uniqueid="{42485954-dc74-ea5b-aceb-b5d7455eecdd}" disabled="false" />
+                      </cell>
+                      <cell id="{cac00151-b6d2-36e5-a39d-772d2883108a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                          <label description="Statut" languagecode="1036" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7845613a-94a4-cc76-0a52-b0476a1175b7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="English Field Name" languagecode="1033" />
+                        </labels>
+                        <control id="chi_name_en" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_name_en" disabled="false" />
+                      </cell>
+                      <cell id="{2d0e5ccd-5004-cb2c-4ab6-5a83cc36ca63}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                          <label description="Raison du statut" languagecode="1036" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4c785ec7-eac2-c45e-8a38-e6d8803c235d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="French Field Name" languagecode="1033" />
+                        </labels>
+                        <control id="chi_name_fr" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="chi_name_fr" disabled="false" />
+                      </cell>
+                      <cell id="{ad339bbd-7601-bccc-e1b6-589aed84eea1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{02a34de8-b7ac-d554-35e9-7dcc0d2958ba}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Portal Display Name" languagecode="1033" />
+                          <label description="Nom complet du portail" languagecode="1036" />
+                        </labels>
+                        <control id="adx_displayname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="adx_displayname" disabled="false" />
+                      </cell>
+                      <cell id="{1a363cdc-4c3d-bb40-8039-c0847e83ba4d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{053d13e2-e81b-0969-5d7b-6d9015e7ab35}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                          <label description="Description" languagecode="1036" />
+                        </labels>
+                        <control id="adx_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="adx_description" disabled="false" />
+                      </cell>
+                      <cell id="{77abd528-cccb-be47-2dce-834ac7c2aec7}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{216e3d00-d512-7522-c35d-1d879e86ea59}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="System Language" languagecode="1033" />
+                          <label description="Langue du système" languagecode="1036" />
+                        </labels>
+                        <control id="adx_systemlanguage" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="adx_systemlanguage" disabled="false" />
+                      </cell>
+                      <cell id="{a78e768e-2b86-7e23-7193-0e45ca736ce3}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5074c2d6-017e-727c-7ca6-99e4e40bbb40}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="LCID" languagecode="1033" />
+                          <label description="LCID" languagecode="1036" />
+                        </labels>
+                        <control id="adx_lcid" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="adx_lcid" disabled="false" />
+                      </cell>
+                      <cell id="{a479a8bd-1e16-8456-d63b-258c7c7e624d}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca5c21e2-e77d-a636-8bab-3e6463ce0301}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Language Code" languagecode="1033" />
+                          <label description="Code de langue" languagecode="1036" />
+                        </labels>
+                        <control id="adx_languagecode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="adx_languagecode" disabled="false" />
+                      </cell>
+                      <cell id="{41714c3b-7663-0540-5ce8-2462ce377a08}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+      <LocalizedName description="Information" languagecode="1036" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+      <Description description="Formulaire pour cette entité." languagecode="1036" />
+    </Descriptions>
+  </systemform>
+</forms>

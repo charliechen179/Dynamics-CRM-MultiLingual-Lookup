@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.CustomAction" Location="Mscrm.Form.account.MainTab.Workflow.Controls._children" Sequence="40">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.Alt" Command="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Send PA to Owner Only&quot;,&quot;workflowname&quot;:&quot;Send PA Agreement to Pharmacy Owner Only&quot;,&quot;confirm&quot;:&quot;Do you want to send PA agreement to Pharmacy Owner only?&quot;}" Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText" Sequence="40" TemplateAlias="o1" ToolTipTitle="$LocLabels:chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipTitle" ToolTipDescription="$LocLabels:chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.CustomAction" Location="Mscrm.Form.account.MainTab.Workflow.Controls._children" Sequence="43">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.Alt" Command="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Send PA &amp; EULA to Licensee Only&quot;,&quot;workflowname&quot;:&quot;Send PA and EULA to Licensee Only&quot;,&quot;confirm&quot;:&quot;Do you want to send PA and EULA to licensee?&quot;}" Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText" Sequence="43" TemplateAlias="o1" ToolTipTitle="$LocLabels:chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipTitle" ToolTipDescription="$LocLabels:chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="51">
+      <CommandUIDefinition>
+        <Button Command="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Assign to Privacy Team&quot;,&quot;workflowname&quot;:&quot;Assign Account Record to Privacy Team&quot;,&quot;confirm&quot;:&quot;Do you want to assign this record to Privacy team?&quot;}" Id="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText" Sequence="51" TemplateAlias="o1" ToolTipTitle="$LocLabels:chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipTitle" ToolTipDescription="$LocLabels:chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button">
+      <EnableRules>
+        <EnableRule Id="chi.account.EnableRule2.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowSingle" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Send PA Agreement to Pharmacy Owner Only" />
+          <CrmParameter Value="PrimaryItemIds" />
+          <StringParameter Value="Do you want to send PA agreement to Pharmacy Owner only?" />
+          <StringParameter Value="" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button">
+      <EnableRules>
+        <EnableRule Id="chi.account.EnableRule3.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowSingle" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Send PA and EULA to Licensee Only" />
+          <CrmParameter Value="PrimaryItemIds" />
+          <StringParameter Value="Do you want to send PA and EULA to licensee?" />
+          <StringParameter Value="" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button">
+      <EnableRules>
+        <EnableRule Id="chi.account.EnableRule4.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowSingle" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Assign Account Record to Privacy Team" />
+          <CrmParameter Value="PrimaryItemIds" />
+          <StringParameter Value="Do you want to assign this record to Privacy team?" />
+          <StringParameter Value="" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="chi.account.EnableRule2.EnableRule">
+        <FormStateRule State="Existing" Default="true" />
+      </EnableRule>
+      <EnableRule Id="chi.account.EnableRule3.EnableRule">
+        <FormStateRule State="Existing" Default="true" />
+      </EnableRule>
+      <EnableRule Id="chi.account.EnableRule4.EnableRule">
+        <FormStateRule State="Existing" Default="true" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.Alt">
+      <Titles>
+        <Title description="Send PA to Pharmacy Owner Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText">
+      <Titles>
+        <Title description="Send PA to Owner Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Send PA to Pharmacy Owner Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button11.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Send PA to Pharmacy Owner Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.Alt">
+      <Titles>
+        <Title description="Send PA and EULA to Licensee Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText">
+      <Titles>
+        <Title description="Send PA &amp; EULA to Licensee Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Send PA and EULA to Licensee Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button13.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Send PA and EULA to Licensee Only" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText">
+      <Titles>
+        <Title description="Assign to Privacy Team" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipDescription">
+      <Titles>
+        <Title description="Assign Account Record to Privacy Team" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.account.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Assign Account Record to Privacy Team" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

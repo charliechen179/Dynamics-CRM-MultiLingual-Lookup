@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{af64cc8d-f21c-4b10-bb0b-1a58c4d87e12}</formid>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{bbb5fd1c-d5f6-4c3b-838b-e2b72ed9e01e}" IsUserDefined="1" name="{bbb5fd1c-d5f6-4c3b-838b-e2b72ed9e01e}" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Status" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{30104af8-beda-49ac-bca9-51fb98c32432}" name="{30104af8-beda-49ac-bca9-51fb98c32432}" columns="11" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e34901ed-5442-1b84-050e-28db1e8893cc}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_name" disabled="false" />
+                      </cell>
+                      <cell id="{22827ec5-2486-0595-c372-58274963b880}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Registration Type" languagecode="1033" />
+                          <label description="Type d'inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_registrationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_registrationtype" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{efd7f38d-0764-459f-96dd-ea1477593633}" columns="1111" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+        <rows>
+          <row>
+            <cell id="{0b4c056c-362e-8e76-56c7-b5a723a65bbd}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Registration Status" languagecode="1033" />
+                <label description="État de l’inscription" languagecode="1036" />
+              </labels>
+              <control id="header_bdo_registrationstatus" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_registrationstatus" disabled="false" />
+            </cell>
+            <cell id="{39dc95d9-6bec-3de0-e9b8-bce11e872e8e}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Go Live Confirmed" languagecode="1033" />
+              </labels>
+              <control id="header_bdo_golivedecision" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_golivedecision" disabled="false" />
+            </cell>
+            <cell id="{b1076c24-5e12-19e2-1ddc-277131449c24}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Go Live Date" languagecode="1033" />
+                <label description="Date de mise en service" languagecode="1036" />
+              </labels>
+              <control id="header_bdo_golivedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_golivedate" disabled="false" />
+            </cell>
+            <cell id="{81c19c33-75c8-e0e5-6da3-627b8e1d890e}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" uniqueid="{921a462e-773d-2cbb-9381-36a86641a4a5}">
+                <parameters>
+                  <AutoResolve>true</AutoResolve>
+                  <DisableMru>false</DisableMru>
+                </parameters>
+              </control>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f6ba4ad0-495e-4763-a692-33860a663e0f}" columns="111">
+        <rows>
+          <row>
+            <cell id="{53e50691-5474-42d9-b87a-87e82d610ba5}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{87997919-2a04-45c7-aca1-3e45ac02e053}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0b528072-2b91-8d70-5a33-dc0e4e7bbab7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="bdo_/Forms/Registration.js" libraryUniqueId="{45ab407b-2651-6a4c-d07e-b13acb72122b}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="Registration_OnLoad" libraryName="bdo_/Forms/Registration.js" handlerUniqueId="{1867e67c-3e06-3b49-47d0-9985ba1d5d22}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

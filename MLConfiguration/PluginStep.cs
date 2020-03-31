@@ -1,8 +1,6 @@
-﻿
-using Microsoft.Xrm.Sdk;
+﻿using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Query;
 using System;
-using System.Collections.ObjectModel;
 
 namespace MLConfiguration
 {
@@ -60,7 +58,13 @@ namespace MLConfiguration
 
         public string PostImageAttributes { get; set; }
 
-        private static Entity RetrieveEntity(ref IOrganizationService service, string entityName, string[] entitySearchField, object[] entitySearchFieldValue, ColumnSet columnSet, ConditionOperator op)
+        private static Entity RetrieveEntity(
+          ref IOrganizationService service,
+          string entityName,
+          string[] entitySearchField,
+          object[] entitySearchFieldValue,
+          ColumnSet columnSet,
+          ConditionOperator op)
         {
             Entity entity = (Entity)null;
             QueryExpression queryExpression = new QueryExpression();
@@ -68,12 +72,12 @@ namespace MLConfiguration
             FilterExpression filterExpression = new FilterExpression();
             for (int index = 0; index < entitySearchField.Length; ++index)
             {
-                ConditionExpression conditionExpression = new ConditionExpression();
-                conditionExpression.AttributeName = entitySearchField[index];
-                conditionExpression.Operator = op;
-                ((Collection<object>)conditionExpression.Values).Add(entitySearchFieldValue[index]);
-                filterExpression.FilterOperator = (LogicalOperator)0;
-                filterExpression.AddCondition(conditionExpression);
+                ConditionExpression condition = new ConditionExpression();
+                condition.AttributeName = entitySearchField[index];
+                condition.Operator = op;
+                condition.Values.Add(entitySearchFieldValue[index]);
+                filterExpression.FilterOperator = LogicalOperator.And;
+                filterExpression.AddCondition(condition);
             }
             queryExpression.ColumnSet = columnSet;
             queryExpression.Criteria = filterExpression;
@@ -86,12 +90,18 @@ namespace MLConfiguration
             {
                 throw new Exception("Step Registration Error-RetrieveEntity", ex);
             }
-            if (((Collection<Entity>)entityCollection.Entities).Count == 1)
-                entity = ((Collection<Entity>)entityCollection.Entities)[0];
+            if (entityCollection.Entities.Count == 1)
+                entity = entityCollection.Entities[0];
             return entity;
         }
 
-        private EntityCollection RetrieveEntityCollection(ref IOrganizationService service, string entityName, string[] entitySearchField, object[] entitySearchFieldValue, ColumnSet columnSet, ConditionOperator op)
+        private EntityCollection RetrieveEntityCollection(
+          ref IOrganizationService service,
+          string entityName,
+          string[] entitySearchField,
+          object[] entitySearchFieldValue,
+          ColumnSet columnSet,
+          ConditionOperator op)
         {
             EntityCollection entityCollection1 = (EntityCollection)null;
             QueryExpression queryExpression = new QueryExpression();
@@ -99,12 +109,12 @@ namespace MLConfiguration
             FilterExpression filterExpression = new FilterExpression();
             for (int index = 0; index < entitySearchField.Length; ++index)
             {
-                ConditionExpression conditionExpression = new ConditionExpression();
-                conditionExpression.AttributeName = entitySearchField[index];
-                conditionExpression.Operator = op;
-                ((Collection<object>)conditionExpression.Values).Add(entitySearchFieldValue[index]);
-                filterExpression.FilterOperator = (LogicalOperator)0;
-                filterExpression.AddCondition(conditionExpression);
+                ConditionExpression condition = new ConditionExpression();
+                condition.AttributeName = entitySearchField[index];
+                condition.Operator = op;
+                condition.Values.Add(entitySearchFieldValue[index]);
+                filterExpression.FilterOperator = LogicalOperator.And;
+                filterExpression.AddCondition(condition);
             }
             queryExpression.ColumnSet = columnSet;
             queryExpression.Criteria = filterExpression;
@@ -117,7 +127,7 @@ namespace MLConfiguration
             {
                 throw new Exception("Step Registration Error-RetrieveEntityCollection", ex);
             }
-            if (((Collection<Entity>)entityCollection2.Entities).Count > 0)
+            if (entityCollection2.Entities.Count > 0)
                 entityCollection1 = entityCollection2;
             return entityCollection1;
         }
@@ -136,7 +146,7 @@ namespace MLConfiguration
           this.MessageId.ToString(),
           this.PrimaryEntity.ToLower(),
           this.SecondaryEntity.ToLower()
-                }, new ColumnSet(true), (ConditionOperator)0);
+                }, new ColumnSet(true), ConditionOperator.Equal);
             else
                 entity = PluginStep.RetrieveEntity(ref service, "sdkmessagefilter", new string[2]
                 {
@@ -146,7 +156,7 @@ namespace MLConfiguration
                 {
           this.MessageId.ToString(),
           this.PrimaryEntity.ToLower()
-                }, new ColumnSet(true), (ConditionOperator)0);
+                }, new ColumnSet(true), ConditionOperator.Equal);
             if (entity == null)
                 return;
             this.MessageFilterId = entity.Id;
@@ -157,10 +167,7 @@ namespace MLConfiguration
             Entity entity = PluginStep.RetrieveEntity(ref service, "sdkmessage", new string[1]
             {
         "name"
-            }, (object[])new string[1]
-            {
-        this.Message.ToLower()
-            }, new ColumnSet(true), (ConditionOperator)0);
+            }, (object[])new string[1] { this.Message.ToLower() }, new ColumnSet(true), ConditionOperator.Equal);
             if (entity == null)
                 return;
             this.MessageId = entity.Id;
@@ -171,65 +178,59 @@ namespace MLConfiguration
             Entity entity = PluginStep.RetrieveEntity(ref service, "plugintype", new string[1]
             {
         "name"
-            }, (object[])new string[1]
-            {
-        this.EventHandler
-            }, new ColumnSet(true), (ConditionOperator)0);
+            }, (object[])new string[1] { this.EventHandler }, new ColumnSet(true), ConditionOperator.Equal);
             if (entity == null)
                 return;
             this.PluginId = entity.Id;
         }
 
-        private Guid registerEntityImage(ref IOrganizationService service, Guid stepId, string imageAlias, PluginStep.PluginStepImageType imageType, string attributes)
+        private Guid registerEntityImage(
+          ref IOrganizationService service,
+          Guid stepId,
+          string imageAlias,
+          PluginStep.PluginStepImageType imageType,
+          string attributes)
         {
-            Guid guid = Guid.Empty;
+            Guid empty = Guid.Empty;
             if (!string.IsNullOrEmpty(imageAlias))
             {
-                var processingStepImage = new Entity("sdkmessageprocessingstepimage");
-                    processingStepImage["entityalias"] = imageAlias;
-                    processingStepImage["imagetype"] = new OptionSetValue((int)imageType);
-                    processingStepImage["messagepropertyname"] = this.Message == "Create" ? "id" : "Target";
-                    processingStepImage["sdkmessageprocessingstepid"] = new EntityReference("sdkmessageprocessingstep", stepId);
-                    processingStepImage["attributes"] = attributes;
+                Entity entity = new Entity("sdkmessageprocessingstepimage");
+                entity["entityalias"] = (object)imageAlias;
+                entity["imagetype"] = (object)new OptionSetValue((int)imageType);
+                entity["messagepropertyname"] = this.Message == "Create" ? (object)"id" : (object)"Target";
+                entity["sdkmessageprocessingstepid"] = (object)new EntityReference("sdkmessageprocessingstep", stepId);
+                entity[nameof(attributes)] = (object)attributes;
                 try
                 {
-                    guid = service.Create(processingStepImage);
+                    empty = service.Create(entity);
                 }
                 catch (Exception ex)
                 {
-                    throw new Exception(string.Concat(new object[8]
-                    {
-                        (object) "Image creation Error for type ",
-                        (object) imageType,
-                        (object) " with alias ",
-                        (object) imageAlias,
-                        (object) " with message ",
-                        (object) this.Message,
-                        (object) " with attributes ",
-                        (object) attributes
-                    }), ex);
+                    throw new Exception("Image creation Error for type " + (object)imageType + " with alias " + imageAlias + " with message " + this.Message + " with attributes " + attributes, ex);
                 }
             }
-            return guid;
+            return empty;
         }
 
-        private Guid createSecureConfiguration(ref IOrganizationService service, string secureConfiguration)
+        private Guid createSecureConfiguration(
+          ref IOrganizationService service,
+          string secureConfiguration)
         {
-            Guid guid = Guid.Empty;
+            Guid empty = Guid.Empty;
             if (!string.IsNullOrEmpty(secureConfiguration))
             {
-                var stepSecureConfig = new Entity("sdkmessageprocessingstepsecureconfig");
-                    stepSecureConfig["secureconfig"] = secureConfiguration;
+                Entity entity = new Entity("sdkmessageprocessingstepsecureconfig");
+                entity["secureconfig"] = (object)secureConfiguration;
                 try
                 {
-                    guid = service.Create(stepSecureConfig);
+                    empty = service.Create(entity);
                 }
                 catch (Exception ex)
                 {
                     throw new Exception("Error creating secure configuration", ex);
                 }
             }
-            return guid;
+            return empty;
         }
 
         public void DeleteStep(ref IOrganizationService service, Guid stepId)
@@ -247,15 +248,14 @@ namespace MLConfiguration
             return service.Retrieve("sdkmessageprocessingstep", stepId, new ColumnSet());
         }
 
-        public EntityCollection RetrieveStepsByPluginId(ref IOrganizationService service, Guid pluginId)
+        public EntityCollection RetrieveStepsByPluginId(
+          ref IOrganizationService service,
+          Guid pluginId)
         {
             return this.RetrieveEntityCollection(ref service, "sdkmessageprocessingstep", new string[1]
             {
         "plugintypeid"
-            }, (object[])new string[1]
-            {
-        pluginId.ToString()
-            }, new ColumnSet(true), (ConditionOperator)0) ?? (EntityCollection)null;
+            }, (object[])new string[1] { pluginId.ToString() }, new ColumnSet(true), ConditionOperator.Equal) ?? (EntityCollection)null;
         }
 
         public Guid RetrievePluginId(ref IOrganizationService service, string pluginName)
@@ -263,10 +263,7 @@ namespace MLConfiguration
             Entity entity = PluginStep.RetrieveEntity(ref service, "plugintype", new string[1]
             {
         "name"
-            }, (object[])new string[1]
-            {
-        pluginName
-            }, new ColumnSet(true), (ConditionOperator)0);
+            }, (object[])new string[1] { pluginName }, new ColumnSet(true), ConditionOperator.Equal);
             if (entity != null)
                 return entity.Id;
             return Guid.Empty;
@@ -277,21 +274,22 @@ namespace MLConfiguration
             this.SetMessageId(ref service);
             this.SetMessageFilterId(ref service);
             this.SetPluginId(ref service);
-            this.step["sdkmessageid"] = new EntityReference("sdkmessage", this.MessageId);
-            if ((this.MessageFilterId != null) && (this.MessageFilterId != Guid.Empty))
-                this.step["sdkmessagefilterid"] = new EntityReference("sdkmessage", this.MessageFilterId);
-            this.step["filteringattributes"] = this.FilteringAttributes;
-            this.step["eventhandler"] = new EntityReference("plugintype", this.PluginId);
-            this.step["name"] = this.Name;
-            this.step["rank"] = new int?(this.Rank);
-            this.step["stage"] = new OptionSetValue((int)this.Stage);
-            this.step["mode"] = new OptionSetValue((int)this.Mode);
-            this.step["supporteddeployment"] = new OptionSetValue((int)this.Deployment);
-            this.step["description"] = this.Description;
-            this.step["configuration"] = this.UnsecureConfiguration;
+            this.step["sdkmessageid"] = (object)new EntityReference("sdkmessage", this.MessageId);
+            Guid messageFilterId = this.MessageFilterId;
+            if (this.MessageFilterId != Guid.Empty)
+                this.step["sdkmessagefilterid"] = (object)new EntityReference("sdkmessage", this.MessageFilterId);
+            this.step["filteringattributes"] = (object)this.FilteringAttributes;
+            this.step["eventhandler"] = (object)new EntityReference("plugintype", this.PluginId);
+            this.step["name"] = (object)this.Name;
+            this.step["rank"] = (object)this.Rank;
+            this.step["stage"] = (object)new OptionSetValue((int)this.Stage);
+            this.step["mode"] = (object)new OptionSetValue((int)this.Mode);
+            this.step["supporteddeployment"] = (object)new OptionSetValue((int)this.Deployment);
+            this.step["description"] = (object)this.Description;
+            this.step["configuration"] = (object)this.UnsecureConfiguration;
             if (!string.IsNullOrEmpty(this.SecureConfiguration))
-                this.step["sdkmessageprocessingstepsecureconfigid"] = new EntityReference("sdkmessageprocessingstepsecureconfig", this.createSecureConfiguration(ref service, this.SecureConfiguration));
-            Guid guid = Guid.Empty;
+                this.step["sdkmessageprocessingstepsecureconfigid"] = (object)new EntityReference("sdkmessageprocessingstepsecureconfig", this.createSecureConfiguration(ref service, this.SecureConfiguration));
+            Guid empty = Guid.Empty;
             Guid stepId;
             try
             {
@@ -299,9 +297,9 @@ namespace MLConfiguration
             }
             catch (Exception ex)
             {
-                throw new Exception("Step Registration Error-RegisterStep====MessageID=>" + this.MessageId.ToString() + "<===MessageFilterId==>" + MessageFilterId + "<=====", ex);
+                throw new Exception("Step Registration Error-RegisterStep====MessageID=>" + this.MessageId.ToString() + "<===MessageFilterId==>" + (object)this.MessageFilterId + "<=====", ex);
             }
-            if ((this.Message == "Update") && !string.IsNullOrEmpty(this.PreImageAlias) && !string.IsNullOrEmpty(this.PreImageAttributes))
+            if (this.Message == "Update" && !string.IsNullOrEmpty(this.PreImageAlias) && !string.IsNullOrEmpty(this.PreImageAttributes))
                 this.registerEntityImage(ref service, stepId, this.PreImageAlias, PluginStep.PluginStepImageType.PreImage, this.PreImageAttributes);
             if (!string.IsNullOrEmpty(this.PostImageAlias) && !string.IsNullOrEmpty(this.PostImageAttributes))
                 this.registerEntityImage(ref service, stepId, this.PostImageAlias, PluginStep.PluginStepImageType.PostImage, this.PostImageAttributes);
@@ -336,11 +334,10 @@ namespace MLConfiguration
 
         public enum PluginStepStage
         {
-            PreValidation = 10,
-            PreOperation = 20,
-            PostOperation = 40,
-            PostOperationDeprecated = 50,
+            PreValidation = 10, // 0x0000000A
+            PreOperation = 20, // 0x00000014
+            PostOperation = 40, // 0x00000028
+            PostOperationDeprecated = 50, // 0x00000032
         }
     }
 }
-

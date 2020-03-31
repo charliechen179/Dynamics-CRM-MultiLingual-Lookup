@@ -1,0 +1,71 @@
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\card\{27fdbbe1-87df-4740-a181-5e9beb2ab1a4}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\main\{aad29bd3-f660-426a-8fca-13699257f78e}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\main\{af64cc8d-f21c-4b10-bb0b-1a58c4d87e12}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\main\{6cf4ab67-9d2d-4640-8aef-33155d0ac4db}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\main\{51dbd857-ee2f-4156-8349-3af95edede91}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\main\{8752ab1d-fc21-4e0b-b90e-9486051652c9}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\main\{4d2a1dd8-7e05-4daf-9382-aa61f7448ad8}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\quick\{ddb6e712-a6ae-474a-8ecf-18f30759467a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\FormXml\quick\{1feb4da7-d694-4499-8979-c3a9e3dc2d8f}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{505b82a7-c987-e911-a97f-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{a839f944-cb87-e911-a97f-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{519526bc-367e-e911-a990-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{1cfe6aab-c387-e911-a97f-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{2562cab7-c21d-ea11-a810-000d3af42f4a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{1e456b3e-9dc1-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{3eee74d6-367e-e911-a990-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{9135c86f-c487-e911-a97f-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{2e301366-3862-4990-8d1b-553c0dd01855}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{875a8572-b7d0-e811-a973-000d3af42a5a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{d6ac4aab-b7d0-e811-a973-000d3af42a5a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{bb1f767c-5ece-e811-a971-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{659773e7-11bd-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{a9e9abc2-9cc1-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{219ad971-a3c1-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{6827d81c-88c2-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{4f669a6a-52c6-e811-a971-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{480517bc-a2c1-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{e3cd6852-a3c1-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{3792182d-a2c1-e811-a976-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{d1d63cee-59c6-e811-a971-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{5ca26429-5ac6-e811-a971-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{c98d4b15-5ac6-e811-a971-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{20e3fae6-b5d7-e811-a971-000d3af47939}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{a07a00dd-bad7-e811-a971-000d3af47939}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{7b4237fe-e928-4ebf-95b6-c23495f61367}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{04d524f2-367e-e911-a990-000d3af438b6}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\bdo_registration\SavedQueries\{567cc495-c487-e911-a97f-000d3af43d1a}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Contact\SavedQueries\{a2d479c5-53e3-4c69-addd-802327e67a0d}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Contact\RibbonDiff.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Contact\Entity.xml
+10:15:08 AM	 - Lead
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Lead\FormXml\main\{e3b6ddb7-8df0-4410-ac7b-fd32e5053d38}.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Lead\RibbonDiff.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Lead\Entity.xml
+10:15:08 AM	 - Product
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Product\RibbonDiff.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Entities\Product\Entity.xml
+10:15:08 AM	Processing Component: Roles
+10:15:08 AM	Processing Component: Workflows
+10:15:08 AM	 - Check Readiness Assessment
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Workflows\CheckReadinessAssessment-F62592B3-BAD3-E811-A974-000D3AF42A5A.xaml.data.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Workflows\CheckReadinessAssessment-F62592B3-BAD3-E811-A974-000D3AF42A5A.xaml
+10:15:08 AM	 - Set Paired Clinic Value
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Workflows\SetPairedClinicValue-D2F9326D-FDF3-E811-A976-000D3AF42A5A.xaml.data.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Workflows\SetPairedClinicValue-D2F9326D-FDF3-E811-A976-000D3AF42A5A.xaml
+10:15:08 AM	Processing Component: optionsets
+10:15:08 AM	 - bdo_apipreferredlanguage
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\OptionSets\bdo_apipreferredlanguage.xml
+10:15:08 AM	 - bdo_languagepreference
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\OptionSets\bdo_languagepreference.xml
+10:15:08 AM	Processing Component: SolutionPluginAssemblies
+10:15:08 AM	 - MLConfiguration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a40a880e6e15f6d0
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLConfiguration-2507D461-12B1-4CCC-9F97-5647467CC34B/MLConfiguration.dll.data.xml
+10:15:08 AM	Solution may not repack due to missing mapped file for: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLConfiguration-2507D461-12B1-4CCC-9F97-5647467CC34B/MLConfiguration.dll
+10:15:08 AM	Skipping 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLConfiguration-2507D461-12B1-4CCC-9F97-5647467CC34B/MLConfiguration.dll' as it matches a mapping directive
+10:15:08 AM	 - MLEventHandler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5b723eb05ce6b273
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLEventHandler-4DD92270-555B-4360-8546-A689F3B3CD11/MLEventHandler.dll.data.xml
+10:15:08 AM	Solution may not repack due to missing mapped file for: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLEventHandler-4DD92270-555B-4360-8546-A689F3B3CD11/MLEventHandler.dll
+10:15:08 AM	Skipping 'C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\PluginAssemblies/MLEventHandler-4DD92270-555B-4360-8546-A689F3B3CD11/MLEventHandler.dll' as it matches a mapping directive
+10:15:08 AM	Processing Component: EntityDataProviders
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Other\Customizations.xml

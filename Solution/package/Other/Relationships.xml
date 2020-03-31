@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships>
+  <EntityRelationship Name="account_originating_lead" />
+  <EntityRelationship Name="bdo_account_bdo_registration_Account" />
+  <EntityRelationship Name="bdo_account_bdo_registration_Organization" />
+  <EntityRelationship Name="bdo_account_bdo_registration_PairedOrganization" />
+  <EntityRelationship Name="bdo_account_bdo_registration_PharmacyAffiliation" />
+  <EntityRelationship Name="bdo_adx_portallanguage_bdo_registration_PreferredLanguage" />
+  <EntityRelationship Name="bdo_bdo_healthregion_bdo_registration_Region" />
+  <EntityRelationship Name="bdo_bdo_licensingcollege_bdo_registration_globalLicensingCollege" />
+  <EntityRelationship Name="bdo_bdo_softwareapplication_bdo_registration_ApplicationName" />
+  <EntityRelationship Name="bdo_bdo_softwareversion_bdo_registration_ApplicationVersion" />
+  <EntityRelationship Name="bdo_bdo_vendor_bdo_registration_Vendor" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_ContactResponsibleforRegistration" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_EMRContactLookup" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_HIC" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_LicenseeContact" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_MainPointofContact" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_NationalSupportContact" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_PharmacyOwner" />
+  <EntityRelationship Name="bdo_contact_bdo_registration_PrimaryContact" />
+  <EntityRelationship Name="bdo_lead_bdo_registration_OriginatingLead" />
+  <EntityRelationship Name="bdo_systemuser_bdo_registration_Completed" />
+  <EntityRelationship Name="bdo_systemuser_bdo_registration_EngagementManager" />
+  <EntityRelationship Name="bdo_systemuser_bdo_registration_GoLiveReviewCompletedBy" />
+  <EntityRelationship Name="bdo_systemuser_bdo_registration_LeadOriginatedBy" />
+  <EntityRelationship Name="bdo_systemuser_bdo_registration_ReadinessAssessmentCompletedBy" />
+  <EntityRelationship Name="bdo_systemuser_bdo_registration_Responsible" />
+  <EntityRelationship Name="business_unit_adx_portallanguage" />
+  <EntityRelationship Name="business_unit_bdo_registration" />
+  <EntityRelationship Name="business_unit_chi_multilinguallookupconfiguration" />
+  <EntityRelationship Name="chi_adx_portallanguage_lead_preferredlanguage" />
+  <EntityRelationship Name="contact_customer_accounts" unmodified="1" />
+  <EntityRelationship Name="contact_originating_lead" unmodified="1" />
+  <EntityRelationship Name="lk_adx_portallanguage_createdby" />
+  <EntityRelationship Name="lk_adx_portallanguage_modifiedby" />
+  <EntityRelationship Name="lk_bdo_registration_createdby" />
+  <EntityRelationship Name="lk_bdo_registration_modifiedby" />
+  <EntityRelationship Name="lk_chi_multilinguallookupconfiguration_createdby" />
+  <EntityRelationship Name="lk_chi_multilinguallookupconfiguration_modifiedby" />
+  <EntityRelationship Name="owner_adx_portallanguage" />
+  <EntityRelationship Name="owner_bdo_registration" />
+  <EntityRelationship Name="owner_chi_multilinguallookupconfiguration" />
+  <EntityRelationship Name="team_adx_portallanguage" />
+  <EntityRelationship Name="team_bdo_registration" />
+  <EntityRelationship Name="team_chi_multilinguallookupconfiguration" />
+  <EntityRelationship Name="user_adx_portallanguage" />
+  <EntityRelationship Name="user_bdo_registration" />
+  <EntityRelationship Name="user_chi_multilinguallookupconfiguration" />
+</EntityRelationships>

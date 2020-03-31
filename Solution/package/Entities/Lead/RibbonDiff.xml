@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="bdo.lead.QualifyNewForm.Button.CustomAction" Location="Mscrm.Form.lead.MainTab.Save.Controls._children" Sequence="75">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:bdo.lead.QualifyNewForm.Button.Alt" Command="bdo.lead.Form.RunQualifyLead.Command" Id="bdo.lead.QualifyNewForm.Button" Image32by32="$webresource:MarketingSales/_imgs/ribbon/ConvertLead_32.png" Image16by16="$webresource:MarketingSales/_imgs/ribbon/ConvertLead_16.png" LabelText="$LocLabels:bdo.lead.QualifyNewForm.Button.LabelText" Sequence="75" TemplateAlias="o2" ToolTipTitle="$LocLabels:bdo.lead.QualifyNewForm.Button.ToolTipTitle" ToolTipDescription="$LocLabels:bdo.lead.QualifyNewForm.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="bdo.lead.QualifyNewHome.Button.CustomAction" Location="Mscrm.HomepageGrid.lead.MainTab.Management.Controls._children" Sequence="85">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:bdo.lead.QualifyNewHome.Button.Alt" Command="bdo.lead.Grid.RunQualifyLead.Command" Id="bdo.lead.QualifyNewHome.Button" Image32by32="$webresource:MarketingSales/_imgs/ribbon/ConvertLead_32.png" Image16by16="$webresource:MarketingSales/_imgs/ribbon/ConvertLead_16.png" LabelText="$LocLabels:bdo.lead.QualifyNewHome.Button.LabelText" Sequence="85" TemplateAlias="isv" ToolTipTitle="$LocLabels:bdo.lead.QualifyNewHome.Button.ToolTipTitle" ToolTipDescription="$LocLabels:bdo.lead.QualifyNewHome.Button.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="bdo.Mscrm.Form.lead.ConvertLeadAs.Hide" Location="Mscrm.Form.lead.ConvertLeadAs" />
+    <HideCustomAction HideActionId="bdo.Mscrm.Form.lead.ConvertLeadAs.Web.Hide" Location="Mscrm.Form.lead.ConvertLeadAs.Web" />
+    <HideCustomAction HideActionId="bdo.Mscrm.Form.lead.ConvertLeadQuick.Hide" Location="Mscrm.Form.lead.ConvertLeadQuick" />
+    <HideCustomAction HideActionId="bdo.Mscrm.Form.lead.ConvertLeadQuick.Web.Hide" Location="Mscrm.Form.lead.ConvertLeadQuick.Web" />
+    <HideCustomAction HideActionId="bdo.Mscrm.HomepageGrid.lead.ConvertLeadAs.Hide" Location="Mscrm.HomepageGrid.lead.ConvertLeadAs" />
+    <HideCustomAction HideActionId="bdo.Mscrm.HomepageGrid.lead.ConvertLeadAs.Web.Hide" Location="Mscrm.HomepageGrid.lead.ConvertLeadAs.Web" />
+    <HideCustomAction HideActionId="bdo.Mscrm.HomepageGrid.lead.ConvertLeadQuick.Hide" Location="Mscrm.HomepageGrid.lead.ConvertLeadQuick" />
+    <HideCustomAction HideActionId="bdo.Mscrm.HomepageGrid.lead.ConvertLeadQuick.Web.Hide" Location="Mscrm.HomepageGrid.lead.ConvertLeadQuick.Web" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="bdo.lead.Form.RunQualifyLead.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.FormStateNotNew" />
+        <EnableRule Id="Mscrm.LeadIsOpen" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="QualifyLead" Library="$webresource:bdo_/Forms/Lead.js">
+          <CrmParameter Value="PrimaryControl" />
+          <CrmParameter Value="FirstPrimaryItemId" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.lead.Grid.RunQualifyLead.Command">
+      <EnableRules>
+        <EnableRule Id="Mscrm.SelectionCountAtLeastOne" />
+        <EnableRule Id="Mscrm.RunWorkflowSelected" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="QualifyLead" Library="$webresource:bdo_/Forms/Lead.js">
+          <CrmParameter Value="SelectedControl" />
+          <CrmParameter Value="SelectedControlSelectedItemReferences" />
+          <CrmParameter Value="FirstPrimaryItemId" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="bdo.lead.QualifyNewForm.Button.Alt">
+      <Titles>
+        <Title description="Qualify" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewForm.Button.LabelText">
+      <Titles>
+        <Title description="Qualify" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewForm.Button.ToolTipDescription">
+      <Titles>
+        <Title description="When the lead is converted, it is saved as qualified in the Closed Leads view." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewForm.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Create a new registration with an account and a contact using information from this lead." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewHome.Button.Alt">
+      <Titles>
+        <Title description="Qualify" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewHome.Button.LabelText">
+      <Titles>
+        <Title description="Register" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewHome.Button.ToolTipDescription">
+      <Titles>
+        <Title description="When the lead is converted, it is saved as qualified in the Closed Leads view." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.lead.QualifyNewHome.Button.ToolTipTitle">
+      <Titles>
+        <Title description="Create a new registration with an account and a contact using information from this lead." languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

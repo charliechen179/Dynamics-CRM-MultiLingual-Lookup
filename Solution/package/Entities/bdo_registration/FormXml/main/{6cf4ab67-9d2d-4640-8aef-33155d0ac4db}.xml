@@ -1,0 +1,1738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms>
+  <systemform>
+    <formid>{6cf4ab67-9d2d-4640-8aef-33155d0ac4db}</formid>
+    <IntroducedVersion>2018.20.09.0819</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab name="tab_4" id="{5353637b-2cb0-2a4c-514b-3cd15d942826}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" labelid="{0181f0fe-ca02-40af-868a-e0fba3880f1a}">
+          <labels>
+            <label description="EMR Details" languagecode="1033" />
+            <label description="Information sur le dossier médical électronique" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_5_section_1" showlabel="false" showbar="false" locklevel="0" id="{4a562437-42bc-6193-4d4e-9b07e4d275d5}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{23e1ac14-f86d-4443-8d21-6ec443fd1c51}">
+                  <labels>
+                    <label description="EMR Details" languagecode="1033" />
+                    <label description="Information sur le dossier médical électronique" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{07a6a1da-0334-2dd2-8e82-56a32082b360}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vendor" languagecode="1033" />
+                          <label description="Fournisseur" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_account" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_account" disabled="false" uniqueid="{b74723b5-8cb3-08ee-59ed-53461dd58749}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{D840914D-0DEC-E811-A972-000D3AF47939}</DefaultViewId>
+                            <AvailableViewIds>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</AvailableViewIds>
+                            <DependentAttributeType>bdo_registration</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{d1c2ce4a-cd13-b74c-6b83-24a026682009}" showlabel="true" locklevel="0" labelid="{3cced695-04c1-4673-b1ba-a8a123eb4d5e}">
+                        <labels>
+                          <label description="Application Name" languagecode="1033" />
+                          <label description="Nom du logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_applicationname" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_applicationname" disabled="false" uniqueid="{1b1cd9e8-a892-337b-bb70-a8d738c1489b}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{84F98B10-11EC-E811-A972-000D3AF47939}</DefaultViewId>
+                            <FilterRelationshipName>bdo_account_bdo_softwareapplication_Account</FilterRelationshipName>
+                            <DependentAttributeName>bdo_registration.bdo_account</DependentAttributeName>
+                            <DependentAttributeType>account</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{FD3DC96E-FE4B-41A0-9E7B-1CF891DE7D32}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{799e25d6-6c7d-238c-07c8-992a210607d1}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b4ea76ed-1d8c-8dae-16cb-395b14e28ddb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Other Application Name" languagecode="1033" />
+                          <label description="Autre logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_otherapplicationname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_otherapplicationname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53ade567-8716-d150-7398-025c14266b21}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Preferred Language" languagecode="1033" />
+                          <label description="Langue de préférence" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_globalapilanguage" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalapilanguage" disabled="false" uniqueid="{7b824c4c-4c8b-6562-c2dd-6b800bba7390}" />
+                      </cell>
+                      <cell id="{44bd9772-739b-49b6-3883-7d289be44740}" showlabel="true" locklevel="0" labelid="{dd36adb2-cbc8-4627-a8d8-59b386746424}">
+                        <labels>
+                          <label description="Application Version" languagecode="1033" />
+                          <label description="Version du logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_applicationversion" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_applicationversion" disabled="false" uniqueid="{d0b16bbb-5ad4-5a58-22ed-5a5d30a916cd}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{FBC52DBD-4550-4C00-A6C1-49044473E3B4}</DefaultViewId>
+                            <FilterRelationshipName>bdo_bdo_softwareapplication_bdo_softwareversion_Application</FilterRelationshipName>
+                            <DependentAttributeName>bdo_registration.bdo_applicationname</DependentAttributeName>
+                            <DependentAttributeType>bdo_softwareapplication</DependentAttributeType>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{FBC52DBD-4550-4C00-A6C1-49044473E3B4}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d548ab4-da52-25d7-4eb9-785cc0b26090}" showlabel="true" locklevel="0" labelid="{e5112727-8911-4d36-8659-33f1c17382d2}">
+                        <labels>
+                          <label description="Incremental Backup on Site?" languagecode="1033" />
+                          <label description="Sauvegarde incrémentale sur place?" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_backupatsite" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_backupatsite" disabled="false" uniqueid="{cbab84bd-49a4-7acd-39c9-4cc1c2d623b8}" />
+                      </cell>
+                      <cell id="{280134d1-8939-5ee5-d767-367440dd6160}" showlabel="true" locklevel="0" colspan="1" labelid="{812e698a-fc6a-4365-b85d-198f2976061b}">
+                        <labels>
+                          <label description="Backup Frequency" languagecode="1033" />
+                          <label description="Fréquence de sauvegarde" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_backupfrequency" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_backupfrequency" disabled="false" uniqueid="{e2a2920a-844a-3647-9360-e9079c86375a}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_8_section_1" showlabel="true" showbar="false" locklevel="0" id="{0ba45454-00e8-20ab-de44-10eca08d4b15}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{a66d19cc-7164-499e-b910-be315aa8af5c}">
+                  <labels>
+                    <label description="EMR Test Patient" languagecode="1033" />
+                    <label description="Patient fictif du DME" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5b6691a4-4107-d3c2-346d-799192b57489}" showlabel="true" locklevel="0" labelid="{bc0f18db-3e6b-4265-b6e1-8ae9fd35157c}">
+                        <labels>
+                          <label description="Test Patient First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_emrtestpatient1firstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_emrtestpatient1firstname" disabled="false" uniqueid="{104a46e7-28d9-edeb-68e9-9e2a16733884}" />
+                      </cell>
+                      <cell id="{baddb45e-0cce-1183-0029-cece02c794a1}" showlabel="true" locklevel="0" labelid="{8b001f72-d448-4f97-8cbc-3ed95468cc33}">
+                        <labels>
+                          <label description="Test Patient Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_emrtestpatient1lastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_emrtestpatient1lastname" disabled="false" uniqueid="{bcaeacba-6d44-e20b-aa75-502bb38b363b}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_8" id="{ec3c2939-4e03-bc78-ad9b-c01c4c3d8915}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Staff Details" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_8_section_2" showlabel="false" showbar="false" locklevel="0" id="{bda3bb07-1da1-11c3-84b5-17e69a317cb1}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Please enter the information on each Prescriber that you wish to/that will be activated on Prescribe IT. If you are also a Prescriber, please select your name from the list below and updated the required information." languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{810a12d2-ccce-2800-7539-8c14d4a41049}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c9c124cd-a27b-012d-d61d-59a75320e451}" showlabel="false" colspan="1" auto="false" rowspan="12">
+                        <labels>
+                          <label description="Contacts (Registration)" languagecode="1033" />
+                          <label description="Contacts" languagecode="1036" />
+                        </labels>
+                        <control id="Prescribers" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{b163d390-8c3a-58c7-9b4a-64308a40e201}">
+                          <parameters>
+                            <ViewId>{0E47598E-C6BD-E811-A976-000D3AF438B6}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>bdo_bdo_registration_contact_Registration</RelationshipName>
+                            <TargetEntityType>contact</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{0E47598E-C6BD-E811-A976-000D3AF438B6},{00000000-0000-0000-00AA-000010001003}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>All</ChartGridMode>
+                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_8_section_3" showlabel="false" showbar="false" locklevel="0" id="{eb314018-9965-da0e-278a-abc2c34d1d1a}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{987e1ded-9d7a-c556-b8cb-cb790a00b6d9}" showlabel="true" rowspan="10" auto="false" colspan="1" locklevel="0">
+                        <labels>
+                          <label description="Note Text" languagecode="1033" />
+                        </labels>
+                        <control id="notescontrol" classid="{06375649-c143-495e-a496-c962e5b4488e}" uniqueid="{46985279-86e1-7590-9d16-2bb763b45b16}" disabled="false">
+                          <parameters>
+                            <UClientUniqueName>Timeline</UClientUniqueName>
+                            <UClientModules>Notes</UClientModules>
+                            <UClientDefaultModuleForCreateExperience>Notes</UClientDefaultModuleForCreateExperience>
+                            <UClientShowFilterPane>true</UClientShowFilterPane>
+                            <UClientExpandFilterPane>false</UClientExpandFilterPane>
+                            <UClientOrderBy>descending</UClientOrderBy>
+                            <UClientRecordPerPage>5</UClientRecordPerPage>
+                            <DefaultTabId>NotesTab</DefaultTabId>
+                            <EmailConversationView>true</EmailConversationView>
+                            <ShowArticleTab>false</ShowArticleTab>
+                            <SelectDefaultLanguage>00000000-0000-0000-0000-000000000000</SelectDefaultLanguage>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_13" id="{e1eae359-1262-9b4e-104c-6206a63c6e83}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true">
+          <labels>
+            <label description="Pharmacy Management System Details" languagecode="1033" />
+            <label description="Information sur le système de gestion de pharmacie" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_13_section_1" showlabel="false" showbar="false" locklevel="0" id="{bec32554-0e8e-e68e-8a4a-6eb667e6ca6a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="PMS Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{edc8c856-ee53-4639-749e-075831e86599}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Vendor" languagecode="1033" />
+                          <label description="Fournisseur" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_account" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_account" disabled="false" uniqueid="{aa730084-a3cb-3648-e75a-a1dbe5547a33}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{2A27DF80-0DEC-E811-A972-000D3AF47939}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <AvailableViewIds>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{b5d81069-8ce9-9d6b-8b5b-5b713a137875}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Application Name" languagecode="1033" />
+                          <label description="Nom du logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_applicationname" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_applicationname" disabled="false" uniqueid="{ed346d5d-28be-0ed9-0a97-8930b4bb0b70}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{C70E3926-11EC-E811-A972-000D3AF47939}</DefaultViewId>
+                            <FilterRelationshipName>bdo_account_bdo_softwareapplication_Account</FilterRelationshipName>
+                            <DependentAttributeName>bdo_registration.bdo_account</DependentAttributeName>
+                            <DependentAttributeType>account</DependentAttributeType>
+                            <AllowFilterOff>true</AllowFilterOff>
+                            <AvailableViewIds>{FD3DC96E-FE4B-41A0-9E7B-1CF891DE7D32}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{40be55b5-c5de-0cb2-e8b3-ec61bc4cd296}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{3dd4e53b-9cec-1699-939b-7008e4cb8aed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Other Application Name" languagecode="1033" />
+                          <label description="Autre logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_otherapplicationname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_otherapplicationname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{24ac527d-7293-9c42-3c93-61b56e824a56}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Preferred Language" languagecode="1033" />
+                          <label description="Langue de préférence" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_globalapilanguage" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_globalapilanguage" disabled="false" uniqueid="{4719ac16-5501-a986-d6be-4845b246bd60}" />
+                      </cell>
+                      <cell id="{71447686-9b38-d13d-3d58-91e0a630585b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Application Version" languagecode="1033" />
+                          <label description="Version du logiciel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_applicationversion" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_applicationversion" disabled="false" uniqueid="{e779e456-168c-2de4-8036-b8ebc4466a20}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{FBC52DBD-4550-4C00-A6C1-49044473E3B4}</DefaultViewId>
+                            <FilterRelationshipName>bdo_bdo_softwareapplication_bdo_softwareversion_Application</FilterRelationshipName>
+                            <DependentAttributeName>bdo_registration.bdo_applicationname</DependentAttributeName>
+                            <DependentAttributeType>bdo_softwareapplication</DependentAttributeType>
+                            <AllowFilterOff>true</AllowFilterOff>
+                            <AvailableViewIds>{FBC52DBD-4550-4C00-A6C1-49044473E3B4}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{575d18a5-7a04-2c16-0597-002064617b60}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Incremental Backup on Site?" languagecode="1033" />
+                          <label description="Sauvegarde incrémentale sur place?" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_backupatsite" classid="{67FAC785-CD58-4f9f-ABB3-4B7DDC6ED5ED}" datafieldname="bdo_backupatsite" disabled="false" uniqueid="{a98a5997-3d09-9722-0ba2-1cbaa2432241}" />
+                      </cell>
+                      <cell id="{db943ad5-0250-b747-e7ab-453aaa82e0b1}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Backup Frequency" languagecode="1033" />
+                          <label description="Fréquence de sauvegarde" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_backupfrequency" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_backupfrequency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ad86ec6-7169-423a-1312-33c2b99986be}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Source" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_source" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_source" disabled="false" uniqueid="{02ba39e1-b7c4-0476-a5b7-5186b15314d1}" />
+                      </cell>
+                      <cell id="{ba34b02d-83be-ca5c-9ca7-358514a9a437}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Organization" languagecode="1033" />
+                          <label description="Organisation" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organization" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_organization" disabled="false" uniqueid="{8c1b22e3-0888-731d-7930-421779e17e1d}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{428a4a97-841b-a266-b815-1810a4deebcc}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_name" disabled="false" uniqueid="{1d725880-2dd0-7e03-4c9d-d886eeea5640}" />
+                      </cell>
+                      <cell id="{502be734-1205-2b74-91aa-8b0b19936715}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_9" id="{d623b3a1-bcbd-9a2a-3e4b-b53ad701b55b}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Select Registration Type" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_9_section_1" showlabel="false" showbar="false" locklevel="0" id="{d9e90ab0-1081-6bec-389b-dda504dad73d}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9a26050a-3330-9085-d164-ca4a97aa23c4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Registration Type" languagecode="1033" />
+                          <label description="Type d'inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_registrationtype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_registrationtype" disabled="false" />
+                      </cell>
+                      <cell id="{998a03b4-4ca7-db80-97e7-b3904c38d63b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Contact Responsible for Registration" languagecode="1033" />
+                          <label description="Contact responsable de l'inscription" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_contactresponsibleforregistration" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_contactresponsibleforregistration" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_2" id="{8be7cbea-a646-11da-de1a-4bec0332ded7}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{90d07bb1-68a4-4442-bc9f-9cea51e9bde6}">
+          <labels>
+            <label description="Clinic Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_1" showlabel="false" showbar="false" locklevel="0" id="{cb4079cc-c2ed-a403-3521-8c7b8de67604}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{c906c004-ed78-427b-90ce-d9bdc6ddda5a}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1168a8b2-1804-de30-1e35-8099aa34c617}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinic Legal Name" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_organizationlegalname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationlegalname" disabled="false" uniqueid="{41e879bb-2ee1-0677-21a8-b716bd1810c1}" />
+                      </cell>
+                      <cell id="{649ac9c4-a75e-b523-6215-dd4cb0086728}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinic Common Name" languagecode="1033" />
+                          <label description="Nom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationcommonname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationcommonname" disabled="false" uniqueid="{4ac8d96a-5e8b-c77e-0ae5-bd65c8424ece}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b6d113ec-688a-65eb-c1e1-0912d46eb450}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinic ID" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_organizationid" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationid" disabled="false" uniqueid="{a24111b4-91be-98b0-75b8-7379d93c6bb6}" />
+                      </cell>
+                      <cell id="{9b72c71d-a171-40a7-0681-ed518bcb1e5e}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_2_section_2" showlabel="true" showbar="false" locklevel="0" id="{c0dd41e2-c610-ab1c-4e90-634b844e785b}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{db7366cc-f8f5-4862-aa9c-10994985edc3}">
+                  <labels>
+                    <label description="Street Address" languagecode="1033" />
+                    <label description="Adresse municipale" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{0ad1dd3e-2090-4343-3a4b-a845dd8d8116}" showlabel="true" locklevel="0" labelid="{7a3ffbae-4f9b-495a-ac5e-e0fa0288fa17}">
+                        <labels>
+                          <label description="Street Address 1" languagecode="1033" />
+                          <label description="No et nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetaddress1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetaddress1" disabled="false" uniqueid="{6a74c8a0-cc65-17c9-2e95-a8d5be7421ab}" />
+                      </cell>
+                      <cell id="{d1d080e1-34ee-1c42-ae0e-b873bed9d68c}" showlabel="true" locklevel="0" labelid="{6867180b-d2af-46fa-8311-f539d303cc80}">
+                        <labels>
+                          <label description="Street Address 2" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_streetaddress2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetaddress2" disabled="false" uniqueid="{c0e3be76-ebb8-5134-a7c1-79ead2c1a6c8}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0abb81e0-1a72-4909-cbaa-1c66b19b5c83}" showlabel="true" locklevel="0" labelid="{47fdcfb7-2818-446b-b2b2-f0df82b842b8}">
+                        <labels>
+                          <label description="Street City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetcity" disabled="false" uniqueid="{9e18a0b2-e81b-ab06-4898-d07c79da3e8e}" />
+                      </cell>
+                      <cell id="{448196b7-c29d-5467-31b6-0483ae58d2a7}" showlabel="true" locklevel="0" labelid="{b80ee74a-512b-42ce-8a84-cc5a41b3679f}">
+                        <labels>
+                          <label description="Street Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_streetprovince" disabled="false" uniqueid="{765d7551-7ade-9e8c-5145-34ecac27be71}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6c95e843-6575-571e-2810-4c0e22aba824}" showlabel="true" locklevel="0" labelid="{be4f5c48-8664-49a3-afeb-8c781ff4c545}">
+                        <labels>
+                          <label description="Street Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetpostalcode" disabled="false" uniqueid="{4e144d21-d405-9d19-7b0e-69bbe7baacdd}" />
+                      </cell>
+                      <cell id="{0931c767-c084-9c5c-0dc4-d0e18c7e6107}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_1" showlabel="true" showbar="false" locklevel="0" id="{abae5d7b-cad1-0158-8ec9-a71a96328ed0}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{c009d0aa-0769-43b3-9e8f-4272e07404f9}">
+                  <labels>
+                    <label description="Mailing Address (If different from Street Address)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{17ece6b3-34b5-bcae-8e1b-7902825309dd}" showlabel="true" locklevel="0" labelid="{992937a8-2519-4d0a-91ba-34a5b1de5995}">
+                        <labels>
+                          <label description="Mailing Address 1" languagecode="1033" />
+                          <label description="No et nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingaddress1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingaddress1" disabled="false" uniqueid="{28bd1c9a-6e75-41c5-ebad-32b69edeacd9}" />
+                      </cell>
+                      <cell id="{85702371-aaa3-3e8d-e5bb-28069b471863}" showlabel="true" locklevel="0" labelid="{d2f942d4-16c7-4919-82de-6d1f4c127f68}">
+                        <labels>
+                          <label description="Mailing Address 2" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_mailingaddress2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingaddress2" disabled="false" uniqueid="{104aa5c7-30e6-9cb7-c531-534ab489cb42}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3de469eb-229a-b0a0-b340-9396d606ce12}" showlabel="true" locklevel="0" labelid="{8b8a331f-4005-4d1a-a463-d0b590a89a76}">
+                        <labels>
+                          <label description="Mailing City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingcity" disabled="false" uniqueid="{58d25121-c8db-b793-887e-08aca613c63c}" />
+                      </cell>
+                      <cell id="{d78e4eab-00a4-d9b3-6aa8-5946a654528c}" showlabel="true" locklevel="0" labelid="{24611e0e-b936-435f-a17b-2fe16bcb7c4d}">
+                        <labels>
+                          <label description="Mailing Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mailingprovince" disabled="false" uniqueid="{3adda709-c4b7-7b00-ba20-247709eb228c}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c75313b2-63aa-9701-0cd4-adc4001847a5}" showlabel="true" locklevel="0" labelid="{50c7de39-c9af-4da3-9e04-0af3afdee164}">
+                        <labels>
+                          <label description="Mailing Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingpostalcode" disabled="false" uniqueid="{26d8269b-97ab-ca94-e6be-a4e197136d63}" />
+                      </cell>
+                      <cell id="{b327ca80-6103-2a06-9682-b63c39ae663b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Same As Street" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_mailingsameasstreet" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_mailingsameasstreet" disabled="false" uniqueid="{5dcdc0c0-2601-b80c-8d90-344d409cbee2}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_3_section_3" showlabel="true" showbar="false" locklevel="0" id="{7e1e9d7a-e1c2-1139-55a6-737d1a060bd2}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{4d41e8c2-6ec1-406b-86bd-9ccccf92a3d0}">
+                  <labels>
+                    <label description="Billing Address (If different from Street Address)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2ee1561d-3ba1-4769-8e31-b929b4878276}" showlabel="true" locklevel="0" labelid="{5d023ddc-cf8c-4465-9cf5-c0aff39dc1c1}">
+                        <labels>
+                          <label description="Billing Street 1" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_billingstreet1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreet1" disabled="false" />
+                      </cell>
+                      <cell id="{5b2aa144-eba1-ecac-c272-69d4944357b1}" showlabel="true" locklevel="0" labelid="{833ebf5c-b1af-4fa3-9115-84ebeef62d2e}">
+                        <labels>
+                          <label description="Billing Street 2" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_billingstreet2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreet2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{813d875a-35d7-b9de-9078-e8aba478e45b}" showlabel="true" locklevel="0" labelid="{503daf2f-888d-493a-9d7d-dda27cf4682b}">
+                        <labels>
+                          <label description="Billing City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingcity" disabled="false" />
+                      </cell>
+                      <cell id="{91a50a98-e0e7-1328-a391-c05a1d196ab3}" showlabel="true" locklevel="0" labelid="{b428f211-4c09-403f-a629-5d460d6a4a10}">
+                        <labels>
+                          <label description="Billing Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_billingprovince" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8ce88cc2-6211-d602-1871-0dac5d9aaa06}" showlabel="true" locklevel="0" labelid="{5d09c8a1-6a1e-4ce5-bf3f-4502f6adf6d5}">
+                        <labels>
+                          <label description="Billing Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingpostalcode" disabled="false" />
+                      </cell>
+                      <cell id="{6a2ed18d-0ecd-c529-3eca-2a4a86780b02}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Same As Street" languagecode="1033" />
+                          <label description="Même adresse que l’adresse municipale" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingsameasstreet" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_billingsameasstreet" disabled="false" uniqueid="{7751eee8-b194-e751-6c77-4323ec8bdc08}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_12" id="{74851118-60ae-15e2-378b-ac478c6ceeda}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Clinic Contact Information" languagecode="1033" />
+            <label description="Coordonnées de la clinique" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_2_section_3" showlabel="true" showbar="false" locklevel="0" id="{b8304269-6c8a-825b-14b8-5e84d93d16ae}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{32345cbc-09dd-49c9-91a9-4b4dcc975225}">
+                  <labels>
+                    <label description="Phone &amp; Fax" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{b41a438a-28a4-b32e-828c-52d7216ad304}" showlabel="true" locklevel="0" labelid="{164f93ea-049e-4c19-9d5b-02611efcbd1a}">
+                        <labels>
+                          <label description="Clinic Phone Number" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_phonenumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_phonenumber" disabled="false" uniqueid="{9755d18e-ea70-8d7d-5910-350412d70361}" />
+                      </cell>
+                      <cell id="{9b34a295-48d0-b9e5-4abb-3e674c2765d9}" showlabel="true" locklevel="0" labelid="{6345c925-62fa-4fc8-a203-15e3ed6d8f37}">
+                        <labels>
+                          <label description="Clinic Fax" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_fax" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_fax" disabled="false" uniqueid="{725658de-8a35-9a00-e9cd-40b6ea7c83d7}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6ebe6546-2d17-db66-33c0-91077bc85c0d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinic Email" languagecode="1033" />
+                          <label description="Courrier électronique" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_email" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_email" disabled="false" uniqueid="{e5751a51-10b9-69b5-9add-05b903259d33}" />
+                      </cell>
+                      <cell id="{68cbd992-84e6-3578-9136-4866231700aa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Clinic Web URL" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_weburl" classid="{71716B6C-711E-476c-8AB8-5D11542BFB47}" datafieldname="bdo_weburl" disabled="false" uniqueid="{e7425d48-0466-e02d-19c9-6c95410d4995}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0dc6eb3-2410-ee45-51a1-7e8ac9d395e4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Preferred Language" languagecode="1033" />
+                          <label description="Langue de préférence" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_preferredlanguage" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_preferredlanguage" disabled="false" />
+                      </cell>
+                      <cell id="{5701844d-a4ba-11e9-8eea-c9b19b8eceb1}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_4_section_1" showlabel="true" showbar="false" locklevel="0" id="{2e20ed7d-ab8c-63b1-7590-195e2dc0555c}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{0a165271-c8a2-44ff-94d3-db46d21c0a34}">
+                  <labels>
+                    <label description="Organizational Contact" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c2d51598-09e4-9e86-59b8-5702a6bb3e18}" showlabel="true" locklevel="0" labelid="{1567f474-1a1f-4b5b-88d3-9748c0f5528e}">
+                        <labels>
+                          <label description="Primary Contact First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactfirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactfirstname" disabled="false" />
+                      </cell>
+                      <cell id="{0de16506-2919-c4be-5538-27922b95b2d4}" showlabel="true" locklevel="0" labelid="{e297d18a-21f9-4b3e-bb89-1d6ce6f35451}">
+                        <labels>
+                          <label description="Primary Contact Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactlastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactlastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a347636e-465a-3719-bada-cc86c5984ee5}" showlabel="true" locklevel="0" labelid="{140ec44c-98ca-45e3-986e-4805f8bbb43b}">
+                        <labels>
+                          <label description="Primary Contact Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactphone" disabled="false" />
+                      </cell>
+                      <cell id="{aab3a4e5-52d9-2404-d55c-a1ecbce09ec7}" showlabel="true" locklevel="0" labelid="{3ac383bf-5a2c-4b33-82be-1c08ef6028a9}">
+                        <labels>
+                          <label description="Primary Contact Fax" languagecode="1033" />
+                          <label description="Télécopieur" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactfax" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactfax" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3de01233-3272-24ab-0dec-08a5e5cbcd8e}" showlabel="true" locklevel="0" labelid="{6e593d4b-5fbb-4ae1-845f-477be2bcf5a1}">
+                        <labels>
+                          <label description="Primary Contact Role" languagecode="1033" />
+                          <label description="Rôle" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactrole" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactrole" disabled="false" />
+                      </cell>
+                      <cell id="{0d30b187-e664-0040-7809-85378d11bb7e}" showlabel="true" locklevel="0" labelid="{b7432055-58a0-47b7-9bcd-d9a8b393ec1c}">
+                        <labels>
+                          <label description="Primary Contact Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_primarycontactemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7a88287c-171b-c049-d9ca-4ee8ea5b308b}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{4264e1d7-e61d-49dc-38ea-37d5c857b608}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Same as Logged In User" languagecode="1033" />
+                          <label description="Même que l’utilisateur connecté" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sameasloggedinuser" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_sameasloggedinuser" disabled="false" uniqueid="{5c4e370c-061d-5c86-7469-dc3c7a9b9b1c}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_6" id="{cbd2ce39-c821-ad4b-598a-8403268194d7}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{d0fc39b1-f0a5-411e-b2c2-6b1bb8800e70}">
+          <labels>
+            <label description="Province Specific Requirements" languagecode="1033" />
+            <label description="Exigence de la province/du territoire" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_6_section_1" showlabel="true" showbar="false" locklevel="0" id="{9c4bdc85-a7d5-e187-553a-5a0686bddd27}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{33967e38-c751-4cf9-b0b6-5228161bb7b2}">
+                  <labels>
+                    <label description="Alberta" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{32413403-28d1-7000-db55-8558870842ea}" showlabel="true" locklevel="0" labelid="{7cff5db4-a59f-421d-a6ed-0666ec92dedd}">
+                        <labels>
+                          <label description="Organization WDFA Key" languagecode="1033" />
+                          <label description="Clé WDFA de l’organisation" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationwdfakey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationwdfakey" disabled="false" />
+                      </cell>
+                      <cell id="{6aad23d3-8d07-acea-c4de-94526ec2383b}" showlabel="true" locklevel="0" labelid="{f6e9a945-54d9-431e-848d-4203735b7e6b}">
+                        <labels>
+                          <label description="PIA Number" languagecode="1033" />
+                          <label description="Numéro de l’EFVP" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_pianumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_pianumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{91b19268-2a1b-093a-6663-3a489817a830}" showlabel="true" locklevel="0" labelid="{2b0fbe34-e684-4894-8578-1a24c2ee2814}">
+                        <labels>
+                          <label description="PORA Acceptance Date" languagecode="1033" />
+                          <label description="Date d’acceptation de la pORA" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_poraacceptancedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_poraacceptancedate" disabled="false" />
+                      </cell>
+                      <cell id="{88871505-2cb5-da96-0445-801582974e0e}" showlabel="true" locklevel="0" labelid="{9439064a-4109-4717-925d-bf5c9bbe98c9}">
+                        <labels>
+                          <label description="Other" languagecode="1033" />
+                          <label description="Autre" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_other" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_other" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_7" id="{1152a9eb-33bd-00e5-13c1-c1e5aec4b132}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false" labelid="{ec95c05a-5b34-4ce4-b46c-6288890c0332}">
+          <labels>
+            <label description="Clinic Hours of Operation" languagecode="1033" />
+            <label description="Heures d'ouverture" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_7_section_1" showlabel="false" showbar="false" locklevel="0" id="{a7ad215c-0e0d-c143-c44a-2d188b625658}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left" labelid="{b112de55-0d76-4b78-8e1a-3a8ede19981b}">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{404c9ea0-4204-c299-e229-b42e5a483878}" showlabel="true" locklevel="0" labelid="{2daacae1-e287-43e0-972f-929c5f2329a8}">
+                        <labels>
+                          <label description="Monday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du lundi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mondayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mondayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{3174d59e-37b5-0272-da5d-09552642035c}" showlabel="true" locklevel="0" labelid="{0cb6c6bf-a042-44cb-bb9c-344b8c7357d8}">
+                        <labels>
+                          <label description="Monday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du lundi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mondayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mondayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{e39e0645-a8cb-5660-a237-d77ddee080db}" showlabel="true" locklevel="0" labelid="{6bd5e073-4b4d-4262-ad3d-04ed8be7ce6d}">
+                        <labels>
+                          <label description="Copy Hours to Weekdays" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_copyhourstoweekdays" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_copyhourstoweekdays" disabled="false" uniqueid="{67ce2567-bb5d-0c15-dac0-235b47be5730}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cbbbbab1-751b-03bb-c371-c1b073e5136d}" showlabel="true" locklevel="0" labelid="{352522a7-b004-4fdc-b704-6ce45dfbf887}">
+                        <labels>
+                          <label description="Tuesday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du mardi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_tuesdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_tuesdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{9c22136e-eb14-1229-1351-ba68e59584dc}" showlabel="true" locklevel="0" labelid="{64037d54-91da-4b52-a016-8efb47d81bca}">
+                        <labels>
+                          <label description="Tuesday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du mardi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_tuesdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_tuesdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{c660e251-ad31-634a-51cd-585ad47d527e}" showlabel="false" labelid="{ea1a7c6e-8592-4a75-981c-6514fa97f401}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cab284e5-7799-1e2d-88a3-3e8972b33907}" showlabel="true" locklevel="0" labelid="{fc9352da-9e15-4905-b478-3f5e16dd8d98}">
+                        <labels>
+                          <label description="Wednesday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du mercredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_wednesdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_wednesdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{56bdcaba-0d37-ed7b-5d67-a4d0d205aa60}" showlabel="true" locklevel="0" labelid="{80c84d8d-a3a1-4185-a03a-ca24b816e8c9}">
+                        <labels>
+                          <label description="Wednesday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du mercredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_wednesdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_wednesdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{19e5cea7-4158-8422-cc9a-bbbc5915a931}" showlabel="false" labelid="{261daf01-13f3-4d16-b4f1-85afdaee9ab2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16d18113-eb8d-0343-1398-a2d82dba7e05}" showlabel="true" locklevel="0" labelid="{e278dd0c-8a7a-4745-8000-4a4d384c4055}">
+                        <labels>
+                          <label description="Thursday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du jeudi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_thursdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_thursdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{9bdd2585-a6ab-d093-8b12-ea5e470ad45a}" showlabel="true" locklevel="0" labelid="{bb7879b0-9157-4e90-b97e-9654810aaeab}">
+                        <labels>
+                          <label description="Thursday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du jeudi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_thursdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_thursdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{06d3239e-7b19-6dc4-b355-a557595cd5c1}" showlabel="false" labelid="{032d3db2-5788-4998-a284-66d7ad12ac62}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e969c8ae-2209-88be-2909-000b1e2079ab}" showlabel="true" locklevel="0" labelid="{e46254d5-3597-447d-a7d5-0bde3958ec9b}">
+                        <labels>
+                          <label description="Friday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du vendredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_fridayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_fridayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{40cec74e-e2d9-40ae-76bc-ab6945222d2d}" showlabel="true" locklevel="0" labelid="{478b84da-716e-4e69-b5d2-d68acff6e7cd}">
+                        <labels>
+                          <label description="Friday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du vendredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_fridayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_fridayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{1613c844-c9c6-9dc3-cb51-32792e56c896}" showlabel="false" labelid="{0e20d106-3ffe-49db-a1c9-b2be6fc520bf}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82a491d7-1795-736d-0575-ed6b11db4364}" showlabel="true" locklevel="0" labelid="{675e5f5c-685c-4315-ad1b-6652c0fcad50}">
+                        <labels>
+                          <label description="Saturday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du samedi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_saturdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_saturdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{c3a29854-3a59-30c2-1d0b-a600787a487c}" showlabel="true" locklevel="0" labelid="{0ac2e900-2634-45af-8860-e73732e3eeb9}">
+                        <labels>
+                          <label description="Saturday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du samedi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_saturdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_saturdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{2b6130a1-b6ce-0c54-845e-90980dee159c}" showlabel="false" labelid="{6e49a501-22d2-4d97-8146-4ba63c24ec03}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{64accba3-3dc2-5232-44c4-43536d72e839}" showlabel="true" locklevel="0" labelid="{bedf7be2-3210-439f-a4a5-b6509898c510}">
+                        <labels>
+                          <label description="Sunday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du dimanche" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sundayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_sundayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{867abed3-14e7-e1d1-a2ae-e0b288bb71ea}" showlabel="true" locklevel="0" labelid="{7a18596c-0839-4365-996a-b18f1fa5cf3f}">
+                        <labels>
+                          <label description="Sunday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du dimanche" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sundayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_sundayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{cd69e16c-cada-2a35-7c71-987a41d1a79c}" showlabel="false" labelid="{8e0d1f5b-85d5-43dc-bc0a-124ff9f3f5b9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1940ac80-b293-7c6d-74a9-aa9cb9c04c4c}" showlabel="true" locklevel="0" colspan="3" rowspan="3">
+                        <labels>
+                          <label description="Comments on Operating Hours" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_hoursexception" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="bdo_hoursexception" disabled="false" uniqueid="{e922d0c6-c1ed-9d82-83ea-94887a5c0858}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_10" id="{5c13737c-edbe-254b-8880-963cb2ead799}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Pharmacy Information" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_10_section_1" showlabel="false" showbar="false" locklevel="0" id="{4ad0dd24-1dc6-d785-07aa-9d253ab0b5e6}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{5381580c-26c9-5c5e-3464-2d7148996452}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pharmacy Legal Name" languagecode="1033" />
+                          <label description="Dénomination légale de la pharmacie" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationlegalname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationlegalname" disabled="false" uniqueid="{e6161702-1c6b-3a3d-e685-b1ebad3832ac}" />
+                      </cell>
+                      <cell id="{9e759edb-0c16-1eb9-2780-60de9ea193e2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pharmacy Common Name" languagecode="1033" />
+                          <label description="Nom usuel de la pharmacie" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationcommonname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationcommonname" disabled="false" uniqueid="{297d7489-55c5-2dcc-8a03-a2a23207d793}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e37688e-70a3-0338-0a1e-ccc3eb017608}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pharmacy License" languagecode="1033" />
+                          <label description="No de permis de la pharmacie" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_pharmacylicense" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_pharmacylicense" disabled="false" />
+                      </cell>
+                      <cell id="{a4a64102-3114-d67b-3ec7-4da8d793766d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Preferred Language" languagecode="1033" />
+                          <label description="Langue de préférence" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_preferredlanguage" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_preferredlanguage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebc985a5-201c-18dc-4028-6e8a913941c0}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="Pharmacy Affiliation" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_pharmacyaffiliation" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bdo_pharmacyaffiliation" disabled="false" uniqueid="{1130a2d9-98c2-3e20-0513-c353db2adeb6}">
+                          <parameters>
+                            <AutoResolve>true</AutoResolve>
+                            <DisableMru>false</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{A9AF0AB8-861D-4CFA-92A5-C6281FED7FAB}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{a2419429-eca6-8ba8-aa5b-3e46e5c8bc8d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Pharmacy Type" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_pharmacytype" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_pharmacytype" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_12_section_1" showlabel="true" showbar="false" locklevel="0" id="{19c28a6d-98e7-6dbb-d38a-21403b456a4a}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Pharmacy Street Address" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{18355511-3620-1899-b9b5-96ae0d2ce2ee}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Address 1" languagecode="1033" />
+                          <label description="No et nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetaddress1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetaddress1" disabled="false" uniqueid="{9c77c95a-62ae-c13d-474d-79e5cc8c033a}" />
+                      </cell>
+                      <cell id="{7ccc9131-86a3-85d4-3eae-ea88a6816e6c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Address 2" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_streetaddress2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetaddress2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6231357d-eecc-ccb3-e8e2-da7083ce54e7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetcity" disabled="false" />
+                      </cell>
+                      <cell id="{63ba7062-8058-38b3-6e90-ea1c49acbe26}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_streetprovince" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{75ec4767-b372-0309-1333-9e18d191b520}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Street Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_streetpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_streetpostalcode" disabled="false" />
+                      </cell>
+                      <cell id="{ad5bdb1e-8382-75c2-4b91-70b44e7b87ea}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_12_section_2" showlabel="true" showbar="false" locklevel="0" id="{2050d0a7-d1e7-3da5-5021-901498ad813b}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Mailing Address" languagecode="1033" />
+                    <label description="Adresse postale" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{edce0eab-04c2-41d7-b79e-56a423cca9ac}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Address 1" languagecode="1033" />
+                          <label description="No et nom de rue" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingaddress1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingaddress1" disabled="false" uniqueid="{42bb9956-ec2e-81ac-a368-36b9864707d0}" />
+                      </cell>
+                      <cell id="{4bbc60b2-ecde-676d-d4bb-611e68e1c4be}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Address 2" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_mailingaddress2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingaddress2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b343a40d-5bec-d795-2c16-2adbb9d04d5e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingcity" disabled="false" />
+                      </cell>
+                      <cell id="{c25ca67b-ae45-c7c0-c10c-87cc8a2e48ad}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mailingprovince" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{638aaec3-d0e0-3891-b4b0-93cab5136817}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mailingpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_mailingpostalcode" disabled="false" />
+                      </cell>
+                      <cell id="{0d407449-89ee-d601-c5dd-6d517b62a9bb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Mailing Same As Street" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_mailingsameasstreet" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_mailingsameasstreet" disabled="false" uniqueid="{be752d85-7c27-8a43-55a5-ab2dc5d874bd}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_12_section_3" showlabel="true" showbar="false" locklevel="0" id="{924593e9-a249-37ce-9c23-47a1a2257102}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Billing Address" languagecode="1033" />
+                    <label description="Adresse de facturation" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d4111b8d-022d-ea09-a82e-d959536e6b64}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Street 1" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_billingstreet1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreet1" disabled="false" />
+                      </cell>
+                      <cell id="{6352ee02-9eea-a636-4216-bd01b3630baa}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Street 2" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_billingstreet2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingstreet2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b836cb6-4494-c184-6b37-e7c6d45671a7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing City" languagecode="1033" />
+                          <label description="Ville" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingcity" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingcity" disabled="false" />
+                      </cell>
+                      <cell id="{8de60197-09ac-831b-6509-73024d1ba785}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Province" languagecode="1033" />
+                          <label description="Province/terr." languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingprovince" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_billingprovince" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0934e271-bd78-0941-509b-eb7845c2590c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Postal Code" languagecode="1033" />
+                          <label description="Code postal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingpostalcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_billingpostalcode" disabled="false" />
+                      </cell>
+                      <cell id="{7ed1172d-c799-19bd-0765-265dce316c83}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Billing Same As Street" languagecode="1033" />
+                          <label description="Même adresse que l’adresse municipale" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_billingsameasstreet" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_billingsameasstreet" disabled="false" uniqueid="{1dd4a6b2-5458-99a9-6ea9-d6b0ecdc5dd3}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_11" id="{9174183a-72bc-a418-a84c-7a83ac50cade}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Pharmacy Contact information" languagecode="1033" />
+            <label description="Information sur la personne-ressource de la pharmacie" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_11_section_1" showlabel="true" showbar="false" locklevel="0" id="{4b061ec2-9443-92db-0519-1b8957aaab4e}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Organizational Contact" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4608977d-2569-57ed-c439-52ec37e0ee47}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactfirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactfirstname" disabled="false" />
+                      </cell>
+                      <cell id="{cbe378e5-1112-322d-86c1-3c356aae3223}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactlastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactlastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebaea227-3abb-b9a9-caa0-c22869687608}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactphone" disabled="false" />
+                      </cell>
+                      <cell id="{4a9e184b-31ca-138a-0954-4dc6c616d189}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Fax" languagecode="1033" />
+                          <label description="Télécopieur" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactfax" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactfax" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb2c04dd-8cd3-35a4-b87d-de8a0e90244c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Role" languagecode="1033" />
+                          <label description="Rôle" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactrole" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_primarycontactrole" disabled="false" />
+                      </cell>
+                      <cell id="{54e27b52-6931-0ba1-8039-65ee51abbad2}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Primary Contact Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_primarycontactemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_primarycontactemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{58c36c11-0366-1d44-dab3-ba9c5c37adb7}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{d244a62c-adc5-bacd-4a8d-e96e077a7523}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Same as Logged In User" languagecode="1033" />
+                          <label description="Même que l’utilisateur connecté" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sameasloggedinuser" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_sameasloggedinuser" disabled="false" uniqueid="{9d89d299-7e85-d801-3813-126582b389d3}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_11_section_2" showlabel="true" showbar="false" locklevel="0" id="{5de9744c-248d-1840-3521-15b5304dbdad}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Licensee Contact" languagecode="1033" />
+                    <label description="Contact du licencié" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c3ebe639-955b-5a78-cb8a-4b57ae8d692d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseefirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_licenseefirstname" disabled="false" />
+                      </cell>
+                      <cell id="{6c5688e5-e453-5a0b-d0ce-426eb65375c6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseelastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_licenseelastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b63033bb-2891-8029-2155-4c0d45c23386}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseephone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_licenseephone" disabled="false" />
+                      </cell>
+                      <cell id="{5ccc0c23-4d91-391a-a3a2-23a18dc45301}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseeemail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_licenseeemail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2b4ed04d-b4d7-d3dd-9518-a9393404e613}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{9850eb43-0b4e-a2c9-6d0d-9b2d20616836}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Licensee Same as Primary Contact" languagecode="1033" />
+                          <label description="Licencié identique au contact principal" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_licenseesameasprimarycontact" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_licenseesameasprimarycontact" disabled="false" uniqueid="{25966a77-7b0a-7629-ec1d-e76a0cca5d16}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tab_11_section_3" showlabel="true" showbar="false" locklevel="0" id="{0b86d723-cad0-3836-dbb6-3d08191d4e29}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Owner Contact" languagecode="1033" />
+                    <label description="Information sur le propriétaire de la pharmacie" languagecode="1036" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{9eba7481-03e9-da80-d6cd-300de8a13248}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner First Name" languagecode="1033" />
+                          <label description="Prénom" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownerfirstname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_ownerfirstname" disabled="false" />
+                      </cell>
+                      <cell id="{ce029718-0d2b-7ecb-d35b-073897494a24}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Last Name" languagecode="1033" />
+                          <label description="Nom de famille" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownerlastname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_ownerlastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0bd8464-0b7d-a585-4908-8d362d06c4b6}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Phone" languagecode="1033" />
+                          <label description="Téléphone" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownerphone" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_ownerphone" disabled="false" />
+                      </cell>
+                      <cell id="{d1c306e7-65ac-9528-b60d-c42b3bbdaeed}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Email" languagecode="1033" />
+                          <label description="Courriel" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_owneremail" classid="{ADA2203E-B4CD-49be-9DDF-234642B43B52}" datafieldname="bdo_owneremail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{67dc3522-87d1-bb20-974a-ba3a3c11e708}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{7613c922-06d9-647b-01a9-14165aa77978}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Owner Same as Primary Contact" languagecode="1033" />
+                          <label description="Même que l’utilisateur connecté" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_ownersameasprimarycontact" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_ownersameasprimarycontact" disabled="false" uniqueid="{c7a53eac-7587-5071-9ae4-ab5e2a441119}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_14" id="{d2225a6d-2ec0-0a01-e284-bada063910ba}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Province Specific Requirements" languagecode="1033" />
+            <label description="Exigence de la province/du territoire" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_14_section_1" showlabel="true" showbar="false" locklevel="0" id="{77e661e2-e312-6c1c-e636-b2d4d80d9840}" IsUserDefined="0" layout="varwidth" columns="11" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Alberta" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{06726d0b-9e0e-dd82-9009-74d8048d66e5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Organization WDFA Key" languagecode="1033" />
+                          <label description="Clé WDFA de l’organisation" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_organizationwdfakey" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_organizationwdfakey" disabled="false" />
+                      </cell>
+                      <cell id="{61d11a22-7170-c972-86ae-7d83e59e2919}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PIA Number" languagecode="1033" />
+                          <label description="Numéro de l’EFVP" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_pianumber" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_pianumber" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e8778d5e-c546-41eb-0c8d-d454b47b9080}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="PORA Acceptance Date" languagecode="1033" />
+                          <label description="Date d’acceptation de la pORA" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_poraacceptancedate" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="bdo_poraacceptancedate" disabled="false" />
+                      </cell>
+                      <cell id="{9a3cd632-7d09-a716-d6c3-bb67e6881010}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Other" languagecode="1033" />
+                          <label description="Autre" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_other" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_other" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_15" id="{0033adda-9899-1340-9400-9195655bd631}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="false">
+          <labels>
+            <label description="Pharmacy Hours of Operation" languagecode="1033" />
+            <label description="Heures d'ouverture" languagecode="1036" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_15_section_1" showlabel="false" showbar="false" locklevel="0" id="{0e3dab40-b634-a091-894b-d46e5b69b735}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d1841e90-b265-2e50-adc2-e0888cc4dac4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Monday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du lundi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mondayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mondayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{215408d6-576d-9288-550c-2a3d8ea6ab4b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Monday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du lundi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_mondayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_mondayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{802b5aa9-1825-4903-3b78-b0d2665e035d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Copy Hours to Weekdays" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_copyhourstoweekdays" classid="{B0C6723A-8503-4fd7-BB28-C8A06AC933C2}" datafieldname="bdo_copyhourstoweekdays" disabled="false" uniqueid="{cdd59865-7e31-d9c6-5e74-10e0a6798e0b}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d06dc081-653b-4118-4ab8-60d2921898bb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Tuesday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du mardi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_tuesdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_tuesdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{a4beb6b8-a70e-1aad-83bc-d6c6e8d6bbd5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Tuesday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du mardi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_tuesdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_tuesdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{a2b55518-73a2-d5ad-5e5b-da8226cb33aa}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8442a297-950b-961e-854d-1014c2d1b071}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Wednesday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du mercredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_wednesdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_wednesdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{a1812812-2dd0-c3c0-4ae0-d93c1b02ac99}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Wednesday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du mercredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_wednesdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_wednesdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{b1956c75-2d87-51c5-a5b9-8026d7a786c2}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0400a525-3e71-758d-4d59-45845ed24a53}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Thursday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du jeudi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_thursdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_thursdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{b08a63c3-c777-8ac7-d7c7-ecb61018dd3d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Thursday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du jeudi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_thursdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_thursdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{5c3076c5-41e7-a62a-4312-12ae93e5b854}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb5c8c65-05ad-61e8-66ad-209884e9acae}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Friday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du vendredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_fridayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_fridayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{45022475-78ed-7425-9995-d38caca08d5e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Friday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du vendredi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_fridayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_fridayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{4949d85b-a3e5-8941-ca81-295e33023c19}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{daac2c32-c75e-3263-9691-d8bce9195476}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Saturday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du samedi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_saturdayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_saturdayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{b5dd4906-1a22-1a2a-a1eb-3be34a09cadd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Saturday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du samedi" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_saturdayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_saturdayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{b811662b-6b92-2434-d1d1-33010e35bdb8}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{89518961-e586-4153-8537-a83a50252449}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sunday Open Time" languagecode="1033" />
+                          <label description="Heure d’ouverture du dimanche" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sundayopentime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_sundayopentime" disabled="false" />
+                      </cell>
+                      <cell id="{48665e27-71a3-d47a-3428-0cd62074e438}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Sunday Close Time" languagecode="1033" />
+                          <label description="Heure de fermeture du dimanche" languagecode="1036" />
+                        </labels>
+                        <control id="bdo_sundayclosetime" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bdo_sundayclosetime" disabled="false" />
+                      </cell>
+                      <cell id="{9a24b05b-0939-3070-ba8a-43577ce2eeb4}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{627cbd8e-15b0-17b4-6b15-432ed0956668}" showlabel="true" locklevel="0" colspan="3" rowspan="3">
+                        <labels>
+                          <label description="Comments on Operating Hours" languagecode="1033" />
+                        </labels>
+                        <control id="bdo_hoursexception" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="bdo_hoursexception" disabled="false" uniqueid="{c8989699-51c1-2867-79b0-4d4e7c70d19d}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{efd7f38d-0764-459f-96dd-ea1477593633}" columns="111">
+        <rows>
+          <row>
+            <cell id="{52889477-9c49-482f-a568-ae71f39f3940}" showlabel="false" labelid="{d0da40e7-5398-4703-beb0-dce3800a786e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d3da3b45-a566-6635-2c6e-2b52d8aa9e48}" showlabel="true" locklevel="0" labelid="{68e9ba5f-960b-4a93-993a-8f817e07df7a}">
+              <labels>
+                <label description="Name" languagecode="1033" />
+                <label description="Nom" languagecode="1036" />
+              </labels>
+              <control id="header_bdo_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bdo_name" disabled="false" />
+            </cell>
+            <cell id="{81c19c33-75c8-e0e5-6da3-627b8e1d890e}" showlabel="true" locklevel="0" labelid="{1bdfd137-7c4a-49d9-bdd8-54eb08d6c7ad}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+                <label description="Propriétaire" languagecode="1036" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="bdo_/Forms/Registration.js" libraryUniqueId="{abd6e45e-9431-bbe5-a5ce-dbc45a018a7d}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="Registration_OnLoad" libraryName="bdo_/Forms/Registration.js" handlerUniqueId="{dc18baa4-cccc-aa67-2077-b4238703860d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="3">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Portal - Registration Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

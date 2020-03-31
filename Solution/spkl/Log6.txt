@@ -1,0 +1,3 @@
+10:15:08 AM	Reading mapping directives...
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Other\Relationships\Team.xml
+10:15:08 AM	Creating: C:\Users\cchen\source\repos\charliechen179\Dynamics-CRM-MultiLingual-Lookup\GitHub\Dynamics-CRM-MultiLingual-Lookup\Solution\package\Other\Relationships.xml

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml>
+  <CustomActions>
+    <CustomAction Id="chi.bdo.bdo_registration.CreateOrg.Button.CustomAction" Location="Mscrm.Form.bdo_registration.MainTab.Collaborate.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:bdo.bdo_registration.CreateOrg.Button.Alt" Command="bdo.bdo_registration.CreateTelusAPI.Command" Id="bdo.bdo_registration.CreateOrg.Button" Image32by32="$webresource:bdo_TelusAPI_32" Image16by16="$webresource:bdo_TelusAPI_16" LabelText="$LocLabels:bdo.bdo_registration.CreateOrg.Button.LabelText" Sequence="0" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo.bdo_registration.UpdateOrg.Button.CustomAction" Location="Mscrm.Form.bdo_registration.MainTab.Collaborate.Controls._children" Sequence="1">
+      <CommandUIDefinition>
+        <Button Alt="$LocLabels:bdo.bdo_registration.UpdateOrg.Button.Alt" Command="bdo.bdo_registration.UpdateTelusAPI.Command" Id="bdo.bdo_registration.UpdateOrg.Button" Image32by32="$webresource:bdo_TelusAPI_32" Image16by16="$webresource:bdo_TelusAPI_16" LabelText="$LocLabels:bdo.bdo_registration.UpdateOrg.Button.LabelText" Sequence="1" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="chi.bdo_registration.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.CustomAction" Location="Mscrm.Form.bdo_registration.MainTab.Save.Controls._children" Sequence="95">
+      <CommandUIDefinition>
+        <Button Command="chi.bdo_registration.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Description="{&quot;smartbuttonid&quot;:&quot;smartbutton.runworkflow&quot;,&quot;Title&quot;:&quot;Assign to PrescribeIT&quot;,&quot;workflowname&quot;:&quot;Registration_AssignRecordFromVendorToInfoway_RibbonButton&quot;,&quot;confirm&quot;:&quot;Do you want to assign this record to Infoway team?&quot;}" Id="chi.bdo_registration.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button" Image32by32="$webresource:dev1_/images/runworkflow16.png" Image16by16="$webresource:dev1_/images/runworkflow16.png" LabelText="$LocLabels:chi.bdo_registration.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText" Sequence="95" TemplateAlias="o2" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="bdo.bdo_registration.CreateTelusAPI.Command">
+      <EnableRules>
+        <EnableRule Id="bdo.bdo_registration.CreateTelusAPI.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CallTelusAPI" Library="$webresource:bdo_/Forms/Registration.js">
+          <CrmParameter Value="FirstPrimaryItemId" />
+          <StringParameter Value="Create" />
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="bdo.bdo_registration.UpdateTelusAPI.Command">
+      <EnableRules>
+        <EnableRule Id="bdo.bdo_registration.UpdateTelusAPI.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CallTelusAPI" Library="$webresource:bdo_/Forms/Registration.js">
+          <CrmParameter Value="FirstPrimaryItemId" />
+          <StringParameter Value="Update" />
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+    <CommandDefinition Id="chi.bdo_registration.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button">
+      <EnableRules>
+        <EnableRule Id="chi.bdo_registration.EnableRule7.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="SmartButtons.ClientHooks.SmartButtons.RunWorkflowSingle" Library="$webresource:dev1_/js/SmartButtons.ClientHooks.js">
+          <StringParameter Value="Registration_AssignRecordFromVendorToInfoway_RibbonButton" />
+          <CrmParameter Value="PrimaryItemIds" />
+          <StringParameter Value="Do you want to assign this record to Infoway team?" />
+          <StringParameter Value="" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="bdo.bdo_registration.CreateTelusAPI.EnableRule">
+        <ValueRule Field="bdo_showapibuttons" Value="755390000" />
+      </EnableRule>
+      <EnableRule Id="bdo.bdo_registration.UpdateTelusAPI.EnableRule">
+        <ValueRule Field="bdo_showapibuttons" Value="755390001" />
+      </EnableRule>
+      <EnableRule Id="chi.bdo_registration.EnableRule7.EnableRule">
+        <FormStateRule State="Existing" Default="true" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="bdo.bdo_registration.CreateOrg.Button.Alt">
+      <Titles>
+        <Title description="Create Organization" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.bdo_registration.CreateOrg.Button.LabelText">
+      <Titles>
+        <Title description="Create Organization" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.bdo_registration.UpdateOrg.Button.Alt">
+      <Titles>
+        <Title description="Update Organization" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bdo.bdo_registration.UpdateOrg.Button.LabelText">
+      <Titles>
+        <Title description="Update Organization" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="chi.bdo_registration.Button15.Button.dev1.EntityDisplayName.RunWorkflowForm.Button.LabelText">
+      <Titles>
+        <Title description="Assign to PrescribeIT" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>
